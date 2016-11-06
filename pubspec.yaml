@@ -1,6 +1,6 @@
 name: semantic_ui_angular_dart
 description: Semantic UI for Angular Dart
-version: 0.0.1
+version: 0.0.2
 author: Nick Ng <ngyewch@gmail.com>
 homepage: https://github.com/ngyewch/semantic-ui-angular-dart
 
@@ -12,3 +12,6 @@ dependencies:
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'
+
+transformers:
+- angular2:
