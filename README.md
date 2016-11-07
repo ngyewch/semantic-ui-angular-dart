@@ -4,10 +4,22 @@ Semantic UI for Angular Dart.
 
 ## Setup
 
+pubspec.yaml:
+
+    dependencies:
+      semantic_ui_angular_dart: 
+
+
+HTML:
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css"/>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+
+Dart:
+
+    import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
 
 ## Usage
 
@@ -29,13 +41,11 @@ HTML:
 
 Dart:
 
-    import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
-
     @Component(
         selector: 'my-app',
         styleUrls: const ['app_component.css'],
         templateUrl: 'app_component.html',
-        directives: const [ROUTER_DIRECTIVES, SidebarDirective]
+        directives: const [SEMANTIC_UI_DIRECTIVES]
     )
     class AppComponent() {
 

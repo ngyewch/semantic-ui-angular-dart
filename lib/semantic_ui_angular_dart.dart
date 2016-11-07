@@ -10,3 +10,7 @@ export 'src/Sidebar.dart';
 export 'src/SidebarDirective.dart';
 
 // TODO: Export any libraries intended for clients of this package.
+
+import 'src/SidebarDirective.dart' show SidebarDirective;
+
+const List<dynamic> SEMANTIC_UI_DIRECTIVES = const [SidebarDirective];
