@@ -8,11 +8,23 @@ import 'dart:js' as js;
 abstract class AbstractModule {
 
   ElementRef element;
+  String defaultMethod;
 
-  AbstractModule(this.element);
+  AbstractModule(this.element, this.defaultMethod);
 
-  invokeMethod(String methodName, List<String> parameters) {
+  invokeDefaultMethod(List<dynamic> parameters) {
+    return invokeMethod(defaultMethod, parameters);
+  }
+
+  invokeMethod(String methodName, List<dynamic> parameters) {
+    List<dynamic> adjustedParameters = new List<dynamic>.from(parameters);
+    for (var i = 0; i < adjustedParameters.length; i++) {
+      if ((adjustedParameters[i] is Map) || (adjustedParameters[i] is List)) {
+        adjustedParameters[i] = new js.JsObject.jsify(adjustedParameters[i]);
+      }
+    }
+
     return js.context.callMethod(r'$', [element.nativeElement]).callMethod(
-        methodName, parameters);
+        methodName, adjustedParameters);
   }
 }

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0
+
+- Added directive namespace.
+- Added semantic_ui_calendar directive.
+
 ## 0.0.5
 
 - Added SEMANTIC_UI_DIRECTIVES.

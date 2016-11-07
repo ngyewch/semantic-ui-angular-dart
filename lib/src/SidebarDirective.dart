@@ -5,12 +5,12 @@ import 'package:angular2/core.dart';
 
 import 'package:semantic_ui_angular_dart/src/Sidebar.dart';
 
-@Directive(selector: '[sidebar]')
+@Directive(selector: '[semantic_ui_sidebar]')
 class SidebarDirective implements AfterContentInit {
 
   Sidebar sidebar = null;
 
-  @Output('sidebar')
+  @Output('semantic_ui_sidebar')
   final EventEmitter eventEmitter = new EventEmitter();
 
   SidebarDirective(ElementRef element) {

@@ -7,37 +7,37 @@ import 'package:semantic_ui_angular_dart/src/AbstractModule.dart';
 
 class Sidebar extends AbstractModule {
 
-  Sidebar(element) : super(element);
+  Sidebar(element) : super(element, "sidebar");
 
   void show() {
-    invokeMethod("sidebar", ["show"]);
+    invokeDefaultMethod(["show"]);
   }
 
   void hide() {
-    invokeMethod("sidebar", ["hide"]);
+    invokeDefaultMethod(["hide"]);
   }
 
   void toggle() {
-    invokeMethod("sidebar", ["toggle"]);
+    invokeDefaultMethod(["toggle"]);
   }
 
   void pushPage() {
-    invokeMethod("sidebar", ["push page"]);
+    invokeDefaultMethod(["push page"]);
   }
 
   void pullPage() {
-    invokeMethod("sidebar", ["pull page"]);
+    invokeDefaultMethod(["pull page"]);
   }
 
   bool isVisible() {
-    return invokeMethod("sidebar", ["is visible"]);
+    return invokeDefaultMethod(["is visible"]);
   }
 
   bool isHidden() {
-    return invokeMethod("sidebar", ["is hidden"]);
+    return invokeDefaultMethod(["is hidden"]);
   }
 
   String getDirection() {
-    return invokeMethod("sidebar", ["get direction"]);
+    return invokeDefaultMethod(["get direction"]);
   }
 }
