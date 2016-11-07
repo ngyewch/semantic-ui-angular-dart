@@ -1,0 +1,25 @@
+<div (semantic_ui_sidebar)="initSidebar($event)" class="ui sidebar inverted vertical menu">
+    <a class="item" [routerLink]="['Home']">
+        Home
+    </a>
+    <a class="item" [routerLink]="['Calendar']">
+        Calendar
+    </a>
+    <a class="item" [routerLink]="['Sidebar']">
+        Sidebar
+    </a>
+</div>
+<div class="pusher">
+    <div>
+    </div>
+    <div class="ui container">
+        <button (click)="onToggleSidebarButtonClicked()" class="ui basic icon button">
+            <i class="large sidebar icon"></i>
+        </button>
+        <h1 class="ui header">
+            Semantic UI for Angular Dart
+        </h1>
+
+        <router-outlet></router-outlet>
+    </div>
+</div>

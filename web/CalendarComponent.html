@@ -1,0 +1,14 @@
+<h2 class="ui header">Calendar</h2>
+
+<div [semantic_ui_calendar]="startDateSettings" [(ngModel)]="startDate" class="ui calendar">
+    <div>
+        Start date:
+        <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="Start date"/>
+        </div>
+    </div>
+    <div>
+        Selected start date: {{startDate}}
+    </div>
+</div>
