@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Fix for sidebar pusher issue.
+
 ## 0.1.0
 
 - Added directive namespace.
