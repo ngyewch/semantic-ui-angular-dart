@@ -13,12 +13,12 @@ class CalendarDirective extends AbstractModule implements AfterViewInit, Control
 
   @Input('semantic_ui_calendar')
   Map<String, dynamic> settings = null;
-  var fnOnChange;
-  var fnOnTouched;
+  var _fnOnChange;
+  var _fnOnTouched;
 
   CalendarDirective(ElementRef element) : super(element, "calendar");
 
-  void init() {
+  void _init() {
     Map<String, dynamic> adjustedSettings;
     if (settings is Map) {
       adjustedSettings = new Map<String, dynamic>.from(settings);
@@ -30,17 +30,17 @@ class CalendarDirective extends AbstractModule implements AfterViewInit, Control
   }
 
   onChange(DateTime dateTime, String text) {
-    fnOnChange(dateTime);
+    _fnOnChange(dateTime);
   }
 
   @override
   void registerOnChange(fn(DateTime value)) {
-    fnOnChange = fn;
+    _fnOnChange = fn;
   }
 
   @override
   void registerOnTouched(fn()) {
-    fnOnTouched = fn;
+    _fnOnTouched = fn;
   }
 
   @override
@@ -50,6 +50,6 @@ class CalendarDirective extends AbstractModule implements AfterViewInit, Control
 
   @override
   ngAfterViewInit() {
-    init();
+    _init();
   }
 }
