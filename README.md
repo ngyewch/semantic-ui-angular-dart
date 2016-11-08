@@ -1,6 +1,6 @@
 # semantic_ui_angular_dart
 
-Semantic UI for Angular Dart.
+[Semantic UI](http://semantic-ui.com/) for [Angular Dart](https://angular.io/dart).
 
 ## Setup
 
@@ -85,21 +85,37 @@ HTML:
 
 Dart:
 
-    @Component(
-        selector: 'my-app',
-        styleUrls: const ['app_component.css'],
-        templateUrl: 'app_component.html',
-        directives: const [SEMANTIC_UI_DIRECTIVES]
-    )
-    class AppComponent() {
+    Sidebar sidebar;
 
-        Sidebar sidebar;
-
-        onToggleSidebarButtonClicked() {
-            sidebar.toggle();
-        }
-
-        initSidebar(Sidebar sidebar) {
-            this.sidebar = sidebar;
-        }
+    onToggleSidebarButtonClicked() {
+        sidebar.toggle();
     }
+
+    initSidebar(Sidebar sidebar) {
+        this.sidebar = sidebar;
+    }
+
+### Tab
+
+HTML:
+
+    <div semantic_ui_tab class="ui tabular menu">
+        <div class="active item" data-tab="tab-1">Tab 1</div>
+        <div class="item" data-tab="tab-2">Tab 2</div>
+        <div class="item" data-tab="tab-3">Tab 3</div>
+    </div>
+    <div class="ui active tab" data-tab="tab-1">
+        <p>
+            ...
+        </p>
+    </div>
+    <div class="ui tab" data-tab="tab-2">
+        <p>
+            ...
+        </p>
+    </div>
+    <div class="ui tab" data-tab="tab-3">
+        <p>
+            ...
+        </p>
+    </div>
