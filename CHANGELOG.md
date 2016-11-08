@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+- Added semantic_ui_tab directive.
+
 ## 0.1.3
 
 - Added semantic_ui_dropdown directive.

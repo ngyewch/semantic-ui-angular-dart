@@ -10,11 +10,13 @@ export 'src/CalendarDirective.dart';
 export 'src/DropdownDirective.dart';
 export 'src/Sidebar.dart';
 export 'src/SidebarDirective.dart';
+export 'src/TabDirective.dart';
 
 // TODO: Export any libraries intended for clients of this package.
 
 import 'src/CalendarDirective.dart' show CalendarDirective;
 import 'src/DropdownDirective.dart' show DropdownDirective;
 import 'src/SidebarDirective.dart' show SidebarDirective;
+import 'src/TabDirective.dart' show TabDirective;
 
-const List<dynamic> SEMANTIC_UI_DIRECTIVES = const [CalendarDirective, DropdownDirective, SidebarDirective];
+const List<dynamic> SEMANTIC_UI_DIRECTIVES = const [CalendarDirective, DropdownDirective, SidebarDirective, TabDirective];

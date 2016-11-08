@@ -10,6 +10,7 @@ import 'CalendarComponent.dart';
 import 'DropdownComponent.dart';
 import 'HomeComponent.dart';
 import 'SidebarComponent.dart';
+import 'TabComponent.dart';
 
 @Component(
     selector: 'my-app',
@@ -30,7 +31,10 @@ import 'SidebarComponent.dart';
       component: DropdownComponent),
   const Route(path: '/sidebar',
       name: 'Sidebar',
-      component: SidebarComponent)
+      component: SidebarComponent),
+  const Route(path: '/tab',
+      name: 'Tab',
+      component: TabComponent)
 ])
 class AppComponent {
 
