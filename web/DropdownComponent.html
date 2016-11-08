@@ -1,5 +1,7 @@
+<h2 class="ui header">Dropdown</h2>
+
 <div>
-    <div semantic_ui_dropdown [(ngModel)]="gender1" class="ui dropdown">
+    <div semantic_ui_dropdown [(ngModel)]="gender" class="ui selection dropdown">
         <input type="hidden" name="gender">
         <i class="dropdown icon"></i>
         <div class="default text">Gender</div>
@@ -8,8 +10,8 @@
             <div class="item" data-value="female">Female</div>
         </div>
     </div>
-    <div>
-        gender1 = {{gender1}}
+    <div class="ui basic segment">
+        gender = {{gender}}
     </div>
 </div>
 <!--

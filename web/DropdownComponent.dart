@@ -8,6 +8,6 @@ import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
     directives: const [SEMANTIC_UI_DIRECTIVES]
 )
 class DropdownComponent {
-  var gender1 = null;
+  var gender = null;
   var gender2 = null;
 }
