@@ -3,7 +3,6 @@
 
 import 'package:angular2/common.dart';
 import 'package:angular2/core.dart';
-import 'package:angular2/di.dart';
 
 import 'dart:js';
 
