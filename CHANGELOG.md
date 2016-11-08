@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Added semantic_ui_dropdown directive.
+
 ## 0.1.2
 
 - Fix for sidebar pusher issue.

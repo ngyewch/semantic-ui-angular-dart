@@ -1,0 +1,26 @@
+<div>
+    <div semantic_ui_dropdown [(ngModel)]="gender1" class="ui dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+            <div class="item" data-value="male">Male</div>
+            <div class="item" data-value="female">Female</div>
+        </div>
+    </div>
+    <div>
+        gender1 = {{gender1}}
+    </div>
+</div>
+<!--
+<div>
+    <select semantic_ui_dropdown [(ngModel)]="gender2" class="ui dropdown">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <div>
+        gender2 = {{gender2}}
+    </div>
+</div>
+-->

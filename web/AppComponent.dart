@@ -7,6 +7,7 @@ import 'package:angular2/router.dart';
 import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
 
 import 'CalendarComponent.dart';
+import 'DropdownComponent.dart';
 import 'HomeComponent.dart';
 import 'SidebarComponent.dart';
 
@@ -24,6 +25,9 @@ import 'SidebarComponent.dart';
   const Route(path: '/calendar',
       name: 'Calendar',
       component: CalendarComponent),
+  const Route(path: '/dropdown',
+      name: 'Dropdown',
+      component: DropdownComponent),
   const Route(path: '/sidebar',
       name: 'Sidebar',
       component: SidebarComponent)

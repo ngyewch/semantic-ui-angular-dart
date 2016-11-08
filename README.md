@@ -27,6 +27,46 @@ Dart:
 
 ## Usage
 
+### Calendar
+
+[WIP]
+
+https://github.com/mdehoog/Semantic-UI-Calendar
+
+HTML:
+
+    <div [semantic_ui_calendar]="startDateSettings" [(ngModel)]="startDate" class="ui calendar">
+        <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="Start date"/>
+        </div>
+    </div>
+
+Dart:
+
+    var startDateSettings = { 'type': 'date' };
+    var startDate = DateTime.parse('2016-10-01');
+
+## Dropdown
+
+NOTE: Currently does not work with select.
+
+HTML:
+
+    <div semantic_ui_dropdown [(ngModel)]="gender" class="ui dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+            <div class="item" data-value="male">Male</div>
+            <div class="item" data-value="female">Female</div>
+        </div>
+    </div>
+
+Dart:
+
+    var gender;
+
 ### Sidebar
 
 HTML:
@@ -63,23 +103,3 @@ Dart:
             this.sidebar = sidebar;
         }
     }
-
-### Calendar
-
-[WIP]
-
-https://github.com/mdehoog/Semantic-UI-Calendar
-
-HTML:
-
-    <div [semantic_ui_calendar]="startDateSettings" [(ngModel)]="startDate" class="ui calendar">
-        <div class="ui input left icon">
-            <i class="calendar icon"></i>
-            <input type="text" placeholder="Start date"/>
-        </div>
-    </div>
-
-Dart:
-
-    var startDateSettings = { 'type': 'date' };
-    var startDate = DateTime.parse('2016-10-01');
