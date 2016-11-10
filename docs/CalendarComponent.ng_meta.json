@@ -1,0 +1,74 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "CalendarComponent",
+        "7": [
+          {
+            "2": "SEMANTIC_UI_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "CalendarComponent.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:semantic_ui_angular_dart/semantic_ui_angular_dart.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "CalendarComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "calendar",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "CalendarComponent",
+        "moduleUrl": "asset:semantic_ui_angular_dart/web/CalendarComponent.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<h2 class=\"ui header\">Calendar</h2>\r\n\r\n<div [semantic_ui_calendar]=\"startDateSettings\" [(ngModel)]=\"startDate\" class=\"ui calendar\">\r\n    <div>\r\n        Start date:\r\n        <div class=\"ui input left icon\">\r\n            <i class=\"calendar icon\"></i>\r\n            <input type=\"text\" placeholder=\"Start date\"/>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        Selected start date: {{startDate}}\r\n    </div>\r\n</div>\r\n",
+        "templateUrl": "asset:semantic_ui_angular_dart/web/CalendarComponent.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

@@ -1,0 +1,64 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "DropdownComponent",
+        "7": [
+          {
+            "2": "SEMANTIC_UI_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "DropdownComponent.dart"
+  },
+  "type": {
+    "DropdownComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "dropdown",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "DropdownComponent",
+        "moduleUrl": "asset:semantic_ui_angular_dart/web/DropdownComponent.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<h2 class=\"ui header\">Dropdown</h2>\r\n\r\n<div>\r\n    <div semantic_ui_dropdown [(ngModel)]=\"gender\" class=\"ui selection dropdown\">\r\n        <input type=\"hidden\" name=\"gender\">\r\n        <i class=\"dropdown icon\"></i>\r\n        <div class=\"default text\">Gender</div>\r\n        <div class=\"menu\">\r\n            <div class=\"item\" data-value=\"male\">Male</div>\r\n            <div class=\"item\" data-value=\"female\">Female</div>\r\n        </div>\r\n    </div>\r\n    <div class=\"ui basic segment\">\r\n        gender = {{gender}}\r\n    </div>\r\n</div>\r\n<!--\r\n<div>\r\n    <select semantic_ui_dropdown [(ngModel)]=\"gender2\" class=\"ui dropdown\">\r\n        <option value=\"\">Gender</option>\r\n        <option value=\"male\">Male</option>\r\n        <option value=\"female\">Female</option>\r\n    </select>\r\n    <div>\r\n        gender2 = {{gender2}}\r\n    </div>\r\n</div>\r\n-->",
+        "templateUrl": "asset:semantic_ui_angular_dart/web/DropdownComponent.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
