@@ -1,0 +1,33 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "dart:js",
+        "4": "js",
+        "5": false
+      }
+    ],
+    "6": "AbstractModule.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "AbstractModule": {
+      "class": "Identifier",
+      "name": "AbstractModule",
+      "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/AbstractModule.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

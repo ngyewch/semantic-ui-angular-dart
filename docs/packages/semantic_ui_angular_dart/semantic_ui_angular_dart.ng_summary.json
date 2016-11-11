@@ -1,0 +1,99 @@
+{
+  "ngDeps": {
+    "1": "semantic_ui_angular_dart",
+    "3": [
+      {
+        "1": "src/CalendarDirective.dart",
+        "2": [
+          "CalendarDirective"
+        ],
+        "5": false
+      },
+      {
+        "1": "src/DropdownDirective.dart",
+        "2": [
+          "DropdownDirective"
+        ],
+        "5": false
+      },
+      {
+        "1": "src/SidebarDirective.dart",
+        "2": [
+          "SidebarDirective"
+        ],
+        "5": false
+      },
+      {
+        "1": "src/TabDirective.dart",
+        "2": [
+          "TabDirective"
+        ],
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "src/CalendarDirective.dart"
+      },
+      {
+        "1": "src/DropdownDirective.dart"
+      },
+      {
+        "1": "src/Sidebar.dart"
+      },
+      {
+        "1": "src/SidebarDirective.dart"
+      },
+      {
+        "1": "src/TabDirective.dart"
+      }
+    ],
+    "6": "semantic_ui_angular_dart.dart"
+  },
+  "type": {
+    "SEMANTIC_UI_DIRECTIVES": {
+      "class": "Identifier",
+      "name": "SEMANTIC_UI_DIRECTIVES",
+      "moduleUrl": "asset:semantic_ui_angular_dart/lib/semantic_ui_angular_dart.dart",
+      "prefix": null,
+      "value": [
+        {
+          "class": "Identifier",
+          "name": "CalendarDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "DropdownDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "SidebarDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "TabDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ]
+    }
+  },
+  "alias": {
+    "SEMANTIC_UI_DIRECTIVES": [
+      "CalendarDirective",
+      "DropdownDirective",
+      "SidebarDirective",
+      "TabDirective"
+    ]
+  }
+}
