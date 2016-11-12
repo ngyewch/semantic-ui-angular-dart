@@ -23040,6 +23040,13 @@
     "^": "",
     CalendarDirective: {
       "^": "AbstractModule;settings,_fnOnChange,_fnOnTouched,element,defaultMethod",
+      _CalendarDirective$_init$0: function() {
+        var t1, adjustedSettings;
+        t1 = this.settings;
+        adjustedSettings = !!J.getInterceptor(t1).$isMap ? P.LinkedHashMap_LinkedHashMap$from(t1, P.String, null) : P.LinkedHashMap__makeEmpty();
+        adjustedSettings.$indexSet(0, "onChange", P.allowInterop(this.get$onChange(this)));
+        this.invokeMethod$2(this.defaultMethod, [adjustedSettings]);
+      },
       onChange$2: [function(_, dateTime, text) {
         this._fnOnChange.call$1(dateTime);
       }, "call$2", "get$onChange", 4, 0, 123, 165, 56],
@@ -23074,6 +23081,9 @@
     "^": "",
     DropdownDirective: {
       "^": "AbstractModule;_DropdownDirective$_fnOnChange,_DropdownDirective$_fnOnTouched,element,defaultMethod",
+      _DropdownDirective$_init$0: function() {
+        this.invokeMethod$2(this.defaultMethod, [P.LinkedHashMap__makeLiteral(["onChange", P.allowInterop(this.get$onChange(this))])]);
+      },
       onChange$3: [function(_, value, text, selectedItem) {
         this._DropdownDirective$_fnOnChange.call$1(value);
       }, "call$3", "get$onChange", 6, 0, 125, 7, 56, 111],
@@ -23159,7 +23169,10 @@
   }], ["", "package:semantic_ui_angular_dart/src/TabDirective.dart",, A, {
     "^": "",
     TabDirective: {
-      "^": "AbstractModule;element,defaultMethod"
+      "^": "AbstractModule;element,defaultMethod",
+      _TabDirective$_init$0: function() {
+        $.$get$context0().callMethod$2("$", [this.element.get$nativeElement()]).callMethod$2("children", [".tabular.menu .item"]).callMethod$2(this.defaultMethod, []);
+      }
     }
   }], ["", "package:semantic_ui_angular_dart/src/TabDirective.template.dart",, A, {
     "^": "",
@@ -23223,7 +23236,7 @@
       R.initReflector10();
     },
     ViewAppComponent0: {
-      "^": "DebugAppView;_AppComponent_template$_el_0,_SidebarDirective_0_3,_AppComponent_template$_el_2,_RouterLink_2_3,_AppComponent_template$_el_5,_RouterLink_5_3,_AppComponent_template$_el_8,_RouterLink_8_3,_AppComponent_template$_el_11,_RouterLink_11_3,_AppComponent_template$_el_14,_RouterLink_14_3,_el_18,_el_20,_AppComponent_template$_el_23,_AppComponent_template$_el_25,_AppComponent_template$_el_27,_AppComponent_template$_el_29,_el_32,_RouterLink_32_3,_el_34,_AppComponent_template$_el_38,_el_40,_AppComponent_template$_el_42,_AppComponent_template$_el_47,_appEl_47,_RouterOutlet_47_5,_AppComponent_template$_arr_0,_AppComponent_template$_expr_2,_AppComponent_template$_expr_3,_AppComponent_template$_expr_4,_AppComponent_template$_arr_1,_AppComponent_template$_expr_6,_AppComponent_template$_expr_7,_AppComponent_template$_expr_8,_AppComponent_template$_arr_2,_AppComponent_template$_expr_10,_AppComponent_template$_expr_11,_expr_12,_AppComponent_template$_arr_3,_AppComponent_template$_expr_14,_AppComponent_template$_expr_15,_expr_16,_arr_4,_expr_18,_expr_19,_expr_20,_arr_5,_expr_23,_expr_24,_expr_25,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_AppComponent_template$_el_0,_SidebarDirective_0_3,_AppComponent_template$_el_2,_RouterLink_2_3,_AppComponent_template$_el_5,_RouterLink_5_3,_AppComponent_template$_el_8,_RouterLink_8_3,_AppComponent_template$_el_11,_RouterLink_11_3,_AppComponent_template$_el_14,_RouterLink_14_3,_el_18,_el_20,_AppComponent_template$_el_23,_AppComponent_template$_el_25,_AppComponent_template$_el_27,_AppComponent_template$_el_29,_el_32,_RouterLink_32_3,_el_34,_el_38,_el_40,_AppComponent_template$_el_42,_AppComponent_template$_el_47,_appEl_47,_RouterOutlet_47_5,_AppComponent_template$_arr_0,_AppComponent_template$_expr_2,_AppComponent_template$_expr_3,_AppComponent_template$_expr_4,_AppComponent_template$_arr_1,_AppComponent_template$_expr_6,_AppComponent_template$_expr_7,_AppComponent_template$_expr_8,_AppComponent_template$_arr_2,_AppComponent_template$_expr_10,_AppComponent_template$_expr_11,_AppComponent_template$_expr_12,_AppComponent_template$_arr_3,_AppComponent_template$_expr_14,_AppComponent_template$_expr_15,_AppComponent_template$_expr_16,_arr_4,_AppComponent_template$_expr_18,_AppComponent_template$_expr_19,_AppComponent_template$_expr_20,_arr_5,_AppComponent_template$_expr_23,_AppComponent_template$_expr_24,_expr_25,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
         var parentRenderNode, t1, t2, t3, _text_1, _text_3, _text_4, _text_6, _text_7, _text_9, _text_10, _text_12, _text_13, _text_15, _text_16, _text_17, _text_19, _text_21, _text_22, _text_24, _text_26, _text_28, _text_30, _text_31, _text_33, _text_35, _text_36, _text_37, _text_39, _text_41, _text_43, _text_44, _text_45, _text_46, _text_48, _text_49, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
@@ -23411,19 +23424,19 @@
         this.dbgElm$4(_text_37, 37, 29, 16);
         t1 = document;
         t1 = t1.createElement("div");
-        this._AppComponent_template$_el_38 = t1;
+        this._el_38 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
-        this._AppComponent_template$_el_25.appendChild(this._AppComponent_template$_el_38);
-        this.dbgElm$4(this._AppComponent_template$_el_38, 38, 30, 12);
-        this.setAttr$3(this._AppComponent_template$_el_38, "class", "right menu");
+        this._AppComponent_template$_el_25.appendChild(this._el_38);
+        this.dbgElm$4(this._el_38, 38, 30, 12);
+        this.setAttr$3(this._el_38, "class", "right menu");
         _text_39 = document.createTextNode("\n                ");
-        this._AppComponent_template$_el_38.appendChild(_text_39);
+        this._el_38.appendChild(_text_39);
         this.dbgElm$4(_text_39, 39, 30, 36);
         t1 = document;
         t1 = t1.createElement("a");
         this._el_40 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
-        this._AppComponent_template$_el_38.appendChild(this._el_40);
+        this._el_38.appendChild(this._el_40);
         this.dbgElm$4(this._el_40, 40, 31, 16);
         this.setAttr$3(this._el_40, "class", "ui item");
         this.setAttr$3(this._el_40, "href", "https://github.com/ngyewch/semantic-ui-angular-dart");
@@ -23441,7 +23454,7 @@
         this._el_40.appendChild(_text_43);
         this.dbgElm$4(_text_43, 43, 32, 47);
         _text_44 = document.createTextNode("\n            ");
-        this._AppComponent_template$_el_38.appendChild(_text_44);
+        this._el_38.appendChild(_text_44);
         this.dbgElm$4(_text_44, 44, 33, 20);
         _text_45 = document.createTextNode("\n        ");
         this._AppComponent_template$_el_25.appendChild(_text_45);
@@ -23499,14 +23512,14 @@
         this._arr_4 = Q.pureProxy1(new V.ViewAppComponent0_createInternal_closure3());
         t2 = this.renderer;
         t3 = this._AppComponent_template$_el_27;
-        t1 = this.evt$1(this.get$_AppComponent_template$_handle_click_27_0());
+        t1 = this.evt$1(this.get$_handle_click_27_0());
         J.addEventListener$3$x(t2._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t1));
         t1 = this.renderer;
         t3 = this._el_32;
         t2 = this.evt$1(this.get$_handle_click_32_0());
         J.addEventListener$3$x(t1._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t2));
         this._arr_5 = Q.pureProxy1(new V.ViewAppComponent0_createInternal_closure4());
-        this.init$3([], [this._AppComponent_template$_el_0, _text_1, this._AppComponent_template$_el_2, _text_3, _text_4, this._AppComponent_template$_el_5, _text_6, _text_7, this._AppComponent_template$_el_8, _text_9, _text_10, this._AppComponent_template$_el_11, _text_12, _text_13, this._AppComponent_template$_el_14, _text_15, _text_16, _text_17, this._el_18, _text_19, this._el_20, _text_21, _text_22, this._AppComponent_template$_el_23, _text_24, this._AppComponent_template$_el_25, _text_26, this._AppComponent_template$_el_27, _text_28, this._AppComponent_template$_el_29, _text_30, _text_31, this._el_32, _text_33, this._el_34, _text_35, _text_36, _text_37, this._AppComponent_template$_el_38, _text_39, this._el_40, _text_41, this._AppComponent_template$_el_42, _text_43, _text_44, _text_45, _text_46, this._AppComponent_template$_el_47, _text_48, _text_49], [subscription_0]);
+        this.init$3([], [this._AppComponent_template$_el_0, _text_1, this._AppComponent_template$_el_2, _text_3, _text_4, this._AppComponent_template$_el_5, _text_6, _text_7, this._AppComponent_template$_el_8, _text_9, _text_10, this._AppComponent_template$_el_11, _text_12, _text_13, this._AppComponent_template$_el_14, _text_15, _text_16, _text_17, this._el_18, _text_19, this._el_20, _text_21, _text_22, this._AppComponent_template$_el_23, _text_24, this._AppComponent_template$_el_25, _text_26, this._AppComponent_template$_el_27, _text_28, this._AppComponent_template$_el_29, _text_30, _text_31, this._el_32, _text_33, this._el_34, _text_35, _text_36, _text_37, this._el_38, _text_39, this._el_40, _text_41, this._AppComponent_template$_el_42, _text_43, _text_44, _text_45, _text_46, this._AppComponent_template$_el_47, _text_48, _text_49], [subscription_0]);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
@@ -23609,19 +23622,19 @@
         }
         this._currentDebugContext = new Z.DebugContext(this, 14, 13, 20, t1);
         currVal_18 = this._arr_4.call$1("Tab");
-        if (Q.checkBinding(this._expr_18, currVal_18)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_18, currVal_18)) {
           t2 = this._RouterLink_14_3;
           t2._routeParams = currVal_18;
           t2._updateLink$0();
-          this._expr_18 = currVal_18;
+          this._AppComponent_template$_expr_18 = currVal_18;
         }
         this._currentDebugContext = new Z.DebugContext(this, 32, 25, 28, t1);
         currVal_23 = this._arr_5.call$1("Home");
-        if (Q.checkBinding(this._expr_23, currVal_23)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_23, currVal_23)) {
           t2 = this._RouterLink_32_3;
           t2._routeParams = currVal_23;
           t2._updateLink$0();
-          this._expr_23 = currVal_23;
+          this._AppComponent_template$_expr_23 = currVal_23;
         }
         this.detectContentChildrenChanges$0();
         if (!$.AppViewUtils_throwOnChanges) {
@@ -23673,10 +23686,10 @@
         }
         this._currentDebugContext = new Z.DebugContext(this, 8, 7, 4, t1);
         currVal_12 = this._RouterLink_8_3.visibleHref;
-        if (Q.checkBinding(this._expr_12, currVal_12)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_12, currVal_12)) {
           t2 = this._AppComponent_template$_el_8;
           this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_12) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_12)));
-          this._expr_12 = currVal_12;
+          this._AppComponent_template$_expr_12 = currVal_12;
         }
         this._currentDebugContext = new Z.DebugContext(this, 11, 10, 4, t1);
         t2 = this._RouterLink_11_3;
@@ -23687,31 +23700,31 @@
         }
         this._currentDebugContext = new Z.DebugContext(this, 11, 10, 4, t1);
         currVal_16 = this._RouterLink_11_3.visibleHref;
-        if (Q.checkBinding(this._expr_16, currVal_16)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_16, currVal_16)) {
           t2 = this._AppComponent_template$_el_11;
           this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_16) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_16)));
-          this._expr_16 = currVal_16;
+          this._AppComponent_template$_expr_16 = currVal_16;
         }
         this._currentDebugContext = new Z.DebugContext(this, 14, 13, 4, t1);
         t2 = this._RouterLink_14_3;
         currVal_19 = t2._router.isRouteActive$1(t2._navigationInstruction);
-        if (Q.checkBinding(this._expr_19, currVal_19)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_19, currVal_19)) {
           this.updateClass$3(this._AppComponent_template$_el_14, "router-link-active", currVal_19);
-          this._expr_19 = currVal_19;
+          this._AppComponent_template$_expr_19 = currVal_19;
         }
         this._currentDebugContext = new Z.DebugContext(this, 14, 13, 4, t1);
         currVal_20 = this._RouterLink_14_3.visibleHref;
-        if (Q.checkBinding(this._expr_20, currVal_20)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_20, currVal_20)) {
           t2 = this._AppComponent_template$_el_14;
           this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20)));
-          this._expr_20 = currVal_20;
+          this._AppComponent_template$_expr_20 = currVal_20;
         }
         this._currentDebugContext = new Z.DebugContext(this, 32, 25, 12, t1);
         t2 = this._RouterLink_32_3;
         currVal_24 = t2._router.isRouteActive$1(t2._navigationInstruction);
-        if (Q.checkBinding(this._expr_24, currVal_24)) {
+        if (Q.checkBinding(this._AppComponent_template$_expr_24, currVal_24)) {
           this.updateClass$3(this._el_32, "router-link-active", currVal_24);
-          this._expr_24 = currVal_24;
+          this._AppComponent_template$_expr_24 = currVal_24;
         }
         this._currentDebugContext = new Z.DebugContext(this, 32, 25, 12, t1);
         currVal_25 = this._RouterLink_32_3.visibleHref;
@@ -23768,12 +23781,12 @@
         pd_0 = this._RouterLink_14_3.onClick$0(0);
         return pd_0;
       }, "call$1", "get$_handle_click_14_0", 2, 0, 3],
-      _AppComponent_template$_handle_click_27_0$1: [function($$event) {
+      _handle_click_27_0$1: [function($$event) {
         this.markPathToRootAsCheckOnce$0();
         this._currentDebugContext = new Z.DebugContext(this, 27, 22, 28, [null]);
         this.ctx.onToggleSidebarButtonClicked$0();
         return true;
-      }, "call$1", "get$_AppComponent_template$_handle_click_27_0", 2, 0, 3],
+      }, "call$1", "get$_handle_click_27_0", 2, 0, 3],
       _handle_click_32_0$1: [function($$event) {
         var pd_0;
         this.markPathToRootAsCheckOnce$0();
@@ -24049,7 +24062,7 @@
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var t1, currVal_1, currVal_2, changes, currVal_3, t2, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, adjustedSettings;
+        var t1, currVal_1, currVal_2, changes, currVal_3, t2, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9;
         t1 = [null];
         this._currentDebugContext = new Z.DebugContext(this, 3, 2, 5, t1);
         currVal_1 = this.ctx.get$startDateSettings();
@@ -24120,13 +24133,8 @@
         this.detectViewChildrenChanges$0();
         if (!$.AppViewUtils_throwOnChanges) {
           this._currentDebugContext = new Z.DebugContext(this, 3, 2, 0, t1);
-          if (this._cdState === C.ChangeDetectorState_0) {
-            t1 = this._CalendarDirective_3_3;
-            t2 = t1.settings;
-            adjustedSettings = !!J.getInterceptor(t2).$isMap ? P.LinkedHashMap_LinkedHashMap$from(t2, P.String, null) : P.LinkedHashMap__makeEmpty();
-            adjustedSettings.$indexSet(0, "onChange", P.allowInterop(t1.get$onChange(t1)));
-            t1.invokeMethod$2(t1.defaultMethod, [adjustedSettings]);
-          }
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._CalendarDirective_3_3._CalendarDirective$_init$0();
         }
       },
       _handle_ngModelChange_3_0$1: [function($$event) {
@@ -24407,7 +24415,7 @@
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var t1, currVal_1, changes, currVal_2, t2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, settings;
+        var t1, currVal_1, changes, currVal_2, t2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8;
         t1 = [null];
         this._currentDebugContext = new Z.DebugContext(this, 5, 3, 4, t1);
         this._currentDebugContext = new Z.DebugContext(this, 5, 3, 30, t1);
@@ -24472,11 +24480,8 @@
         this.detectViewChildrenChanges$0();
         if (!$.AppViewUtils_throwOnChanges) {
           this._currentDebugContext = new Z.DebugContext(this, 5, 3, 4, t1);
-          if (this._cdState === C.ChangeDetectorState_0) {
-            t1 = this._DropdownDirective_5_3;
-            settings = P.LinkedHashMap__makeLiteral(["onChange", P.allowInterop(t1.get$onChange(t1))]);
-            t1.invokeMethod$2(t1.defaultMethod, [settings]);
-          }
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._DropdownDirective_5_3._DropdownDirective$_init$0();
         }
       },
       _handle_ngModelChange_5_0$1: [function($$event) {
@@ -24540,7 +24545,13 @@
   }], ["", "HomeComponent.dart",, Y, {
     "^": "",
     HomeComponent: {
-      "^": "Object;"
+      "^": "Object;dateSettings<,date@,gender@,sidebar",
+      onToggleSidebarButtonClicked$0: function() {
+        J.toggle$0$x(this.sidebar);
+      },
+      initSidebar$1: function($sidebar) {
+        this.sidebar = $sidebar;
+      }
     }
   }], ["", "HomeComponent.template.dart",, B, {
     "^": "",
@@ -24563,11 +24574,12 @@
       $.$get$reflector()._injectableInfo.$indexSet(0, C.Type_HomeComponent_wrR, new M.ReflectionInfo0(C.List_uEf, C.List_empty, new B.initReflector_closure56(), null, null));
       L.initReflector0();
       U.initReflector3();
+      U.initReflector5();
     },
     ViewHomeComponent0: {
-      "^": "DebugAppView;_HomeComponent_template$_el_0,_el_2,_el_6,_el_8,_HomeComponent_template$_el_11,_el_13,_HomeComponent_template$_el_15,_RouterLink_15_3,_HomeComponent_template$_el_19,_el_21,_RouterLink_21_3,_el_25,_el_27,_RouterLink_27_3,_el_31,_el_33,_RouterLink_33_3,_el_38,_el_41,_el_43,_el_46,_el_49,_el_52,_el_55,_el_58,_el_61,_el_64,_el_67,_el_70,_el_73,_el_76,_el_79,_arr_0,_HomeComponent_template$_expr_1,_HomeComponent_template$_expr_2,_HomeComponent_template$_expr_3,_arr_1,_HomeComponent_template$_expr_5,_HomeComponent_template$_expr_6,_HomeComponent_template$_expr_7,_arr_2,_HomeComponent_template$_expr_9,_expr_10,_expr_11,_arr_3,_expr_13,_expr_14,_expr_15,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_HomeComponent_template$_el_0,_el_2,_el_6,_HomeComponent_template$_el_9,_HomeComponent_template$_el_11,_el_13,_HomeComponent_template$_el_15,_RouterLink_15_3,_HomeComponent_template$_el_19,_CalendarDirective_19_3,_NG_VALUE_ACCESSOR_19_4,_NgModel_19_5,_NgControl_19_6,_NgControlStatus_19_7,_el_21,_el_23,_el_25,_el_27,_el_33,_el_35,_el_37,_RouterLink_37_3,_el_41,_DropdownDirective_41_3,_NG_VALUE_ACCESSOR_41_4,_NgModel_41_5,_NgControl_41_6,_NgControlStatus_41_7,_el_43,_el_45,_el_47,_el_50,_el_52,_el_55,_el_61,_el_63,_el_65,_RouterLink_65_3,_el_69,_el_71,_SidebarDirective_71_3,_el_73,_el_76,_el_79,_el_83,_el_85,_el_87,_el_90,_el_92,_el_99,_el_101,_el_103,_RouterLink_103_3,_el_107,_TabDirective_107_3,_el_109,_el_112,_el_115,_el_119,_el_121,_el_125,_el_127,_el_131,_el_133,_el_139,_el_141,_el_143,_el_146,_el_148,_el_151,_el_154,_el_157,_el_160,_el_163,_el_166,_el_169,_el_172,_el_175,_el_178,_el_181,_el_184,_arr_0,_HomeComponent_template$_expr_1,_HomeComponent_template$_expr_2,_HomeComponent_template$_expr_3,_HomeComponent_template$_expr_5,_HomeComponent_template$_expr_6,_HomeComponent_template$_expr_7,_HomeComponent_template$_expr_8,_HomeComponent_template$_expr_9,_expr_10,_expr_11,_expr_12,_arr_1,_expr_14,_expr_15,_expr_16,_expr_18,_expr_19,_expr_20,_expr_21,_expr_22,_expr_23,_expr_24,_arr_2,_expr_26,_expr_27,_expr_28,_arr_3,_expr_32,_expr_33,_expr_34,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
-        var parentRenderNode, t1, t2, _text_1, _text_3, _text_4, _text_5, _text_7, _text_9, _text_10, _text_12, _text_14, _text_16, _text_17, _text_18, t3, _text_20, _text_22, _text_23, _text_24, _text_26, _text_28, _text_29, _text_30, _text_32, _text_34, _text_35, _text_36, _text_37, _text_39, _text_40, _text_42, _text_44, _text_45, _text_47, _text_48, _text_50, _text_51, _text_53, _text_54, _text_56, _text_57, _text_59, _text_60, _text_62, _text_63, _text_65, _text_66, _text_68, _text_69, _text_71, _text_72, _text_74, _text_75, _text_77, _text_78, _text_80, _text_81, _text_82, _text_83;
+        var parentRenderNode, t1, t2, _text_1, _text_3, _text_4, _text_5, _text_7, _text_8, _text_10, _text_12, _text_14, _text_16, _text_17, _text_18, t3, t4, _text_20, _text_22, _text_24, _text_26, _text_28, _text_29, _text_30, _text_31, _text_32, _text_34, _text_36, _text_38, _text_39, _text_40, _text_42, _text_44, _text_46, _text_48, _text_49, _text_51, _text_53, _text_54, _text_56, _text_57, _text_58, _text_59, _text_60, _text_62, _text_64, _text_66, _text_67, _text_68, _text_70, _text_72, _text_74, _text_75, _text_77, _text_78, _text_80, _text_81, _text_82, _text_84, _text_86, _text_88, _text_89, _text_91, _text_93, _text_94, _text_95, _text_96, _text_97, _text_98, _text_100, _text_102, _text_104, _text_105, _text_106, _text_108, _text_110, _text_111, _text_113, _text_114, _text_116, _text_117, _text_118, _text_120, _text_122, _text_123, _text_124, _text_126, _text_128, _text_129, _text_130, _text_132, _text_134, _text_135, _text_136, _text_137, _text_138, _text_140, _text_142, _text_144, _text_145, _text_147, _text_149, _text_150, _text_152, _text_153, _text_155, _text_156, _text_158, _text_159, _text_161, _text_162, _text_164, _text_165, _text_167, _text_168, _text_170, _text_171, _text_173, _text_174, _text_176, _text_177, _text_179, _text_180, _text_182, _text_183, _text_185, _text_186, _text_187, _text_188, subscription_0, subscription_1, subscription_2;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
         t1 = document;
         t1 = t1.createElement("div");
@@ -24595,42 +24607,44 @@
         t2.append$1(parentRenderNode, _text_5);
         this.dbgElm$4(_text_5, 5, 4, 6);
         t1 = document;
-        t1 = t1.createElement("div");
+        t1 = t1.createElement("h2");
         this._el_6 = t1;
         t2.append$1(parentRenderNode, t1);
         this.dbgElm$4(this._el_6, 6, 6, 0);
-        this.setAttr$3(this._el_6, "class", "ui basic segment");
-        _text_7 = document.createTextNode("\n    ");
+        this.setAttr$3(this._el_6, "class", "ui header");
+        _text_7 = document.createTextNode("In-progress");
         this._el_6.appendChild(_text_7);
-        this.dbgElm$4(_text_7, 7, 6, 30);
+        this.dbgElm$4(_text_7, 7, 6, 22);
+        _text_8 = document.createTextNode("\n");
+        t2.append$1(parentRenderNode, _text_8);
+        this.dbgElm$4(_text_8, 8, 6, 38);
         t1 = document;
-        t1 = t1.createElement("h2");
-        this._el_8 = t1;
-        this._el_6.appendChild(t1);
-        this.dbgElm$4(this._el_8, 8, 7, 4);
-        this.setAttr$3(this._el_8, "class", "ui header");
-        _text_9 = document.createTextNode("In-progress");
-        this._el_8.appendChild(_text_9);
-        this.dbgElm$4(_text_9, 9, 7, 26);
+        t1 = t1.createElement("div");
+        this._HomeComponent_template$_el_9 = t1;
+        t2.append$1(parentRenderNode, t1);
+        this.dbgElm$4(this._HomeComponent_template$_el_9, 9, 7, 0);
+        this.setAttr$3(this._HomeComponent_template$_el_9, "class", "ui three column grid");
         _text_10 = document.createTextNode("\n    ");
-        this._el_6.appendChild(_text_10);
-        this.dbgElm$4(_text_10, 10, 7, 42);
+        this._HomeComponent_template$_el_9.appendChild(_text_10);
+        this.dbgElm$4(_text_10, 10, 7, 34);
         t1 = document;
-        t1 = t1.createElement("ul");
+        t1 = t1.createElement("div");
         this._HomeComponent_template$_el_11 = t1;
-        this._el_6.appendChild(t1);
+        this._HomeComponent_template$_el_9.appendChild(t1);
         this.dbgElm$4(this._HomeComponent_template$_el_11, 11, 8, 4);
+        this.setAttr$3(this._HomeComponent_template$_el_11, "class", "column");
         _text_12 = document.createTextNode("\n        ");
         this._HomeComponent_template$_el_11.appendChild(_text_12);
-        this.dbgElm$4(_text_12, 12, 8, 8);
+        this.dbgElm$4(_text_12, 12, 8, 24);
         t1 = document;
-        t1 = t1.createElement("li");
+        t1 = t1.createElement("h4");
         this._el_13 = t1;
         this._HomeComponent_template$_el_11.appendChild(t1);
         this.dbgElm$4(this._el_13, 13, 9, 8);
+        this.setAttr$3(this._el_13, "class", "ui header");
         _text_14 = document.createTextNode("\n            ");
         this._el_13.appendChild(_text_14);
-        this.dbgElm$4(_text_14, 14, 9, 12);
+        this.dbgElm$4(_text_14, 14, 9, 30);
         t1 = document;
         t1 = t1.createElement("a");
         this._HomeComponent_template$_el_15 = t1;
@@ -24649,274 +24663,771 @@
         this._HomeComponent_template$_el_11.appendChild(_text_18);
         this.dbgElm$4(_text_18, 18, 13, 13);
         t3 = document;
-        t3 = t3.createElement("li");
+        t3 = t3.createElement("div");
         this._HomeComponent_template$_el_19 = t3;
         this._HomeComponent_template$_el_11.appendChild(t3);
         this.dbgElm$4(this._HomeComponent_template$_el_19, 19, 14, 8);
+        this.setAttr$3(this._HomeComponent_template$_el_19, "class", "ui calendar");
+        t3 = new Z.ElementRef(null);
+        t3.nativeElement = this._HomeComponent_template$_el_19;
+        t3 = new E.CalendarDirective(null, null, null, t3, "calendar");
+        this._CalendarDirective_19_3 = t3;
+        t3 = [t3];
+        this._NG_VALUE_ACCESSOR_19_4 = t3;
+        t4 = new U.NgModel(null, null, Z.Control$(null, null, null), false, B.EventEmitter$(false, null), null, null, null, null);
+        t4.valueAccessor = X.selectValueAccessor(t4, t3);
+        this._NgModel_19_5 = t4;
+        this._NgControl_19_6 = t4;
+        t3 = new Q.NgControlStatus(null);
+        t3._cd = t4;
+        this._NgControlStatus_19_7 = t3;
         _text_20 = document.createTextNode("\n            ");
         this._HomeComponent_template$_el_19.appendChild(_text_20);
-        this.dbgElm$4(_text_20, 20, 14, 12);
+        this.dbgElm$4(_text_20, 20, 14, 90);
         t3 = document;
-        t3 = t3.createElement("a");
+        t3 = t3.createElement("div");
         this._el_21 = t3;
         this._HomeComponent_template$_el_19.appendChild(t3);
         this.dbgElm$4(this._el_21, 21, 15, 12);
-        this.setAttr$3(this._el_21, "class", "item");
-        this._RouterLink_21_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
-        _text_22 = document.createTextNode("\n                Dropdown\n            ");
+        _text_22 = document.createTextNode("\n                ");
         this._el_21.appendChild(_text_22);
-        this.dbgElm$4(_text_22, 22, 15, 56);
-        _text_23 = document.createTextNode("\n        ");
-        this._HomeComponent_template$_el_19.appendChild(_text_23);
-        this.dbgElm$4(_text_23, 23, 17, 16);
-        _text_24 = document.createTextNode("\n        ");
-        this._HomeComponent_template$_el_11.appendChild(_text_24);
-        this.dbgElm$4(_text_24, 24, 18, 13);
+        this.dbgElm$4(_text_22, 22, 15, 17);
         t3 = document;
-        t3 = t3.createElement("li");
+        t3 = t3.createElement("div");
+        this._el_23 = t3;
+        this._el_21.appendChild(t3);
+        this.dbgElm$4(this._el_23, 23, 16, 16);
+        this.setAttr$3(this._el_23, "class", "ui input left icon");
+        _text_24 = document.createTextNode("\n                    ");
+        this._el_23.appendChild(_text_24);
+        this.dbgElm$4(_text_24, 24, 16, 48);
+        t3 = document;
+        t3 = t3.createElement("i");
         this._el_25 = t3;
-        this._HomeComponent_template$_el_11.appendChild(t3);
-        this.dbgElm$4(this._el_25, 25, 19, 8);
-        _text_26 = document.createTextNode("\n            ");
-        this._el_25.appendChild(_text_26);
-        this.dbgElm$4(_text_26, 26, 19, 12);
+        this._el_23.appendChild(t3);
+        this.dbgElm$4(this._el_25, 25, 17, 20);
+        this.setAttr$3(this._el_25, "class", "calendar icon");
+        _text_26 = document.createTextNode("\n                    ");
+        this._el_23.appendChild(_text_26);
+        this.dbgElm$4(_text_26, 26, 17, 49);
         t3 = document;
-        t3 = t3.createElement("a");
+        t3 = t3.createElement("input");
         this._el_27 = t3;
-        this._el_25.appendChild(t3);
-        this.dbgElm$4(this._el_27, 27, 20, 12);
-        this.setAttr$3(this._el_27, "class", "item");
-        this._RouterLink_27_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
-        _text_28 = document.createTextNode("\n                Sidebar\n            ");
-        this._el_27.appendChild(_text_28);
-        this.dbgElm$4(_text_28, 28, 20, 55);
-        _text_29 = document.createTextNode("\n        ");
-        this._el_25.appendChild(_text_29);
-        this.dbgElm$4(_text_29, 29, 22, 16);
+        this._el_23.appendChild(t3);
+        this.dbgElm$4(this._el_27, 27, 18, 20);
+        this.setAttr$3(this._el_27, "placeholder", "Date");
+        this.setAttr$3(this._el_27, "type", "text");
+        _text_28 = document.createTextNode("\n                ");
+        this._el_23.appendChild(_text_28);
+        this.dbgElm$4(_text_28, 28, 18, 59);
+        _text_29 = document.createTextNode("\n            ");
+        this._el_21.appendChild(_text_29);
+        this.dbgElm$4(_text_29, 29, 19, 22);
         _text_30 = document.createTextNode("\n        ");
-        this._HomeComponent_template$_el_11.appendChild(_text_30);
-        this.dbgElm$4(_text_30, 30, 23, 13);
+        this._HomeComponent_template$_el_19.appendChild(_text_30);
+        this.dbgElm$4(_text_30, 30, 20, 18);
+        _text_31 = document.createTextNode("\n    ");
+        this._HomeComponent_template$_el_11.appendChild(_text_31);
+        this.dbgElm$4(_text_31, 31, 21, 14);
+        _text_32 = document.createTextNode("\n    ");
+        this._HomeComponent_template$_el_9.appendChild(_text_32);
+        this.dbgElm$4(_text_32, 32, 22, 10);
         t3 = document;
-        t3 = t3.createElement("li");
-        this._el_31 = t3;
-        this._HomeComponent_template$_el_11.appendChild(t3);
-        this.dbgElm$4(this._el_31, 31, 24, 8);
-        _text_32 = document.createTextNode("\n            ");
-        this._el_31.appendChild(_text_32);
-        this.dbgElm$4(_text_32, 32, 24, 12);
+        t3 = t3.createElement("div");
+        this._el_33 = t3;
+        this._HomeComponent_template$_el_9.appendChild(t3);
+        this.dbgElm$4(this._el_33, 33, 23, 4);
+        this.setAttr$3(this._el_33, "class", "column");
+        _text_34 = document.createTextNode("\n        ");
+        this._el_33.appendChild(_text_34);
+        this.dbgElm$4(_text_34, 34, 23, 24);
+        t3 = document;
+        t3 = t3.createElement("h4");
+        this._el_35 = t3;
+        this._el_33.appendChild(t3);
+        this.dbgElm$4(this._el_35, 35, 24, 8);
+        this.setAttr$3(this._el_35, "class", "ui header");
+        _text_36 = document.createTextNode("\n            ");
+        this._el_35.appendChild(_text_36);
+        this.dbgElm$4(_text_36, 36, 24, 30);
         t3 = document;
         t3 = t3.createElement("a");
-        this._el_33 = t3;
-        this._el_31.appendChild(t3);
-        this.dbgElm$4(this._el_33, 33, 25, 12);
-        this.setAttr$3(this._el_33, "class", "item");
-        this._RouterLink_33_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
-        _text_34 = document.createTextNode("\n                Tab\n            ");
-        this._el_33.appendChild(_text_34);
-        this.dbgElm$4(_text_34, 34, 25, 51);
-        _text_35 = document.createTextNode("\n        ");
-        this._el_31.appendChild(_text_35);
-        this.dbgElm$4(_text_35, 35, 27, 16);
-        _text_36 = document.createTextNode("\n    ");
-        this._HomeComponent_template$_el_11.appendChild(_text_36);
-        this.dbgElm$4(_text_36, 36, 28, 13);
-        _text_37 = document.createTextNode("\n    ");
-        this._el_6.appendChild(_text_37);
-        this.dbgElm$4(_text_37, 37, 29, 9);
+        this._el_37 = t3;
+        this._el_35.appendChild(t3);
+        this.dbgElm$4(this._el_37, 37, 25, 12);
+        this.setAttr$3(this._el_37, "class", "item");
+        this._RouterLink_37_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
+        _text_38 = document.createTextNode("\n                Dropdown\n            ");
+        this._el_37.appendChild(_text_38);
+        this.dbgElm$4(_text_38, 38, 25, 56);
+        _text_39 = document.createTextNode("\n        ");
+        this._el_35.appendChild(_text_39);
+        this.dbgElm$4(_text_39, 39, 27, 16);
+        _text_40 = document.createTextNode("\n        ");
+        this._el_33.appendChild(_text_40);
+        this.dbgElm$4(_text_40, 40, 28, 13);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_41 = t3;
+        this._el_33.appendChild(t3);
+        this.dbgElm$4(this._el_41, 41, 29, 8);
+        this.setAttr$3(this._el_41, "class", "ui selection dropdown");
+        this.setAttr$3(this._el_41, "semantic_ui_dropdown", "");
+        t3 = new Z.ElementRef(null);
+        t3.nativeElement = this._el_41;
+        t3 = new E.DropdownDirective(null, null, t3, "dropdown");
+        this._DropdownDirective_41_3 = t3;
+        t3 = [t3];
+        this._NG_VALUE_ACCESSOR_41_4 = t3;
+        t4 = new U.NgModel(null, null, Z.Control$(null, null, null), false, B.EventEmitter$(false, null), null, null, null, null);
+        t4.valueAccessor = X.selectValueAccessor(t4, t3);
+        this._NgModel_41_5 = t4;
+        this._NgControl_41_6 = t4;
+        t3 = new Q.NgControlStatus(null);
+        t3._cd = t4;
+        this._NgControlStatus_41_7 = t3;
+        _text_42 = document.createTextNode("\n            ");
+        this._el_41.appendChild(_text_42);
+        this.dbgElm$4(_text_42, 42, 29, 85);
+        t3 = document;
+        t3 = t3.createElement("input");
+        this._el_43 = t3;
+        this._el_41.appendChild(t3);
+        this.dbgElm$4(this._el_43, 43, 30, 12);
+        this.setAttr$3(this._el_43, "name", "gender");
+        this.setAttr$3(this._el_43, "type", "hidden");
+        _text_44 = document.createTextNode("\n            ");
+        this._el_41.appendChild(_text_44);
+        this.dbgElm$4(_text_44, 44, 30, 47);
+        t3 = document;
+        t3 = t3.createElement("i");
+        this._el_45 = t3;
+        this._el_41.appendChild(t3);
+        this.dbgElm$4(this._el_45, 45, 31, 12);
+        this.setAttr$3(this._el_45, "class", "dropdown icon");
+        _text_46 = document.createTextNode("\n            ");
+        this._el_41.appendChild(_text_46);
+        this.dbgElm$4(_text_46, 46, 31, 41);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_47 = t3;
+        this._el_41.appendChild(t3);
+        this.dbgElm$4(this._el_47, 47, 32, 12);
+        this.setAttr$3(this._el_47, "class", "default text");
+        _text_48 = document.createTextNode("Gender");
+        this._el_47.appendChild(_text_48);
+        this.dbgElm$4(_text_48, 48, 32, 38);
+        _text_49 = document.createTextNode("\n            ");
+        this._el_41.appendChild(_text_49);
+        this.dbgElm$4(_text_49, 49, 32, 50);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_50 = t3;
+        this._el_41.appendChild(t3);
+        this.dbgElm$4(this._el_50, 50, 33, 12);
+        this.setAttr$3(this._el_50, "class", "menu");
+        _text_51 = document.createTextNode("\n                ");
+        this._el_50.appendChild(_text_51);
+        this.dbgElm$4(_text_51, 51, 33, 30);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_52 = t3;
+        this._el_50.appendChild(t3);
+        this.dbgElm$4(this._el_52, 52, 34, 16);
+        this.setAttr$3(this._el_52, "class", "item");
+        this.setAttr$3(this._el_52, "data-value", "male");
+        _text_53 = document.createTextNode("Male");
+        this._el_52.appendChild(_text_53);
+        this.dbgElm$4(_text_53, 53, 34, 52);
+        _text_54 = document.createTextNode("\n                ");
+        this._el_50.appendChild(_text_54);
+        this.dbgElm$4(_text_54, 54, 34, 62);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_55 = t3;
+        this._el_50.appendChild(t3);
+        this.dbgElm$4(this._el_55, 55, 35, 16);
+        this.setAttr$3(this._el_55, "class", "item");
+        this.setAttr$3(this._el_55, "data-value", "female");
+        _text_56 = document.createTextNode("Female");
+        this._el_55.appendChild(_text_56);
+        this.dbgElm$4(_text_56, 56, 35, 54);
+        _text_57 = document.createTextNode("\n            ");
+        this._el_50.appendChild(_text_57);
+        this.dbgElm$4(_text_57, 57, 35, 66);
+        _text_58 = document.createTextNode("\n        ");
+        this._el_41.appendChild(_text_58);
+        this.dbgElm$4(_text_58, 58, 36, 18);
+        _text_59 = document.createTextNode("\n    ");
+        this._el_33.appendChild(_text_59);
+        this.dbgElm$4(_text_59, 59, 37, 14);
+        _text_60 = document.createTextNode("\n    ");
+        this._HomeComponent_template$_el_9.appendChild(_text_60);
+        this.dbgElm$4(_text_60, 60, 38, 10);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_61 = t3;
+        this._HomeComponent_template$_el_9.appendChild(t3);
+        this.dbgElm$4(this._el_61, 61, 39, 4);
+        this.setAttr$3(this._el_61, "class", "column");
+        _text_62 = document.createTextNode("\n        ");
+        this._el_61.appendChild(_text_62);
+        this.dbgElm$4(_text_62, 62, 39, 24);
+        t3 = document;
+        t3 = t3.createElement("h4");
+        this._el_63 = t3;
+        this._el_61.appendChild(t3);
+        this.dbgElm$4(this._el_63, 63, 40, 8);
+        this.setAttr$3(this._el_63, "class", "ui header");
+        _text_64 = document.createTextNode("\n            ");
+        this._el_63.appendChild(_text_64);
+        this.dbgElm$4(_text_64, 64, 40, 30);
+        t3 = document;
+        t3 = t3.createElement("a");
+        this._el_65 = t3;
+        this._el_63.appendChild(t3);
+        this.dbgElm$4(this._el_65, 65, 41, 12);
+        this.setAttr$3(this._el_65, "class", "item");
+        this._RouterLink_65_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
+        _text_66 = document.createTextNode("\n                Sidebar\n            ");
+        this._el_65.appendChild(_text_66);
+        this.dbgElm$4(_text_66, 66, 41, 55);
+        _text_67 = document.createTextNode("\n        ");
+        this._el_63.appendChild(_text_67);
+        this.dbgElm$4(_text_67, 67, 43, 16);
+        _text_68 = document.createTextNode("\n        ");
+        this._el_61.appendChild(_text_68);
+        this.dbgElm$4(_text_68, 68, 44, 13);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_69 = t3;
+        this._el_61.appendChild(t3);
+        this.dbgElm$4(this._el_69, 69, 45, 8);
+        _text_70 = document.createTextNode("\n            ");
+        this._el_69.appendChild(_text_70);
+        this.dbgElm$4(_text_70, 70, 45, 13);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_71 = t3;
+        this._el_69.appendChild(t3);
+        this.dbgElm$4(this._el_71, 71, 46, 12);
+        this.setAttr$3(this._el_71, "class", "ui sidebar inverted vertical menu");
+        t3 = new Z.ElementRef(null);
+        t3.nativeElement = this._el_71;
+        t4 = new T.SidebarDirective(null, B.EventEmitter$(true, null));
+        t4.sidebar = new B.Sidebar(t3, "sidebar");
+        this._SidebarDirective_71_3 = t4;
+        _text_72 = document.createTextNode("\n                ");
+        this._el_71.appendChild(_text_72);
+        this.dbgElm$4(_text_72, 72, 46, 103);
+        t4 = document;
+        t3 = t4.createElement("a");
+        this._el_73 = t3;
+        this._el_71.appendChild(t3);
+        this.dbgElm$4(this._el_73, 73, 47, 16);
+        this.setAttr$3(this._el_73, "class", "item");
+        _text_74 = document.createTextNode("\n                    Menu item 1\n                ");
+        this._el_73.appendChild(_text_74);
+        this.dbgElm$4(_text_74, 74, 47, 32);
+        _text_75 = document.createTextNode("\n                ");
+        this._el_71.appendChild(_text_75);
+        this.dbgElm$4(_text_75, 75, 49, 20);
+        t3 = document;
+        t3 = t3.createElement("a");
+        this._el_76 = t3;
+        this._el_71.appendChild(t3);
+        this.dbgElm$4(this._el_76, 76, 50, 16);
+        this.setAttr$3(this._el_76, "class", "item");
+        _text_77 = document.createTextNode("\n                    Menu item 2\n                ");
+        this._el_76.appendChild(_text_77);
+        this.dbgElm$4(_text_77, 77, 50, 32);
+        _text_78 = document.createTextNode("\n                ");
+        this._el_71.appendChild(_text_78);
+        this.dbgElm$4(_text_78, 78, 52, 20);
+        t3 = document;
+        t3 = t3.createElement("a");
+        this._el_79 = t3;
+        this._el_71.appendChild(t3);
+        this.dbgElm$4(this._el_79, 79, 53, 16);
+        this.setAttr$3(this._el_79, "class", "item");
+        _text_80 = document.createTextNode("\n                    Menu item 3\n                ");
+        this._el_79.appendChild(_text_80);
+        this.dbgElm$4(_text_80, 80, 53, 32);
+        _text_81 = document.createTextNode("\n            ");
+        this._el_71.appendChild(_text_81);
+        this.dbgElm$4(_text_81, 81, 55, 20);
+        _text_82 = document.createTextNode("\n            ");
+        this._el_69.appendChild(_text_82);
+        this.dbgElm$4(_text_82, 82, 56, 18);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_83 = t3;
+        this._el_69.appendChild(t3);
+        this.dbgElm$4(this._el_83, 83, 57, 12);
+        this.setAttr$3(this._el_83, "class", "pusher");
+        _text_84 = document.createTextNode("\n                ");
+        this._el_83.appendChild(_text_84);
+        this.dbgElm$4(_text_84, 84, 57, 32);
+        t3 = document;
+        t3 = t3.createElement("button");
+        this._el_85 = t3;
+        this._el_83.appendChild(t3);
+        this.dbgElm$4(this._el_85, 85, 58, 16);
+        this.setAttr$3(this._el_85, "class", "ui labeled icon primary button");
+        _text_86 = document.createTextNode("\n                    ");
+        this._el_85.appendChild(_text_86);
+        this.dbgElm$4(_text_86, 86, 58, 104);
+        t3 = document;
+        t3 = t3.createElement("i");
+        this._el_87 = t3;
+        this._el_85.appendChild(t3);
+        this.dbgElm$4(this._el_87, 87, 59, 20);
+        this.setAttr$3(this._el_87, "class", "sidebar icon");
+        _text_88 = document.createTextNode("\n                    Show sidebar\n                ");
+        this._el_85.appendChild(_text_88);
+        this.dbgElm$4(_text_88, 88, 59, 48);
+        _text_89 = document.createTextNode("\n                ");
+        this._el_83.appendChild(_text_89);
+        this.dbgElm$4(_text_89, 89, 61, 25);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_90 = t3;
+        this._el_83.appendChild(t3);
+        this.dbgElm$4(this._el_90, 90, 62, 16);
+        this.setAttr$3(this._el_90, "class", "ui basic segment");
+        _text_91 = document.createTextNode("\n                    ");
+        this._el_90.appendChild(_text_91);
+        this.dbgElm$4(_text_91, 91, 62, 46);
+        t3 = document;
+        t3 = t3.createElement("p");
+        this._el_92 = t3;
+        this._el_90.appendChild(t3);
+        this.dbgElm$4(this._el_92, 92, 63, 20);
+        _text_93 = document.createTextNode("\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n                    ");
+        this._el_92.appendChild(_text_93);
+        this.dbgElm$4(_text_93, 93, 63, 23);
+        _text_94 = document.createTextNode("\n                ");
+        this._el_90.appendChild(_text_94);
+        this.dbgElm$4(_text_94, 94, 65, 24);
+        _text_95 = document.createTextNode("\n            ");
+        this._el_83.appendChild(_text_95);
+        this.dbgElm$4(_text_95, 95, 66, 22);
+        _text_96 = document.createTextNode("\n        ");
+        this._el_69.appendChild(_text_96);
+        this.dbgElm$4(_text_96, 96, 67, 18);
+        _text_97 = document.createTextNode("\n    ");
+        this._el_61.appendChild(_text_97);
+        this.dbgElm$4(_text_97, 97, 68, 14);
+        _text_98 = document.createTextNode("\n    ");
+        this._HomeComponent_template$_el_9.appendChild(_text_98);
+        this.dbgElm$4(_text_98, 98, 69, 10);
+        t3 = document;
+        t3 = t3.createElement("div");
+        this._el_99 = t3;
+        this._HomeComponent_template$_el_9.appendChild(t3);
+        this.dbgElm$4(this._el_99, 99, 70, 4);
+        this.setAttr$3(this._el_99, "class", "column");
+        _text_100 = document.createTextNode("\n        ");
+        this._el_99.appendChild(_text_100);
+        this.dbgElm$4(_text_100, 100, 70, 24);
+        t3 = document;
+        t3 = t3.createElement("h4");
+        this._el_101 = t3;
+        this._el_99.appendChild(t3);
+        this.dbgElm$4(this._el_101, 101, 71, 8);
+        this.setAttr$3(this._el_101, "class", "ui header");
+        _text_102 = document.createTextNode("\n            ");
+        this._el_101.appendChild(_text_102);
+        this.dbgElm$4(_text_102, 102, 71, 30);
+        t3 = document;
+        t3 = t3.createElement("a");
+        this._el_103 = t3;
+        this._el_101.appendChild(t3);
+        this.dbgElm$4(this._el_103, 103, 72, 12);
+        this.setAttr$3(this._el_103, "class", "item");
+        this._RouterLink_103_3 = V.RouterLink$(t1.$get$1(C.Type_Router_yx3), t1.$get$1(C.Type_Location_ckm));
+        _text_104 = document.createTextNode("\n                Tab\n            ");
+        this._el_103.appendChild(_text_104);
+        this.dbgElm$4(_text_104, 104, 72, 51);
+        _text_105 = document.createTextNode("\n        ");
+        this._el_101.appendChild(_text_105);
+        this.dbgElm$4(_text_105, 105, 74, 16);
+        _text_106 = document.createTextNode("\n        ");
+        this._el_99.appendChild(_text_106);
+        this.dbgElm$4(_text_106, 106, 75, 13);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_107 = t1;
+        this._el_99.appendChild(t1);
+        this.dbgElm$4(this._el_107, 107, 76, 8);
+        this.setAttr$3(this._el_107, "class", "ui tabular menu");
+        this.setAttr$3(this._el_107, "semantic_ui_tab", "");
+        t1 = new Z.ElementRef(null);
+        t1.nativeElement = this._el_107;
+        this._TabDirective_107_3 = new A.TabDirective(t1, "tab");
+        _text_108 = document.createTextNode("\n            ");
+        this._el_107.appendChild(_text_108);
+        this.dbgElm$4(_text_108, 108, 76, 53);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_109 = t1;
+        this._el_107.appendChild(t1);
+        this.dbgElm$4(this._el_109, 109, 77, 12);
+        this.setAttr$3(this._el_109, "class", "active item");
+        this.setAttr$3(this._el_109, "data-tab", "tab-1");
+        _text_110 = document.createTextNode("Tab 1");
+        this._el_109.appendChild(_text_110);
+        this.dbgElm$4(_text_110, 110, 77, 54);
+        _text_111 = document.createTextNode("\n            ");
+        this._el_107.appendChild(_text_111);
+        this.dbgElm$4(_text_111, 111, 77, 65);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_112 = t1;
+        this._el_107.appendChild(t1);
+        this.dbgElm$4(this._el_112, 112, 78, 12);
+        this.setAttr$3(this._el_112, "class", "item");
+        this.setAttr$3(this._el_112, "data-tab", "tab-2");
+        _text_113 = document.createTextNode("Tab 2");
+        this._el_112.appendChild(_text_113);
+        this.dbgElm$4(_text_113, 113, 78, 47);
+        _text_114 = document.createTextNode("\n            ");
+        this._el_107.appendChild(_text_114);
+        this.dbgElm$4(_text_114, 114, 78, 58);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_115 = t1;
+        this._el_107.appendChild(t1);
+        this.dbgElm$4(this._el_115, 115, 79, 12);
+        this.setAttr$3(this._el_115, "class", "item");
+        this.setAttr$3(this._el_115, "data-tab", "tab-3");
+        _text_116 = document.createTextNode("Tab 3");
+        this._el_115.appendChild(_text_116);
+        this.dbgElm$4(_text_116, 116, 79, 47);
+        _text_117 = document.createTextNode("\n        ");
+        this._el_107.appendChild(_text_117);
+        this.dbgElm$4(_text_117, 117, 79, 58);
+        _text_118 = document.createTextNode("\n        ");
+        this._el_99.appendChild(_text_118);
+        this.dbgElm$4(_text_118, 118, 80, 14);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_119 = t1;
+        this._el_99.appendChild(t1);
+        this.dbgElm$4(this._el_119, 119, 81, 8);
+        this.setAttr$3(this._el_119, "class", "ui active tab");
+        this.setAttr$3(this._el_119, "data-tab", "tab-1");
+        _text_120 = document.createTextNode("\n            ");
+        this._el_119.appendChild(_text_120);
+        this.dbgElm$4(_text_120, 120, 81, 52);
+        t1 = document;
+        t1 = t1.createElement("p");
+        this._el_121 = t1;
+        this._el_119.appendChild(t1);
+        this.dbgElm$4(this._el_121, 121, 82, 12);
+        _text_122 = document.createTextNode("\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            ");
+        this._el_121.appendChild(_text_122);
+        this.dbgElm$4(_text_122, 122, 82, 15);
+        _text_123 = document.createTextNode("\n        ");
+        this._el_119.appendChild(_text_123);
+        this.dbgElm$4(_text_123, 123, 84, 16);
+        _text_124 = document.createTextNode("\n        ");
+        this._el_99.appendChild(_text_124);
+        this.dbgElm$4(_text_124, 124, 85, 14);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_125 = t1;
+        this._el_99.appendChild(t1);
+        this.dbgElm$4(this._el_125, 125, 86, 8);
+        this.setAttr$3(this._el_125, "class", "ui tab");
+        this.setAttr$3(this._el_125, "data-tab", "tab-2");
+        _text_126 = document.createTextNode("\n            ");
+        this._el_125.appendChild(_text_126);
+        this.dbgElm$4(_text_126, 126, 86, 45);
+        t1 = document;
+        t1 = t1.createElement("p");
+        this._el_127 = t1;
+        this._el_125.appendChild(t1);
+        this.dbgElm$4(this._el_127, 127, 87, 12);
+        _text_128 = document.createTextNode("\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n            ");
+        this._el_127.appendChild(_text_128);
+        this.dbgElm$4(_text_128, 128, 87, 15);
+        _text_129 = document.createTextNode("\n        ");
+        this._el_125.appendChild(_text_129);
+        this.dbgElm$4(_text_129, 129, 89, 16);
+        _text_130 = document.createTextNode("\n        ");
+        this._el_99.appendChild(_text_130);
+        this.dbgElm$4(_text_130, 130, 90, 14);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_131 = t1;
+        this._el_99.appendChild(t1);
+        this.dbgElm$4(this._el_131, 131, 91, 8);
+        this.setAttr$3(this._el_131, "class", "ui tab");
+        this.setAttr$3(this._el_131, "data-tab", "tab-3");
+        _text_132 = document.createTextNode("\n            ");
+        this._el_131.appendChild(_text_132);
+        this.dbgElm$4(_text_132, 132, 91, 45);
+        t1 = document;
+        t1 = t1.createElement("p");
+        this._el_133 = t1;
+        this._el_131.appendChild(t1);
+        this.dbgElm$4(this._el_133, 133, 92, 12);
+        _text_134 = document.createTextNode("\n                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n            ");
+        this._el_133.appendChild(_text_134);
+        this.dbgElm$4(_text_134, 134, 92, 15);
+        _text_135 = document.createTextNode("\n        ");
+        this._el_131.appendChild(_text_135);
+        this.dbgElm$4(_text_135, 135, 94, 16);
+        _text_136 = document.createTextNode("\n    ");
+        this._el_99.appendChild(_text_136);
+        this.dbgElm$4(_text_136, 136, 95, 14);
+        _text_137 = document.createTextNode("\n");
+        this._HomeComponent_template$_el_9.appendChild(_text_137);
+        this.dbgElm$4(_text_137, 137, 96, 10);
+        _text_138 = document.createTextNode("\n\n");
+        t2.append$1(parentRenderNode, _text_138);
+        this.dbgElm$4(_text_138, 138, 97, 6);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_139 = t1;
+        t2.append$1(parentRenderNode, t1);
+        this.dbgElm$4(this._el_139, 139, 99, 0);
+        this.setAttr$3(this._el_139, "class", "ui divider");
+        _text_140 = document.createTextNode("\n\n");
+        t2.append$1(parentRenderNode, _text_140);
+        this.dbgElm$4(_text_140, 140, 99, 30);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._el_141 = t1;
+        t2.append$1(parentRenderNode, t1);
+        this.dbgElm$4(this._el_141, 141, 101, 0);
+        this.setAttr$3(this._el_141, "class", "ui basic segment");
+        _text_142 = document.createTextNode("\n    ");
+        this._el_141.appendChild(_text_142);
+        this.dbgElm$4(_text_142, 142, 101, 30);
         t1 = document;
         t1 = t1.createElement("h2");
-        this._el_38 = t1;
-        this._el_6.appendChild(t1);
-        this.dbgElm$4(this._el_38, 38, 30, 4);
-        this.setAttr$3(this._el_38, "class", "ui header");
-        _text_39 = document.createTextNode("To-do");
-        this._el_38.appendChild(_text_39);
-        this.dbgElm$4(_text_39, 39, 30, 26);
-        _text_40 = document.createTextNode("\n    ");
-        this._el_6.appendChild(_text_40);
-        this.dbgElm$4(_text_40, 40, 30, 36);
+        this._el_143 = t1;
+        this._el_141.appendChild(t1);
+        this.dbgElm$4(this._el_143, 143, 102, 4);
+        this.setAttr$3(this._el_143, "class", "ui header");
+        _text_144 = document.createTextNode("To-do");
+        this._el_143.appendChild(_text_144);
+        this.dbgElm$4(_text_144, 144, 102, 26);
+        _text_145 = document.createTextNode("\n    ");
+        this._el_141.appendChild(_text_145);
+        this.dbgElm$4(_text_145, 145, 102, 36);
         t1 = document;
         t1 = t1.createElement("ul");
-        this._el_41 = t1;
-        this._el_6.appendChild(t1);
-        this.dbgElm$4(this._el_41, 41, 31, 4);
-        _text_42 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_42);
-        this.dbgElm$4(_text_42, 42, 31, 8);
+        this._el_146 = t1;
+        this._el_141.appendChild(t1);
+        this.dbgElm$4(this._el_146, 146, 103, 4);
+        _text_147 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_147);
+        this.dbgElm$4(_text_147, 147, 103, 8);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_43 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_43, 43, 32, 8);
-        _text_44 = document.createTextNode("Accordion");
-        this._el_43.appendChild(_text_44);
-        this.dbgElm$4(_text_44, 44, 32, 12);
-        _text_45 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_45);
-        this.dbgElm$4(_text_45, 45, 32, 26);
+        this._el_148 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_148, 148, 104, 8);
+        _text_149 = document.createTextNode("Accordion");
+        this._el_148.appendChild(_text_149);
+        this.dbgElm$4(_text_149, 149, 104, 12);
+        _text_150 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_150);
+        this.dbgElm$4(_text_150, 150, 104, 26);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_46 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_46, 46, 33, 8);
-        _text_47 = document.createTextNode("Checkbox");
-        this._el_46.appendChild(_text_47);
-        this.dbgElm$4(_text_47, 47, 33, 12);
-        _text_48 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_48);
-        this.dbgElm$4(_text_48, 48, 33, 25);
+        this._el_151 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_151, 151, 105, 8);
+        _text_152 = document.createTextNode("Checkbox");
+        this._el_151.appendChild(_text_152);
+        this.dbgElm$4(_text_152, 152, 105, 12);
+        _text_153 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_153);
+        this.dbgElm$4(_text_153, 153, 105, 25);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_49 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_49, 49, 34, 8);
-        _text_50 = document.createTextNode("Dimmer");
-        this._el_49.appendChild(_text_50);
-        this.dbgElm$4(_text_50, 50, 34, 12);
-        _text_51 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_51);
-        this.dbgElm$4(_text_51, 51, 34, 23);
+        this._el_154 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_154, 154, 106, 8);
+        _text_155 = document.createTextNode("Dimmer");
+        this._el_154.appendChild(_text_155);
+        this.dbgElm$4(_text_155, 155, 106, 12);
+        _text_156 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_156);
+        this.dbgElm$4(_text_156, 156, 106, 23);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_52 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_52, 52, 35, 8);
-        _text_53 = document.createTextNode("Embed");
-        this._el_52.appendChild(_text_53);
-        this.dbgElm$4(_text_53, 53, 35, 12);
-        _text_54 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_54);
-        this.dbgElm$4(_text_54, 54, 35, 22);
+        this._el_157 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_157, 157, 107, 8);
+        _text_158 = document.createTextNode("Embed");
+        this._el_157.appendChild(_text_158);
+        this.dbgElm$4(_text_158, 158, 107, 12);
+        _text_159 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_159);
+        this.dbgElm$4(_text_159, 159, 107, 22);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_55 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_55, 55, 36, 8);
-        _text_56 = document.createTextNode("Modal");
-        this._el_55.appendChild(_text_56);
-        this.dbgElm$4(_text_56, 56, 36, 12);
-        _text_57 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_57);
-        this.dbgElm$4(_text_57, 57, 36, 22);
+        this._el_160 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_160, 160, 108, 8);
+        _text_161 = document.createTextNode("Modal");
+        this._el_160.appendChild(_text_161);
+        this.dbgElm$4(_text_161, 161, 108, 12);
+        _text_162 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_162);
+        this.dbgElm$4(_text_162, 162, 108, 22);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_58 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_58, 58, 37, 8);
-        _text_59 = document.createTextNode("Nag");
-        this._el_58.appendChild(_text_59);
-        this.dbgElm$4(_text_59, 59, 37, 12);
-        _text_60 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_60);
-        this.dbgElm$4(_text_60, 60, 37, 20);
+        this._el_163 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_163, 163, 109, 8);
+        _text_164 = document.createTextNode("Nag");
+        this._el_163.appendChild(_text_164);
+        this.dbgElm$4(_text_164, 164, 109, 12);
+        _text_165 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_165);
+        this.dbgElm$4(_text_165, 165, 109, 20);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_61 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_61, 61, 38, 8);
-        _text_62 = document.createTextNode("Popup");
-        this._el_61.appendChild(_text_62);
-        this.dbgElm$4(_text_62, 62, 38, 12);
-        _text_63 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_63);
-        this.dbgElm$4(_text_63, 63, 38, 22);
+        this._el_166 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_166, 166, 110, 8);
+        _text_167 = document.createTextNode("Popup");
+        this._el_166.appendChild(_text_167);
+        this.dbgElm$4(_text_167, 167, 110, 12);
+        _text_168 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_168);
+        this.dbgElm$4(_text_168, 168, 110, 22);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_64 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_64, 64, 39, 8);
-        _text_65 = document.createTextNode("Progress");
-        this._el_64.appendChild(_text_65);
-        this.dbgElm$4(_text_65, 65, 39, 12);
-        _text_66 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_66);
-        this.dbgElm$4(_text_66, 66, 39, 25);
+        this._el_169 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_169, 169, 111, 8);
+        _text_170 = document.createTextNode("Progress");
+        this._el_169.appendChild(_text_170);
+        this.dbgElm$4(_text_170, 170, 111, 12);
+        _text_171 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_171);
+        this.dbgElm$4(_text_171, 171, 111, 25);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_67 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_67, 67, 40, 8);
-        _text_68 = document.createTextNode("Rating");
-        this._el_67.appendChild(_text_68);
-        this.dbgElm$4(_text_68, 68, 40, 12);
-        _text_69 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_69);
-        this.dbgElm$4(_text_69, 69, 40, 23);
+        this._el_172 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_172, 172, 112, 8);
+        _text_173 = document.createTextNode("Rating");
+        this._el_172.appendChild(_text_173);
+        this.dbgElm$4(_text_173, 173, 112, 12);
+        _text_174 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_174);
+        this.dbgElm$4(_text_174, 174, 112, 23);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_70 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_70, 70, 41, 8);
-        _text_71 = document.createTextNode("Search");
-        this._el_70.appendChild(_text_71);
-        this.dbgElm$4(_text_71, 71, 41, 12);
-        _text_72 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_72);
-        this.dbgElm$4(_text_72, 72, 41, 23);
+        this._el_175 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_175, 175, 113, 8);
+        _text_176 = document.createTextNode("Search");
+        this._el_175.appendChild(_text_176);
+        this.dbgElm$4(_text_176, 176, 113, 12);
+        _text_177 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_177);
+        this.dbgElm$4(_text_177, 177, 113, 23);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_73 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_73, 73, 42, 8);
-        _text_74 = document.createTextNode("Shape");
-        this._el_73.appendChild(_text_74);
-        this.dbgElm$4(_text_74, 74, 42, 12);
-        _text_75 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_75);
-        this.dbgElm$4(_text_75, 75, 42, 22);
+        this._el_178 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_178, 178, 114, 8);
+        _text_179 = document.createTextNode("Shape");
+        this._el_178.appendChild(_text_179);
+        this.dbgElm$4(_text_179, 179, 114, 12);
+        _text_180 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_180);
+        this.dbgElm$4(_text_180, 180, 114, 22);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_76 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_76, 76, 43, 8);
-        _text_77 = document.createTextNode("Sticky");
-        this._el_76.appendChild(_text_77);
-        this.dbgElm$4(_text_77, 77, 43, 12);
-        _text_78 = document.createTextNode("\n        ");
-        this._el_41.appendChild(_text_78);
-        this.dbgElm$4(_text_78, 78, 43, 23);
+        this._el_181 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_181, 181, 115, 8);
+        _text_182 = document.createTextNode("Sticky");
+        this._el_181.appendChild(_text_182);
+        this.dbgElm$4(_text_182, 182, 115, 12);
+        _text_183 = document.createTextNode("\n        ");
+        this._el_146.appendChild(_text_183);
+        this.dbgElm$4(_text_183, 183, 115, 23);
         t1 = document;
         t1 = t1.createElement("li");
-        this._el_79 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_79, 79, 44, 8);
-        _text_80 = document.createTextNode("Transition");
-        this._el_79.appendChild(_text_80);
-        this.dbgElm$4(_text_80, 80, 44, 12);
-        _text_81 = document.createTextNode("\n    ");
-        this._el_41.appendChild(_text_81);
-        this.dbgElm$4(_text_81, 81, 44, 27);
-        _text_82 = document.createTextNode("\n");
-        this._el_6.appendChild(_text_82);
-        this.dbgElm$4(_text_82, 82, 45, 9);
-        _text_83 = document.createTextNode("\n");
-        t2.append$1(parentRenderNode, _text_83);
-        this.dbgElm$4(_text_83, 83, 46, 6);
+        this._el_184 = t1;
+        this._el_146.appendChild(t1);
+        this.dbgElm$4(this._el_184, 184, 116, 8);
+        _text_185 = document.createTextNode("Transition");
+        this._el_184.appendChild(_text_185);
+        this.dbgElm$4(_text_185, 185, 116, 12);
+        _text_186 = document.createTextNode("\n    ");
+        this._el_146.appendChild(_text_186);
+        this.dbgElm$4(_text_186, 186, 116, 27);
+        _text_187 = document.createTextNode("\n");
+        this._el_141.appendChild(_text_187);
+        this.dbgElm$4(_text_187, 187, 117, 9);
+        _text_188 = document.createTextNode("\n");
+        t2.append$1(parentRenderNode, _text_188);
+        this.dbgElm$4(_text_188, 188, 118, 6);
         t2 = this.renderer;
         t1 = this._HomeComponent_template$_el_15;
         t3 = this.evt$1(this.get$_handle_click_15_0());
         J.addEventListener$3$x(t2._rootRenderer.eventManager, t1, "click", X.decoratePreventDefault(t3));
         this._arr_0 = Q.pureProxy1(new B.ViewHomeComponent0_createInternal_closure());
         t3 = this.renderer;
-        t1 = this._el_21;
-        t2 = this.evt$1(this.get$_handle_click_21_0());
-        J.addEventListener$3$x(t3._rootRenderer.eventManager, t1, "click", X.decoratePreventDefault(t2));
+        t1 = this._HomeComponent_template$_el_19;
+        t2 = this.evt$1(this.get$_handle_ngModelChange_19_0());
+        J.addEventListener$3$x(t3._rootRenderer.eventManager, t1, "ngModelChange", X.decoratePreventDefault(t2));
+        t2 = this._NgModel_19_5.update;
+        t1 = this.evt$1(this.get$_handle_ngModelChange_19_0());
+        t2 = t2._controller;
+        subscription_0 = new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$4$cancelOnError$onDone$onError(t1, null, null, null);
+        t1 = this.renderer;
+        t2 = this._el_37;
+        t3 = this.evt$1(this.get$_handle_click_37_0());
+        J.addEventListener$3$x(t1._rootRenderer.eventManager, t2, "click", X.decoratePreventDefault(t3));
         this._arr_1 = Q.pureProxy1(new B.ViewHomeComponent0_createInternal_closure0());
+        t3 = this.renderer;
+        t2 = this._el_41;
+        t1 = this.evt$1(this.get$_handle_ngModelChange_41_0());
+        J.addEventListener$3$x(t3._rootRenderer.eventManager, t2, "ngModelChange", X.decoratePreventDefault(t1));
+        t1 = this._NgModel_41_5.update;
+        t2 = this.evt$1(this.get$_handle_ngModelChange_41_0());
+        t1 = t1._controller;
+        subscription_1 = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$4$cancelOnError$onDone$onError(t2, null, null, null);
         t2 = this.renderer;
-        t1 = this._el_27;
-        t3 = this.evt$1(this.get$_handle_click_27_0());
+        t1 = this._el_65;
+        t3 = this.evt$1(this.get$_handle_click_65_0());
         J.addEventListener$3$x(t2._rootRenderer.eventManager, t1, "click", X.decoratePreventDefault(t3));
         this._arr_2 = Q.pureProxy1(new B.ViewHomeComponent0_createInternal_closure1());
         t3 = this.renderer;
-        t1 = this._el_33;
-        t2 = this.evt$1(this.get$_handle_click_33_0());
-        J.addEventListener$3$x(t3._rootRenderer.eventManager, t1, "click", X.decoratePreventDefault(t2));
+        t1 = this._el_71;
+        t2 = this.evt$1(this.get$_handle_semantic_ui_sidebar_71_0());
+        J.addEventListener$3$x(t3._rootRenderer.eventManager, t1, "semantic_ui_sidebar", X.decoratePreventDefault(t2));
+        t2 = this._SidebarDirective_71_3.eventEmitter;
+        t1 = this.evt$1(this.get$_handle_semantic_ui_sidebar_71_0());
+        t2 = t2._controller;
+        subscription_2 = new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$4$cancelOnError$onDone$onError(t1, null, null, null);
+        t1 = this.renderer;
+        t2 = this._el_85;
+        t3 = this.evt$1(this.get$_handle_click_85_0());
+        J.addEventListener$3$x(t1._rootRenderer.eventManager, t2, "click", X.decoratePreventDefault(t3));
+        t3 = this.renderer;
+        t2 = this._el_103;
+        t1 = this.evt$1(this.get$_handle_click_103_0());
+        J.addEventListener$3$x(t3._rootRenderer.eventManager, t2, "click", X.decoratePreventDefault(t1));
         this._arr_3 = Q.pureProxy1(new B.ViewHomeComponent0_createInternal_closure2());
-        this.init$3([], [this._HomeComponent_template$_el_0, _text_1, this._el_2, _text_3, _text_4, _text_5, this._el_6, _text_7, this._el_8, _text_9, _text_10, this._HomeComponent_template$_el_11, _text_12, this._el_13, _text_14, this._HomeComponent_template$_el_15, _text_16, _text_17, _text_18, this._HomeComponent_template$_el_19, _text_20, this._el_21, _text_22, _text_23, _text_24, this._el_25, _text_26, this._el_27, _text_28, _text_29, _text_30, this._el_31, _text_32, this._el_33, _text_34, _text_35, _text_36, _text_37, this._el_38, _text_39, _text_40, this._el_41, _text_42, this._el_43, _text_44, _text_45, this._el_46, _text_47, _text_48, this._el_49, _text_50, _text_51, this._el_52, _text_53, _text_54, this._el_55, _text_56, _text_57, this._el_58, _text_59, _text_60, this._el_61, _text_62, _text_63, this._el_64, _text_65, _text_66, this._el_67, _text_68, _text_69, this._el_70, _text_71, _text_72, this._el_73, _text_74, _text_75, this._el_76, _text_77, _text_78, this._el_79, _text_80, _text_81, _text_82, _text_83], []);
+        this.init$3([], [this._HomeComponent_template$_el_0, _text_1, this._el_2, _text_3, _text_4, _text_5, this._el_6, _text_7, _text_8, this._HomeComponent_template$_el_9, _text_10, this._HomeComponent_template$_el_11, _text_12, this._el_13, _text_14, this._HomeComponent_template$_el_15, _text_16, _text_17, _text_18, this._HomeComponent_template$_el_19, _text_20, this._el_21, _text_22, this._el_23, _text_24, this._el_25, _text_26, this._el_27, _text_28, _text_29, _text_30, _text_31, _text_32, this._el_33, _text_34, this._el_35, _text_36, this._el_37, _text_38, _text_39, _text_40, this._el_41, _text_42, this._el_43, _text_44, this._el_45, _text_46, this._el_47, _text_48, _text_49, this._el_50, _text_51, this._el_52, _text_53, _text_54, this._el_55, _text_56, _text_57, _text_58, _text_59, _text_60, this._el_61, _text_62, this._el_63, _text_64, this._el_65, _text_66, _text_67, _text_68, this._el_69, _text_70, this._el_71, _text_72, this._el_73, _text_74, _text_75, this._el_76, _text_77, _text_78, this._el_79, _text_80, _text_81, _text_82, this._el_83, _text_84, this._el_85, _text_86, this._el_87, _text_88, _text_89, this._el_90, _text_91, this._el_92, _text_93, _text_94, _text_95, _text_96, _text_97, _text_98, this._el_99, _text_100, this._el_101, _text_102, this._el_103, _text_104, _text_105, _text_106, this._el_107, _text_108, this._el_109, _text_110, _text_111, this._el_112, _text_113, _text_114, this._el_115, _text_116, _text_117, _text_118, this._el_119, _text_120, this._el_121, _text_122, _text_123, _text_124, this._el_125, _text_126, this._el_127, _text_128, _text_129, _text_130, this._el_131, _text_132, this._el_133, _text_134, _text_135, _text_136, _text_137, _text_138, this._el_139, _text_140, this._el_141, _text_142, this._el_143, _text_144, _text_145, this._el_146, _text_147, this._el_148, _text_149, _text_150, this._el_151, _text_152, _text_153, this._el_154, _text_155, _text_156, this._el_157, _text_158, _text_159, this._el_160, _text_161, _text_162, this._el_163, _text_164, _text_165, this._el_166, _text_167, _text_168, this._el_169, _text_170, _text_171, this._el_172, _text_173, _text_174, this._el_175, _text_176, _text_177, this._el_178, _text_179, _text_180, this._el_181, _text_182, _text_183, this._el_184, _text_185, _text_186, _text_187, _text_188], [subscription_0, subscription_1, subscription_2]);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
-        var t1, t2;
+        var t1, t2, t3, t4, t5, t6;
         t1 = token === C.Type_RouterLink_O12;
         if (t1) {
           if (typeof requestNodeIndex !== "number")
@@ -24926,34 +25437,134 @@
           t2 = false;
         if (t2)
           return this._RouterLink_15_3;
-        if (t1) {
+        if (token === C.Type_CalendarDirective_g2e) {
           if (typeof requestNodeIndex !== "number")
             return H.iae(requestNodeIndex);
-          t2 = 21 <= requestNodeIndex && requestNodeIndex <= 22;
+          t2 = 19 <= requestNodeIndex && requestNodeIndex <= 30;
         } else
           t2 = false;
         if (t2)
-          return this._RouterLink_21_3;
+          return this._CalendarDirective_19_3;
+        t2 = token === C.OpaqueToken_NgValueAccessor;
+        if (t2) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t3 = 19 <= requestNodeIndex && requestNodeIndex <= 30;
+        } else
+          t3 = false;
+        if (t3)
+          return this._NG_VALUE_ACCESSOR_19_4;
+        t3 = token === C.Type_NgModel_qx4;
+        if (t3) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t4 = 19 <= requestNodeIndex && requestNodeIndex <= 30;
+        } else
+          t4 = false;
+        if (t4)
+          return this._NgModel_19_5;
+        t4 = token === C.Type_NgControl_GNi;
+        if (t4) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t5 = 19 <= requestNodeIndex && requestNodeIndex <= 30;
+        } else
+          t5 = false;
+        if (t5)
+          return this._NgControl_19_6;
+        t5 = token === C.Type_NgControlStatus_H9u;
+        if (t5) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t6 = 19 <= requestNodeIndex && requestNodeIndex <= 30;
+        } else
+          t6 = false;
+        if (t6)
+          return this._NgControlStatus_19_7;
         if (t1) {
           if (typeof requestNodeIndex !== "number")
             return H.iae(requestNodeIndex);
-          t2 = 27 <= requestNodeIndex && requestNodeIndex <= 28;
+          t6 = 37 <= requestNodeIndex && requestNodeIndex <= 38;
+        } else
+          t6 = false;
+        if (t6)
+          return this._RouterLink_37_3;
+        if (token === C.Type_DropdownDirective_Yds) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t6 = 41 <= requestNodeIndex && requestNodeIndex <= 58;
+        } else
+          t6 = false;
+        if (t6)
+          return this._DropdownDirective_41_3;
+        if (t2) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t2 = 41 <= requestNodeIndex && requestNodeIndex <= 58;
         } else
           t2 = false;
         if (t2)
-          return this._RouterLink_27_3;
+          return this._NG_VALUE_ACCESSOR_41_4;
+        if (t3) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t2 = 41 <= requestNodeIndex && requestNodeIndex <= 58;
+        } else
+          t2 = false;
+        if (t2)
+          return this._NgModel_41_5;
+        if (t4) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t2 = 41 <= requestNodeIndex && requestNodeIndex <= 58;
+        } else
+          t2 = false;
+        if (t2)
+          return this._NgControl_41_6;
+        if (t5) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t2 = 41 <= requestNodeIndex && requestNodeIndex <= 58;
+        } else
+          t2 = false;
+        if (t2)
+          return this._NgControlStatus_41_7;
         if (t1) {
           if (typeof requestNodeIndex !== "number")
             return H.iae(requestNodeIndex);
-          t1 = 33 <= requestNodeIndex && requestNodeIndex <= 34;
+          t2 = 65 <= requestNodeIndex && requestNodeIndex <= 66;
+        } else
+          t2 = false;
+        if (t2)
+          return this._RouterLink_65_3;
+        if (token === C.Type_SidebarDirective_Qs9) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t2 = 71 <= requestNodeIndex && requestNodeIndex <= 81;
+        } else
+          t2 = false;
+        if (t2)
+          return this._SidebarDirective_71_3;
+        if (t1) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t1 = 103 <= requestNodeIndex && requestNodeIndex <= 104;
         } else
           t1 = false;
         if (t1)
-          return this._RouterLink_33_3;
+          return this._RouterLink_103_3;
+        if (token === C.Type_TabDirective_27p) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t1 = 107 <= requestNodeIndex && requestNodeIndex <= 117;
+        } else
+          t1 = false;
+        if (t1)
+          return this._TabDirective_107_3;
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var t1, currVal_1, t2, currVal_5, currVal_9, currVal_13, currVal_2, currVal_3, currVal_6, currVal_7, currVal_10, currVal_11, currVal_14, currVal_15;
+        var t1, currVal_1, t2, currVal_5, currVal_6, changes, currVal_14, currVal_18, currVal_26, currVal_32, t3, currVal_2, currVal_3, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_15, currVal_16, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_27, currVal_28, currVal_33, currVal_34;
         t1 = [null];
         this._currentDebugContext = new Z.DebugContext(this, 15, 10, 28, t1);
         currVal_1 = this._arr_0.call$1("Calendar");
@@ -24963,31 +25574,73 @@
           t2._updateLink$0();
           this._HomeComponent_template$_expr_1 = currVal_1;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 21, 15, 28, t1);
-        currVal_5 = this._arr_1.call$1("Dropdown");
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 13, t1);
+        currVal_5 = this.ctx.get$dateSettings();
         if (Q.checkBinding(this._HomeComponent_template$_expr_5, currVal_5)) {
-          t2 = this._RouterLink_21_3;
-          t2._routeParams = currVal_5;
-          t2._updateLink$0();
+          this._CalendarDirective_19_3.settings = currVal_5;
           this._HomeComponent_template$_expr_5 = currVal_5;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 27, 20, 28, t1);
-        currVal_9 = this._arr_2.call$1("Sidebar");
-        if (Q.checkBinding(this._HomeComponent_template$_expr_9, currVal_9)) {
-          t2 = this._RouterLink_27_3;
-          t2._routeParams = currVal_9;
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 51, t1);
+        currVal_6 = this.ctx.get$date();
+        if (Q.checkBinding(this._HomeComponent_template$_expr_6, currVal_6)) {
+          this._NgModel_19_5.model = currVal_6;
+          changes = P.LinkedHashMap_LinkedHashMap$_empty(P.String, A.SimpleChange);
+          changes.$indexSet(0, "model", new A.SimpleChange(this._HomeComponent_template$_expr_6, currVal_6));
+          this._HomeComponent_template$_expr_6 = currVal_6;
+        } else
+          changes = null;
+        if (changes != null)
+          this._NgModel_19_5.ngOnChanges$1(changes);
+        this._currentDebugContext = new Z.DebugContext(this, 37, 25, 28, t1);
+        currVal_14 = this._arr_1.call$1("Dropdown");
+        if (Q.checkBinding(this._expr_14, currVal_14)) {
+          t2 = this._RouterLink_37_3;
+          t2._routeParams = currVal_14;
           t2._updateLink$0();
-          this._HomeComponent_template$_expr_9 = currVal_9;
+          this._expr_14 = currVal_14;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 33, 25, 28, t1);
-        currVal_13 = this._arr_3.call$1("Tab");
-        if (Q.checkBinding(this._expr_13, currVal_13)) {
-          t2 = this._RouterLink_33_3;
-          t2._routeParams = currVal_13;
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 34, t1);
+        currVal_18 = this.ctx.get$gender();
+        if (Q.checkBinding(this._expr_18, currVal_18)) {
+          this._NgModel_41_5.model = currVal_18;
+          changes = P.LinkedHashMap_LinkedHashMap$_empty(P.String, A.SimpleChange);
+          changes.$indexSet(0, "model", new A.SimpleChange(this._expr_18, currVal_18));
+          this._expr_18 = currVal_18;
+        } else
+          changes = null;
+        if (changes != null)
+          this._NgModel_41_5.ngOnChanges$1(changes);
+        this._currentDebugContext = new Z.DebugContext(this, 65, 41, 28, t1);
+        currVal_26 = this._arr_2.call$1("Sidebar");
+        if (Q.checkBinding(this._expr_26, currVal_26)) {
+          t2 = this._RouterLink_65_3;
+          t2._routeParams = currVal_26;
           t2._updateLink$0();
-          this._expr_13 = currVal_13;
+          this._expr_26 = currVal_26;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 103, 72, 28, t1);
+        currVal_32 = this._arr_3.call$1("Tab");
+        if (Q.checkBinding(this._expr_32, currVal_32)) {
+          t2 = this._RouterLink_103_3;
+          t2._routeParams = currVal_32;
+          t2._updateLink$0();
+          this._expr_32 = currVal_32;
         }
         this.detectContentChildrenChanges$0();
+        if (!$.AppViewUtils_throwOnChanges) {
+          this._currentDebugContext = new Z.DebugContext(this, 71, 46, 12, t1);
+          if (this._cdState === C.ChangeDetectorState_0) {
+            t2 = this._SidebarDirective_71_3;
+            t3 = t2.eventEmitter;
+            t2 = t2.sidebar;
+            t3 = t3._controller;
+            if (!t3.get$_mayAddEvent())
+              H.throwExpression(t3._addEventError$0());
+            t3._sendData$1(t2);
+          }
+        }
         this._currentDebugContext = new Z.DebugContext(this, 15, 10, 12, t1);
         t2 = this._RouterLink_15_3;
         currVal_2 = t2._router.isRouteActive$1(t2._navigationInstruction);
@@ -25002,49 +25655,142 @@
           this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_3) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_3)));
           this._HomeComponent_template$_expr_3 = currVal_3;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 21, 15, 12, t1);
-        t2 = this._RouterLink_21_3;
-        currVal_6 = t2._router.isRouteActive$1(t2._navigationInstruction);
-        if (Q.checkBinding(this._HomeComponent_template$_expr_6, currVal_6)) {
-          this.updateClass$3(this._el_21, "router-link-active", currVal_6);
-          this._HomeComponent_template$_expr_6 = currVal_6;
-        }
-        this._currentDebugContext = new Z.DebugContext(this, 21, 15, 12, t1);
-        currVal_7 = this._RouterLink_21_3.visibleHref;
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        currVal_7 = this._NgControlStatus_19_7.get$ngClassInvalid();
         if (Q.checkBinding(this._HomeComponent_template$_expr_7, currVal_7)) {
-          t2 = this._el_21;
-          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_7) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_7)));
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-invalid", currVal_7);
           this._HomeComponent_template$_expr_7 = currVal_7;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 27, 20, 12, t1);
-        t2 = this._RouterLink_27_3;
-        currVal_10 = t2._router.isRouteActive$1(t2._navigationInstruction);
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        t2 = this._NgControlStatus_19_7;
+        currVal_8 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$touched();
+        if (Q.checkBinding(this._HomeComponent_template$_expr_8, currVal_8)) {
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-touched", currVal_8);
+          this._HomeComponent_template$_expr_8 = currVal_8;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        t2 = this._NgControlStatus_19_7;
+        currVal_9 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$untouched();
+        if (Q.checkBinding(this._HomeComponent_template$_expr_9, currVal_9)) {
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-untouched", currVal_9);
+          this._HomeComponent_template$_expr_9 = currVal_9;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        t2 = this._NgControlStatus_19_7;
+        currVal_10 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$valid();
         if (Q.checkBinding(this._expr_10, currVal_10)) {
-          this.updateClass$3(this._el_27, "router-link-active", currVal_10);
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-valid", currVal_10);
           this._expr_10 = currVal_10;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 27, 20, 12, t1);
-        currVal_11 = this._RouterLink_27_3.visibleHref;
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        t2 = this._NgControlStatus_19_7;
+        currVal_11 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$dirty();
         if (Q.checkBinding(this._expr_11, currVal_11)) {
-          t2 = this._el_27;
-          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_11) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_11)));
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-dirty", currVal_11);
           this._expr_11 = currVal_11;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 33, 25, 12, t1);
-        t2 = this._RouterLink_33_3;
-        currVal_14 = t2._router.isRouteActive$1(t2._navigationInstruction);
-        if (Q.checkBinding(this._expr_14, currVal_14)) {
-          this.updateClass$3(this._el_33, "router-link-active", currVal_14);
-          this._expr_14 = currVal_14;
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+        t2 = this._NgControlStatus_19_7;
+        currVal_12 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$pristine();
+        if (Q.checkBinding(this._expr_12, currVal_12)) {
+          this.updateClass$3(this._HomeComponent_template$_el_19, "ng-pristine", currVal_12);
+          this._expr_12 = currVal_12;
         }
-        this._currentDebugContext = new Z.DebugContext(this, 33, 25, 12, t1);
-        currVal_15 = this._RouterLink_33_3.visibleHref;
+        this._currentDebugContext = new Z.DebugContext(this, 37, 25, 12, t1);
+        t2 = this._RouterLink_37_3;
+        currVal_15 = t2._router.isRouteActive$1(t2._navigationInstruction);
         if (Q.checkBinding(this._expr_15, currVal_15)) {
-          t1 = this._el_33;
-          this.setAttr$3(t1, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_15) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_15)));
+          this.updateClass$3(this._el_37, "router-link-active", currVal_15);
           this._expr_15 = currVal_15;
         }
+        this._currentDebugContext = new Z.DebugContext(this, 37, 25, 12, t1);
+        currVal_16 = this._RouterLink_37_3.visibleHref;
+        if (Q.checkBinding(this._expr_16, currVal_16)) {
+          t2 = this._el_37;
+          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_16) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_16)));
+          this._expr_16 = currVal_16;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        currVal_19 = this._NgControlStatus_41_7.get$ngClassInvalid();
+        if (Q.checkBinding(this._expr_19, currVal_19)) {
+          this.updateClass$3(this._el_41, "ng-invalid", currVal_19);
+          this._expr_19 = currVal_19;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        t2 = this._NgControlStatus_41_7;
+        currVal_20 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$touched();
+        if (Q.checkBinding(this._expr_20, currVal_20)) {
+          this.updateClass$3(this._el_41, "ng-touched", currVal_20);
+          this._expr_20 = currVal_20;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        t2 = this._NgControlStatus_41_7;
+        currVal_21 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$untouched();
+        if (Q.checkBinding(this._expr_21, currVal_21)) {
+          this.updateClass$3(this._el_41, "ng-untouched", currVal_21);
+          this._expr_21 = currVal_21;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        t2 = this._NgControlStatus_41_7;
+        currVal_22 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$valid();
+        if (Q.checkBinding(this._expr_22, currVal_22)) {
+          this.updateClass$3(this._el_41, "ng-valid", currVal_22);
+          this._expr_22 = currVal_22;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        t2 = this._NgControlStatus_41_7;
+        currVal_23 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$dirty();
+        if (Q.checkBinding(this._expr_23, currVal_23)) {
+          this.updateClass$3(this._el_41, "ng-dirty", currVal_23);
+          this._expr_23 = currVal_23;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+        t2 = this._NgControlStatus_41_7;
+        currVal_24 = J.get$control$x(t2._cd) != null && J.get$control$x(t2._cd).get$pristine();
+        if (Q.checkBinding(this._expr_24, currVal_24)) {
+          this.updateClass$3(this._el_41, "ng-pristine", currVal_24);
+          this._expr_24 = currVal_24;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 65, 41, 12, t1);
+        t2 = this._RouterLink_65_3;
+        currVal_27 = t2._router.isRouteActive$1(t2._navigationInstruction);
+        if (Q.checkBinding(this._expr_27, currVal_27)) {
+          this.updateClass$3(this._el_65, "router-link-active", currVal_27);
+          this._expr_27 = currVal_27;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 65, 41, 12, t1);
+        currVal_28 = this._RouterLink_65_3.visibleHref;
+        if (Q.checkBinding(this._expr_28, currVal_28)) {
+          t2 = this._el_65;
+          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_28) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_28)));
+          this._expr_28 = currVal_28;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 103, 72, 12, t1);
+        t2 = this._RouterLink_103_3;
+        currVal_33 = t2._router.isRouteActive$1(t2._navigationInstruction);
+        if (Q.checkBinding(this._expr_33, currVal_33)) {
+          this.updateClass$3(this._el_103, "router-link-active", currVal_33);
+          this._expr_33 = currVal_33;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 103, 72, 12, t1);
+        currVal_34 = this._RouterLink_103_3.visibleHref;
+        if (Q.checkBinding(this._expr_34, currVal_34)) {
+          t2 = this._el_103;
+          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_34) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_34)));
+          this._expr_34 = currVal_34;
+        }
         this.detectViewChildrenChanges$0();
+        if (!$.AppViewUtils_throwOnChanges) {
+          this._currentDebugContext = new Z.DebugContext(this, 19, 14, 8, t1);
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._CalendarDirective_19_3._CalendarDirective$_init$0();
+          this._currentDebugContext = new Z.DebugContext(this, 41, 29, 8, t1);
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._DropdownDirective_41_3._DropdownDirective$_init$0();
+          this._currentDebugContext = new Z.DebugContext(this, 107, 76, 8, t1);
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._TabDirective_107_3._TabDirective$_init$0();
+        }
       },
       _handle_click_15_0$1: [function($$event) {
         var pd_0;
@@ -25053,27 +25799,51 @@
         pd_0 = this._RouterLink_15_3.onClick$0(0);
         return pd_0;
       }, "call$1", "get$_handle_click_15_0", 2, 0, 3],
-      _handle_click_21_0$1: [function($$event) {
+      _handle_ngModelChange_19_0$1: [function($$event) {
+        this.markPathToRootAsCheckOnce$0();
+        this._currentDebugContext = new Z.DebugContext(this, 19, 14, 51, [null]);
+        this.ctx.set$date($$event);
+        return $$event !== false;
+      }, "call$1", "get$_handle_ngModelChange_19_0", 2, 0, 3],
+      _handle_click_37_0$1: [function($$event) {
         var pd_0;
         this.markPathToRootAsCheckOnce$0();
-        this._currentDebugContext = new Z.DebugContext(this, 21, 15, 12, [null]);
-        pd_0 = this._RouterLink_21_3.onClick$0(0);
+        this._currentDebugContext = new Z.DebugContext(this, 37, 25, 12, [null]);
+        pd_0 = this._RouterLink_37_3.onClick$0(0);
         return pd_0;
-      }, "call$1", "get$_handle_click_21_0", 2, 0, 3],
-      _handle_click_27_0$1: [function($$event) {
+      }, "call$1", "get$_handle_click_37_0", 2, 0, 3],
+      _handle_ngModelChange_41_0$1: [function($$event) {
+        this.markPathToRootAsCheckOnce$0();
+        this._currentDebugContext = new Z.DebugContext(this, 41, 29, 34, [null]);
+        this.ctx.set$gender($$event);
+        return $$event !== false;
+      }, "call$1", "get$_handle_ngModelChange_41_0", 2, 0, 3],
+      _handle_click_65_0$1: [function($$event) {
         var pd_0;
         this.markPathToRootAsCheckOnce$0();
-        this._currentDebugContext = new Z.DebugContext(this, 27, 20, 12, [null]);
-        pd_0 = this._RouterLink_27_3.onClick$0(0);
+        this._currentDebugContext = new Z.DebugContext(this, 65, 41, 12, [null]);
+        pd_0 = this._RouterLink_65_3.onClick$0(0);
         return pd_0;
-      }, "call$1", "get$_handle_click_27_0", 2, 0, 3],
-      _handle_click_33_0$1: [function($$event) {
+      }, "call$1", "get$_handle_click_65_0", 2, 0, 3],
+      _handle_semantic_ui_sidebar_71_0$1: [function($$event) {
+        this.markPathToRootAsCheckOnce$0();
+        this._currentDebugContext = new Z.DebugContext(this, 71, 46, 17, [null]);
+        this.ctx.initSidebar$1($$event);
+        return true;
+      }, "call$1", "get$_handle_semantic_ui_sidebar_71_0", 2, 0, 3],
+      _handle_click_85_0$1: [function($$event) {
+        this.markPathToRootAsCheckOnce$0();
+        this._currentDebugContext = new Z.DebugContext(this, 85, 58, 63, [null]);
+        this.ctx.onToggleSidebarButtonClicked$0();
+        return true;
+      }, "call$1", "get$_handle_click_85_0", 2, 0, 3],
+      _handle_click_103_0$1: [function($$event) {
         var pd_0;
         this.markPathToRootAsCheckOnce$0();
-        this._currentDebugContext = new Z.DebugContext(this, 33, 25, 12, [null]);
-        pd_0 = this._RouterLink_33_3.onClick$0(0);
+        this._currentDebugContext = new Z.DebugContext(this, 103, 72, 12, [null]);
+        pd_0 = this._RouterLink_103_3.onClick$0(0);
         return pd_0;
-      }, "call$1", "get$_handle_click_33_0", 2, 0, 3],
+      }, "call$1", "get$_handle_click_103_0", 2, 0, 3],
       $asDebugAppView: function() {
         return [Y.HomeComponent];
       },
@@ -25123,9 +25893,9 @@
         }
         t4 = $.uninitialized;
         t5 = P.LinkedHashMap__makeEmpty();
-        compView_0 = new B.ViewHomeComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_JmU, null, C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
+        compView_0 = new B.ViewHomeComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, t4, t4, t4, t4, t4, t4, t4, t4, null, t4, t4, t4, t4, t4, t4, t4, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_mqF, null, C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
         compView_0.AppView$7(C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, Y.HomeComponent);
-        t2 = new Y.HomeComponent();
+        t2 = new Y.HomeComponent(P.LinkedHashMap__makeLiteral(["type", "date"]), new P.DateTime(Date.now(), false), null, null);
         this._HomeComponent_0_4 = t2;
         t1 = this._HomeComponent_template$_appEl_0;
         t1.component = t2;
@@ -25147,7 +25917,7 @@
     initReflector_closure56: {
       "^": "Closure:1;",
       call$0: [function() {
-        return new Y.HomeComponent();
+        return new Y.HomeComponent(P.LinkedHashMap__makeLiteral(["type", "date"]), new P.DateTime(Date.now(), false), null, null);
       }, null, null, 0, 0, null, "call"]
     }
   }], ["", "SidebarComponent.dart",, B, {
@@ -25184,7 +25954,7 @@
       U.initReflector5();
     },
     ViewSidebarComponent0: {
-      "^": "DebugAppView;_SidebarComponent_template$_el_0,_SidebarComponent_template$_el_3,_SidebarComponent_template$_el_5,_SidebarDirective_5_3,_SidebarComponent_template$_el_7,_el_10,_SidebarComponent_template$_el_13,_SidebarComponent_template$_el_16,_SidebarComponent_template$_el_19,_el_22,_SidebarComponent_template$_el_25,_el_28,_SidebarComponent_template$_el_31,_el_35,_el_37,_el_39,_el_42,_el_44,_el_47,_el_50,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_SidebarComponent_template$_el_0,_SidebarComponent_template$_el_3,_SidebarComponent_template$_el_5,_SidebarDirective_5_3,_SidebarComponent_template$_el_7,_el_10,_SidebarComponent_template$_el_13,_SidebarComponent_template$_el_16,_SidebarComponent_template$_el_19,_el_22,_SidebarComponent_template$_el_25,_el_28,_el_31,_SidebarComponent_template$_el_35,_SidebarComponent_template$_el_37,_el_39,_el_42,_el_44,_SidebarComponent_template$_el_47,_SidebarComponent_template$_el_50,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
         var parentRenderNode, t1, t2, _text_1, _text_2, _text_4, t3, _text_6, _text_8, _text_9, _text_11, _text_12, _text_14, _text_15, _text_17, _text_18, _text_20, _text_21, _text_23, _text_24, _text_26, _text_27, _text_29, _text_30, _text_32, _text_33, _text_34, _text_36, _text_38, _text_40, _text_41, _text_43, _text_45, _text_46, _text_48, _text_49, _text_51, _text_52, _text_53, _text_54, _text_55, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
@@ -25321,12 +26091,12 @@
         this.dbgElm$4(_text_30, 30, 27, 12);
         t1 = document;
         t1 = t1.createElement("a");
-        this._SidebarComponent_template$_el_31 = t1;
+        this._el_31 = t1;
         this._SidebarComponent_template$_el_5.appendChild(t1);
-        this.dbgElm$4(this._SidebarComponent_template$_el_31, 31, 28, 8);
-        this.setAttr$3(this._SidebarComponent_template$_el_31, "class", "item");
+        this.dbgElm$4(this._el_31, 31, 28, 8);
+        this.setAttr$3(this._el_31, "class", "item");
         _text_32 = document.createTextNode("\n            Menu item 9\n        ");
-        this._SidebarComponent_template$_el_31.appendChild(_text_32);
+        this._el_31.appendChild(_text_32);
         this.dbgElm$4(_text_32, 32, 28, 24);
         _text_33 = document.createTextNode("\n    ");
         this._SidebarComponent_template$_el_5.appendChild(_text_33);
@@ -25336,38 +26106,38 @@
         this.dbgElm$4(_text_34, 34, 31, 10);
         t1 = document;
         t1 = t1.createElement("div");
-        this._el_35 = t1;
+        this._SidebarComponent_template$_el_35 = t1;
         this._SidebarComponent_template$_el_3.appendChild(t1);
-        this.dbgElm$4(this._el_35, 35, 32, 4);
-        this.setAttr$3(this._el_35, "class", "pusher");
+        this.dbgElm$4(this._SidebarComponent_template$_el_35, 35, 32, 4);
+        this.setAttr$3(this._SidebarComponent_template$_el_35, "class", "pusher");
         _text_36 = document.createTextNode("\n        ");
-        this._el_35.appendChild(_text_36);
+        this._SidebarComponent_template$_el_35.appendChild(_text_36);
         this.dbgElm$4(_text_36, 36, 32, 24);
         t1 = document;
         t1 = t1.createElement("button");
-        this._el_37 = t1;
-        this._el_35.appendChild(t1);
-        this.dbgElm$4(this._el_37, 37, 33, 8);
-        this.setAttr$3(this._el_37, "class", "ui basic icon button");
+        this._SidebarComponent_template$_el_37 = t1;
+        this._SidebarComponent_template$_el_35.appendChild(t1);
+        this.dbgElm$4(this._SidebarComponent_template$_el_37, 37, 33, 8);
+        this.setAttr$3(this._SidebarComponent_template$_el_37, "class", "ui basic icon button");
         _text_38 = document.createTextNode("\n            ");
-        this._el_37.appendChild(_text_38);
+        this._SidebarComponent_template$_el_37.appendChild(_text_38);
         this.dbgElm$4(_text_38, 38, 33, 86);
         t1 = document;
         t1 = t1.createElement("i");
         this._el_39 = t1;
-        this._el_37.appendChild(t1);
+        this._SidebarComponent_template$_el_37.appendChild(t1);
         this.dbgElm$4(this._el_39, 39, 34, 12);
         this.setAttr$3(this._el_39, "class", "large content icon");
         _text_40 = document.createTextNode("\n        ");
-        this._el_37.appendChild(_text_40);
+        this._SidebarComponent_template$_el_37.appendChild(_text_40);
         this.dbgElm$4(_text_40, 40, 34, 46);
         _text_41 = document.createTextNode("\n        Menu\n        ");
-        this._el_35.appendChild(_text_41);
+        this._SidebarComponent_template$_el_35.appendChild(_text_41);
         this.dbgElm$4(_text_41, 41, 35, 17);
         t1 = document;
         t1 = t1.createElement("div");
         this._el_42 = t1;
-        this._el_35.appendChild(t1);
+        this._SidebarComponent_template$_el_35.appendChild(t1);
         this.dbgElm$4(this._el_42, 42, 37, 8);
         this.setAttr$3(this._el_42, "class", "ui basic segment");
         _text_43 = document.createTextNode("\n            ");
@@ -25386,28 +26156,28 @@
         this.dbgElm$4(_text_46, 46, 40, 16);
         t1 = document;
         t1 = t1.createElement("p");
-        this._el_47 = t1;
+        this._SidebarComponent_template$_el_47 = t1;
         this._el_42.appendChild(t1);
-        this.dbgElm$4(this._el_47, 47, 41, 12);
+        this.dbgElm$4(this._SidebarComponent_template$_el_47, 47, 41, 12);
         _text_48 = document.createTextNode("\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n            ");
-        this._el_47.appendChild(_text_48);
+        this._SidebarComponent_template$_el_47.appendChild(_text_48);
         this.dbgElm$4(_text_48, 48, 41, 15);
         _text_49 = document.createTextNode("\n            ");
         this._el_42.appendChild(_text_49);
         this.dbgElm$4(_text_49, 49, 43, 16);
         t1 = document;
         t1 = t1.createElement("p");
-        this._el_50 = t1;
+        this._SidebarComponent_template$_el_50 = t1;
         this._el_42.appendChild(t1);
-        this.dbgElm$4(this._el_50, 50, 44, 12);
+        this.dbgElm$4(this._SidebarComponent_template$_el_50, 50, 44, 12);
         _text_51 = document.createTextNode("\n                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n            ");
-        this._el_50.appendChild(_text_51);
+        this._SidebarComponent_template$_el_50.appendChild(_text_51);
         this.dbgElm$4(_text_51, 51, 44, 15);
         _text_52 = document.createTextNode("\n        ");
         this._el_42.appendChild(_text_52);
         this.dbgElm$4(_text_52, 52, 46, 16);
         _text_53 = document.createTextNode("\n    ");
-        this._el_35.appendChild(_text_53);
+        this._SidebarComponent_template$_el_35.appendChild(_text_53);
         this.dbgElm$4(_text_53, 53, 47, 14);
         _text_54 = document.createTextNode("\n");
         this._SidebarComponent_template$_el_3.appendChild(_text_54);
@@ -25424,10 +26194,10 @@
         t3 = t3._controller;
         subscription_0 = new P._BroadcastStream(t3, [H.getTypeArgumentByIndex(t3, 0)]).listen$4$cancelOnError$onDone$onError(t1, null, null, null);
         t1 = this.renderer;
-        t3 = this._el_37;
-        t2 = this.evt$1(this.get$_handle_click_37_0());
+        t3 = this._SidebarComponent_template$_el_37;
+        t2 = this.evt$1(this.get$_SidebarComponent_template$_handle_click_37_0());
         J.addEventListener$3$x(t1._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t2));
-        this.init$3([], [this._SidebarComponent_template$_el_0, _text_1, _text_2, this._SidebarComponent_template$_el_3, _text_4, this._SidebarComponent_template$_el_5, _text_6, this._SidebarComponent_template$_el_7, _text_8, _text_9, this._el_10, _text_11, _text_12, this._SidebarComponent_template$_el_13, _text_14, _text_15, this._SidebarComponent_template$_el_16, _text_17, _text_18, this._SidebarComponent_template$_el_19, _text_20, _text_21, this._el_22, _text_23, _text_24, this._SidebarComponent_template$_el_25, _text_26, _text_27, this._el_28, _text_29, _text_30, this._SidebarComponent_template$_el_31, _text_32, _text_33, _text_34, this._el_35, _text_36, this._el_37, _text_38, this._el_39, _text_40, _text_41, this._el_42, _text_43, this._el_44, _text_45, _text_46, this._el_47, _text_48, _text_49, this._el_50, _text_51, _text_52, _text_53, _text_54, _text_55], [subscription_0]);
+        this.init$3([], [this._SidebarComponent_template$_el_0, _text_1, _text_2, this._SidebarComponent_template$_el_3, _text_4, this._SidebarComponent_template$_el_5, _text_6, this._SidebarComponent_template$_el_7, _text_8, _text_9, this._el_10, _text_11, _text_12, this._SidebarComponent_template$_el_13, _text_14, _text_15, this._SidebarComponent_template$_el_16, _text_17, _text_18, this._SidebarComponent_template$_el_19, _text_20, _text_21, this._el_22, _text_23, _text_24, this._SidebarComponent_template$_el_25, _text_26, _text_27, this._el_28, _text_29, _text_30, this._el_31, _text_32, _text_33, _text_34, this._SidebarComponent_template$_el_35, _text_36, this._SidebarComponent_template$_el_37, _text_38, this._el_39, _text_40, _text_41, this._el_42, _text_43, this._el_44, _text_45, _text_46, this._SidebarComponent_template$_el_47, _text_48, _text_49, this._SidebarComponent_template$_el_50, _text_51, _text_52, _text_53, _text_54, _text_55], [subscription_0]);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
@@ -25465,12 +26235,12 @@
         this.ctx.initSidebar$1($$event);
         return true;
       }, "call$1", "get$_handle_semantic_ui_sidebar_5_0", 2, 0, 3],
-      _handle_click_37_0$1: [function($$event) {
+      _SidebarComponent_template$_handle_click_37_0$1: [function($$event) {
         this.markPathToRootAsCheckOnce$0();
         this._currentDebugContext = new Z.DebugContext(this, 37, 33, 16, [null]);
         this.ctx.onToggleSidebarButtonClicked$0();
         return true;
-      }, "call$1", "get$_handle_click_37_0", 2, 0, 3],
+      }, "call$1", "get$_SidebarComponent_template$_handle_click_37_0", 2, 0, 3],
       $asDebugAppView: function() {
         return [B.SidebarComponent];
       },
@@ -25550,7 +26320,7 @@
       U.initReflector5();
     },
     ViewTabComponent0: {
-      "^": "DebugAppView;_TabComponent_template$_el_0,_TabComponent_template$_el_3,_TabDirective_3_3,_TabComponent_template$_el_5,_TabComponent_template$_el_8,_TabComponent_template$_el_11,_TabComponent_template$_el_15,_el_17,_TabComponent_template$_el_21,_el_23,_TabComponent_template$_el_27,_el_29,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_TabComponent_template$_el_0,_TabComponent_template$_el_3,_TabDirective_3_3,_TabComponent_template$_el_5,_el_8,_TabComponent_template$_el_11,_TabComponent_template$_el_15,_el_17,_TabComponent_template$_el_21,_TabComponent_template$_el_23,_TabComponent_template$_el_27,_el_29,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
         var parentRenderNode, t1, t2, _text_1, _text_2, _text_4, _text_6, _text_7, _text_9, _text_10, _text_12, _text_13, _text_14, _text_16, _text_18, _text_19, _text_20, _text_22, _text_24, _text_25, _text_26, _text_28, _text_30, _text_31, _text_32;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
@@ -25595,13 +26365,13 @@
         this.dbgElm$4(_text_7, 7, 3, 57);
         t1 = document;
         t1 = t1.createElement("div");
-        this._TabComponent_template$_el_8 = t1;
+        this._el_8 = t1;
         this._TabComponent_template$_el_3.appendChild(t1);
-        this.dbgElm$4(this._TabComponent_template$_el_8, 8, 4, 4);
-        this.setAttr$3(this._TabComponent_template$_el_8, "class", "item");
-        this.setAttr$3(this._TabComponent_template$_el_8, "data-tab", "tab-2");
+        this.dbgElm$4(this._el_8, 8, 4, 4);
+        this.setAttr$3(this._el_8, "class", "item");
+        this.setAttr$3(this._el_8, "data-tab", "tab-2");
         _text_9 = document.createTextNode("Tab 2");
-        this._TabComponent_template$_el_8.appendChild(_text_9);
+        this._el_8.appendChild(_text_9);
         this.dbgElm$4(_text_9, 9, 4, 39);
         _text_10 = document.createTextNode("\n    ");
         this._TabComponent_template$_el_3.appendChild(_text_10);
@@ -25658,11 +26428,11 @@
         this.dbgElm$4(_text_22, 22, 12, 37);
         t1 = document;
         t1 = t1.createElement("p");
-        this._el_23 = t1;
+        this._TabComponent_template$_el_23 = t1;
         this._TabComponent_template$_el_21.appendChild(t1);
-        this.dbgElm$4(this._el_23, 23, 13, 4);
+        this.dbgElm$4(this._TabComponent_template$_el_23, 23, 13, 4);
         _text_24 = document.createTextNode("\n        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n    ");
-        this._el_23.appendChild(_text_24);
+        this._TabComponent_template$_el_23.appendChild(_text_24);
         this.dbgElm$4(_text_24, 24, 13, 7);
         _text_25 = document.createTextNode("\n");
         this._TabComponent_template$_el_21.appendChild(_text_25);
@@ -25694,7 +26464,7 @@
         _text_32 = document.createTextNode("\n");
         t2.append$1(parentRenderNode, _text_32);
         this.dbgElm$4(_text_32, 32, 21, 6);
-        this.init$3([], [this._TabComponent_template$_el_0, _text_1, _text_2, this._TabComponent_template$_el_3, _text_4, this._TabComponent_template$_el_5, _text_6, _text_7, this._TabComponent_template$_el_8, _text_9, _text_10, this._TabComponent_template$_el_11, _text_12, _text_13, _text_14, this._TabComponent_template$_el_15, _text_16, this._el_17, _text_18, _text_19, _text_20, this._TabComponent_template$_el_21, _text_22, this._el_23, _text_24, _text_25, _text_26, this._TabComponent_template$_el_27, _text_28, this._el_29, _text_30, _text_31, _text_32], []);
+        this.init$3([], [this._TabComponent_template$_el_0, _text_1, _text_2, this._TabComponent_template$_el_3, _text_4, this._TabComponent_template$_el_5, _text_6, _text_7, this._el_8, _text_9, _text_10, this._TabComponent_template$_el_11, _text_12, _text_13, _text_14, this._TabComponent_template$_el_15, _text_16, this._el_17, _text_18, _text_19, _text_20, this._TabComponent_template$_el_21, _text_22, this._TabComponent_template$_el_23, _text_24, _text_25, _text_26, this._TabComponent_template$_el_27, _text_28, this._el_29, _text_30, _text_31, _text_32], []);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
@@ -25714,11 +26484,8 @@
         this.detectViewChildrenChanges$0();
         if (!$.AppViewUtils_throwOnChanges) {
           this._currentDebugContext = new Z.DebugContext(this, 3, 2, 0, [null]);
-          if (this._cdState === C.ChangeDetectorState_0) {
-            var t1 = this._TabDirective_3_3;
-            t1.toString;
-            $.$get$context0().callMethod$2("$", [t1.element.get$nativeElement()]).callMethod$2("children", [".tabular.menu .item"]).callMethod$2(t1.defaultMethod, []);
-          }
+          if (this._cdState === C.ChangeDetectorState_0)
+            this._TabDirective_3_3._TabDirective$_init$0();
         }
       },
       $asDebugAppView: function() {
@@ -26393,7 +27160,6 @@
   C.Type_SanitizationService_bRS = H.createRuntimeType("SanitizationService");
   C.List_Type_SanitizationService_bRS = Isolate.makeConstantList([C.Type_SanitizationService_bRS]);
   C.List_JYE = Isolate.makeConstantList([C.List_Type_RootRenderer_0, C.List_CFJ, C.List_Type_SanitizationService_bRS]);
-  C.List_JmU = Isolate.makeConstantList([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.OpaqueToken_DocumentToken = new S.OpaqueToken("DocumentToken");
   C.Inject_OpaqueToken_DocumentToken = new B.Inject(C.OpaqueToken_DocumentToken);
   C.List_gSn = Isolate.makeConstantList([C.Type_dynamic_0Rz, C.Inject_OpaqueToken_DocumentToken]);
@@ -26509,6 +27275,7 @@
   C.List_iyO = Isolate.makeConstantList([null, null, null, C.StaticNodeDebugInfo_owA, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.List_liq = Isolate.makeConstantList([C.Type_ControlValueAccessor_6pl, C.Type_OnDestroy_AWG, C.Type_OnInit_MMm]);
   C.List_mZ3 = Isolate.makeConstantList([C.Type_AfterViewInit_UKj, C.Type_ControlValueAccessor_6pl]);
+  C.List_mqF = Isolate.makeConstantList([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, C.StaticNodeDebugInfo_Qs5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, C.StaticNodeDebugInfo_eTF, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_JCa, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, C.StaticNodeDebugInfo_owA, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.List_qVK = Isolate.makeConstantList([C.List_Type_Renderer_eoZ, C.List_Type_ElementRef_kOG]);
   C.List_s7p = Isolate.makeConstantList([C.Type_DoCheck_mtl, C.Type_OnDestroy_AWG]);
   C.Type_HammerGestureConfig_gc6 = H.createRuntimeType("HammerGestureConfig");
