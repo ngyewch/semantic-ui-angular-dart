@@ -4,6 +4,11 @@
 
 [Demo](https://ngyewch.github.io/semantic-ui-angular-dart/)
 
+[Pub](https://pub.dartlang.org/packages/semantic_ui_angular_dart)
+
+[Dartdocs](https://www.dartdocs.org/documentation/semantic_ui_angular_dart/0.1.4/)
+
+
 ## Setup
 
 pubspec.yaml:
