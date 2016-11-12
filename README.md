@@ -2,6 +2,8 @@
 
 [Semantic UI](http://semantic-ui.com/) for [Angular Dart](https://angular.io/dart).
 
+[Demo](https://ngyewch.github.io/semantic-ui-angular-dart/)
+
 ## Setup
 
 pubspec.yaml:
