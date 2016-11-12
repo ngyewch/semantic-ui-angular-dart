@@ -40,8 +40,7 @@ const List<StaticNodeDebugInfo> nodeDebugInfos_HomeComponent0 = const [
   null,null,null,null,null,const StaticNodeDebugInfo(const [import1.RouterLink],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null
+  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
 ]
 ;
 RenderComponentType renderType_HomeComponent;
@@ -78,7 +77,6 @@ class ViewHomeComponent0 extends DebugAppView<import4.HomeComponent> {
   Element _el_73;
   Element _el_76;
   Element _el_79;
-  Element _el_82;
   var _arr_0;
   var _expr_1 = uninitialized;
   var _expr_2 = uninitialized;
@@ -342,36 +340,27 @@ class ViewHomeComponent0 extends DebugAppView<import4.HomeComponent> {
     _el_76 = document.createElement('li');
     _el_41.append(_el_76);
     dbgElm(_el_76,76,43,8);
-    Text _text_77 = new Text('Sidebar');
+    Text _text_77 = new Text('Sticky');
     _el_76.append(_text_77);
     dbgElm(_text_77,77,43,12);
     Text _text_78 = new Text('\n        ');
     _el_41.append(_text_78);
-    dbgElm(_text_78,78,43,24);
+    dbgElm(_text_78,78,43,23);
     _el_79 = document.createElement('li');
     _el_41.append(_el_79);
     dbgElm(_el_79,79,44,8);
-    Text _text_80 = new Text('Sticky');
+    Text _text_80 = new Text('Transition');
     _el_79.append(_text_80);
     dbgElm(_text_80,80,44,12);
-    Text _text_81 = new Text('\n        ');
+    Text _text_81 = new Text('\n    ');
     _el_41.append(_text_81);
-    dbgElm(_text_81,81,44,23);
-    _el_82 = document.createElement('li');
-    _el_41.append(_el_82);
-    dbgElm(_el_82,82,45,8);
-    Text _text_83 = new Text('Transition');
-    _el_82.append(_text_83);
-    dbgElm(_text_83,83,45,12);
-    Text _text_84 = new Text('\n    ');
-    _el_41.append(_text_84);
-    dbgElm(_text_84,84,45,27);
-    Text _text_85 = new Text('\n');
-    _el_6.append(_text_85);
-    dbgElm(_text_85,85,46,9);
-    Text _text_86 = new Text('\n');
-    parentRenderNode.append(_text_86);
-    dbgElm(_text_86,86,47,6);
+    dbgElm(_text_81,81,44,27);
+    Text _text_82 = new Text('\n');
+    _el_6.append(_text_82);
+    dbgElm(_text_82,82,45,9);
+    Text _text_83 = new Text('\n');
+    parentRenderNode.append(_text_83);
+    dbgElm(_text_83,83,46,6);
     renderer.listen(_el_15,'click',evt(_handle_click_15_0));
     this._arr_0 = import12.pureProxy1((p0) {
       return [p0];
@@ -397,7 +386,7 @@ class ViewHomeComponent0 extends DebugAppView<import4.HomeComponent> {
       _text_51,_el_52,_text_53,_text_54,_el_55,_text_56,_text_57,_el_58,_text_59,_text_60,
       _el_61,_text_62,_text_63,_el_64,_text_65,_text_66,_el_67,_text_68,_text_69,_el_70,
       _text_71,_text_72,_el_73,_text_74,_text_75,_el_76,_text_77,_text_78,_el_79,_text_80,
-      _text_81,_el_82,_text_83,_text_84,_text_85,_text_86
+      _text_81,_text_82,_text_83
     ]
     ,[]);
     return null;

@@ -23223,9 +23223,9 @@
       R.initReflector10();
     },
     ViewAppComponent0: {
-      "^": "DebugAppView;_AppComponent_template$_el_0,_SidebarDirective_0_3,_AppComponent_template$_el_2,_RouterLink_2_3,_AppComponent_template$_el_5,_RouterLink_5_3,_AppComponent_template$_el_8,_RouterLink_8_3,_AppComponent_template$_el_11,_RouterLink_11_3,_AppComponent_template$_el_14,_RouterLink_14_3,_el_18,_el_20,_AppComponent_template$_el_23,_AppComponent_template$_el_25,_AppComponent_template$_el_27,_el_30,_AppComponent_template$_el_33,_appEl_33,_RouterOutlet_33_5,_AppComponent_template$_arr_0,_AppComponent_template$_expr_2,_AppComponent_template$_expr_3,_AppComponent_template$_expr_4,_AppComponent_template$_arr_1,_AppComponent_template$_expr_6,_AppComponent_template$_expr_7,_AppComponent_template$_expr_8,_AppComponent_template$_arr_2,_AppComponent_template$_expr_10,_AppComponent_template$_expr_11,_expr_12,_AppComponent_template$_arr_3,_AppComponent_template$_expr_14,_AppComponent_template$_expr_15,_expr_16,_arr_4,_expr_18,_expr_19,_expr_20,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_AppComponent_template$_el_0,_SidebarDirective_0_3,_AppComponent_template$_el_2,_RouterLink_2_3,_AppComponent_template$_el_5,_RouterLink_5_3,_AppComponent_template$_el_8,_RouterLink_8_3,_AppComponent_template$_el_11,_RouterLink_11_3,_AppComponent_template$_el_14,_RouterLink_14_3,_el_18,_el_20,_AppComponent_template$_el_23,_AppComponent_template$_el_25,_AppComponent_template$_el_27,_AppComponent_template$_el_29,_el_32,_RouterLink_32_3,_el_34,_AppComponent_template$_el_38,_el_40,_AppComponent_template$_el_42,_AppComponent_template$_el_47,_appEl_47,_RouterOutlet_47_5,_AppComponent_template$_arr_0,_AppComponent_template$_expr_2,_AppComponent_template$_expr_3,_AppComponent_template$_expr_4,_AppComponent_template$_arr_1,_AppComponent_template$_expr_6,_AppComponent_template$_expr_7,_AppComponent_template$_expr_8,_AppComponent_template$_arr_2,_AppComponent_template$_expr_10,_AppComponent_template$_expr_11,_expr_12,_AppComponent_template$_arr_3,_AppComponent_template$_expr_14,_AppComponent_template$_expr_15,_expr_16,_arr_4,_expr_18,_expr_19,_expr_20,_arr_5,_expr_23,_expr_24,_expr_25,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
-        var parentRenderNode, t1, t2, t3, _text_1, _text_3, _text_4, _text_6, _text_7, _text_9, _text_10, _text_12, _text_13, _text_15, _text_16, _text_17, _text_19, _text_21, _text_22, _text_24, _text_26, _text_28, _text_29, _text_31, _text_32, _text_34, _text_35, subscription_0;
+        var parentRenderNode, t1, t2, t3, _text_1, _text_3, _text_4, _text_6, _text_7, _text_9, _text_10, _text_12, _text_13, _text_15, _text_16, _text_17, _text_19, _text_21, _text_22, _text_24, _text_26, _text_28, _text_30, _text_31, _text_33, _text_35, _text_36, _text_37, _text_39, _text_41, _text_43, _text_44, _text_45, _text_46, _text_48, _text_49, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
         t1 = document;
         t1 = t1.createElement("div");
@@ -23350,56 +23350,120 @@
         this._AppComponent_template$_el_23.appendChild(_text_24);
         this.dbgElm$4(_text_24, 24, 20, 30);
         t1 = document;
-        t1 = t1.createElement("button");
+        t1 = t1.createElement("div");
         this._AppComponent_template$_el_25 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
         this._AppComponent_template$_el_23.appendChild(this._AppComponent_template$_el_25);
         this.dbgElm$4(this._AppComponent_template$_el_25, 25, 21, 8);
-        this.setAttr$3(this._AppComponent_template$_el_25, "class", "ui basic icon button");
+        this.setAttr$3(this._AppComponent_template$_el_25, "class", "ui secondary menu");
         _text_26 = document.createTextNode("\n            ");
         this._AppComponent_template$_el_25.appendChild(_text_26);
-        this.dbgElm$4(_text_26, 26, 21, 86);
+        this.dbgElm$4(_text_26, 26, 21, 39);
         t1 = document;
-        t1 = t1.createElement("i");
+        t1 = t1.createElement("a");
         this._AppComponent_template$_el_27 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
         this._AppComponent_template$_el_25.appendChild(this._AppComponent_template$_el_27);
         this.dbgElm$4(this._AppComponent_template$_el_27, 27, 22, 12);
-        this.setAttr$3(this._AppComponent_template$_el_27, "class", "large sidebar icon");
-        _text_28 = document.createTextNode("\n        ");
-        this._AppComponent_template$_el_25.appendChild(_text_28);
-        this.dbgElm$4(_text_28, 28, 22, 46);
-        _text_29 = document.createTextNode("\n        ");
-        this._AppComponent_template$_el_23.appendChild(_text_29);
-        this.dbgElm$4(_text_29, 29, 23, 17);
+        this.setAttr$3(this._AppComponent_template$_el_27, "class", "item");
+        _text_28 = document.createTextNode("\n                ");
+        this._AppComponent_template$_el_27.appendChild(_text_28);
+        this.dbgElm$4(_text_28, 28, 22, 69);
         t1 = document;
-        t1 = t1.createElement("h1");
-        this._el_30 = t1;
+        t1 = t1.createElement("i");
+        this._AppComponent_template$_el_29 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
-        this._AppComponent_template$_el_23.appendChild(this._el_30);
-        this.dbgElm$4(this._el_30, 30, 24, 8);
-        this.setAttr$3(this._el_30, "class", "ui header");
-        _text_31 = document.createTextNode("\n            Semantic UI for Angular Dart\n        ");
-        this._el_30.appendChild(_text_31);
-        this.dbgElm$4(_text_31, 31, 24, 30);
-        _text_32 = document.createTextNode("\n\n        ");
-        this._AppComponent_template$_el_23.appendChild(_text_32);
-        this.dbgElm$4(_text_32, 32, 26, 13);
+        this._AppComponent_template$_el_27.appendChild(this._AppComponent_template$_el_29);
+        this.dbgElm$4(this._AppComponent_template$_el_29, 29, 23, 16);
+        this.setAttr$3(this._AppComponent_template$_el_29, "class", "large sidebar icon");
+        _text_30 = document.createTextNode("\n            ");
+        this._AppComponent_template$_el_27.appendChild(_text_30);
+        this.dbgElm$4(_text_30, 30, 23, 50);
+        _text_31 = document.createTextNode("\n            ");
+        this._AppComponent_template$_el_25.appendChild(_text_31);
+        this.dbgElm$4(_text_31, 31, 24, 16);
+        t1 = document;
+        t1 = t1.createElement("a");
+        this._el_32 = t1;
+        t1.setAttribute(this.componentType._contentAttr, "");
+        this._AppComponent_template$_el_25.appendChild(this._el_32);
+        this.dbgElm$4(this._el_32, 32, 25, 12);
+        this.setAttr$3(this._el_32, "class", "item");
+        this._RouterLink_32_3 = V.RouterLink$(t2.$get$1(C.Type_Router_yx3), t2.$get$1(C.Type_Location_ckm));
+        _text_33 = document.createTextNode("\n                ");
+        this._el_32.appendChild(_text_33);
+        this.dbgElm$4(_text_33, 33, 25, 52);
+        t1 = document;
+        t1 = t1.createElement("span");
+        this._el_34 = t1;
+        t1.setAttribute(this.componentType._contentAttr, "");
+        this._el_32.appendChild(this._el_34);
+        this.dbgElm$4(this._el_34, 34, 26, 16);
+        this.setAttr$3(this._el_34, "class", "ui header");
+        _text_35 = document.createTextNode("\n                    Semantic UI for Angular Dart\n                ");
+        this._el_34.appendChild(_text_35);
+        this.dbgElm$4(_text_35, 35, 26, 40);
+        _text_36 = document.createTextNode("\n            ");
+        this._el_32.appendChild(_text_36);
+        this.dbgElm$4(_text_36, 36, 28, 23);
+        _text_37 = document.createTextNode("\n            ");
+        this._AppComponent_template$_el_25.appendChild(_text_37);
+        this.dbgElm$4(_text_37, 37, 29, 16);
+        t1 = document;
+        t1 = t1.createElement("div");
+        this._AppComponent_template$_el_38 = t1;
+        t1.setAttribute(this.componentType._contentAttr, "");
+        this._AppComponent_template$_el_25.appendChild(this._AppComponent_template$_el_38);
+        this.dbgElm$4(this._AppComponent_template$_el_38, 38, 30, 12);
+        this.setAttr$3(this._AppComponent_template$_el_38, "class", "right menu");
+        _text_39 = document.createTextNode("\n                ");
+        this._AppComponent_template$_el_38.appendChild(_text_39);
+        this.dbgElm$4(_text_39, 39, 30, 36);
+        t1 = document;
+        t1 = t1.createElement("a");
+        this._el_40 = t1;
+        t1.setAttribute(this.componentType._contentAttr, "");
+        this._AppComponent_template$_el_38.appendChild(this._el_40);
+        this.dbgElm$4(this._el_40, 40, 31, 16);
+        this.setAttr$3(this._el_40, "class", "ui item");
+        this.setAttr$3(this._el_40, "href", "https://github.com/ngyewch/semantic-ui-angular-dart");
+        _text_41 = document.createTextNode("\n                    ");
+        this._el_40.appendChild(_text_41);
+        this.dbgElm$4(_text_41, 41, 31, 94);
+        t1 = document;
+        t1 = t1.createElement("i");
+        this._AppComponent_template$_el_42 = t1;
+        t1.setAttribute(this.componentType._contentAttr, "");
+        this._el_40.appendChild(this._AppComponent_template$_el_42);
+        this.dbgElm$4(this._AppComponent_template$_el_42, 42, 32, 20);
+        this.setAttr$3(this._AppComponent_template$_el_42, "class", "github icon");
+        _text_43 = document.createTextNode(" Github\n                ");
+        this._el_40.appendChild(_text_43);
+        this.dbgElm$4(_text_43, 43, 32, 47);
+        _text_44 = document.createTextNode("\n            ");
+        this._AppComponent_template$_el_38.appendChild(_text_44);
+        this.dbgElm$4(_text_44, 44, 33, 20);
+        _text_45 = document.createTextNode("\n        ");
+        this._AppComponent_template$_el_25.appendChild(_text_45);
+        this.dbgElm$4(_text_45, 45, 34, 18);
+        _text_46 = document.createTextNode("\n\n        ");
+        this._AppComponent_template$_el_23.appendChild(_text_46);
+        this.dbgElm$4(_text_46, 46, 35, 14);
         t1 = document;
         t1 = t1.createElement("router-outlet");
-        this._AppComponent_template$_el_33 = t1;
+        this._AppComponent_template$_el_47 = t1;
         t1.setAttribute(this.componentType._contentAttr, "");
-        this._AppComponent_template$_el_23.appendChild(this._AppComponent_template$_el_33);
-        this.dbgElm$4(this._AppComponent_template$_el_33, 33, 28, 8);
-        t1 = new F.AppElement(33, 23, this, this._AppComponent_template$_el_33, null, null, null, null);
-        this._appEl_33 = t1;
-        this._RouterOutlet_33_5 = U.RouterOutlet$(new R.ViewContainerRef(t1), t2.$get$1(C.Type_ComponentResolver_r9K), t2.$get$1(C.Type_Router_yx3), null);
-        _text_34 = document.createTextNode("\n    ");
-        this._AppComponent_template$_el_23.appendChild(_text_34);
-        this.dbgElm$4(_text_34, 34, 28, 39);
-        _text_35 = document.createTextNode("\n");
-        this._el_18.appendChild(_text_35);
-        this.dbgElm$4(_text_35, 35, 29, 10);
+        this._AppComponent_template$_el_23.appendChild(this._AppComponent_template$_el_47);
+        this.dbgElm$4(this._AppComponent_template$_el_47, 47, 37, 8);
+        t1 = new F.AppElement(47, 23, this, this._AppComponent_template$_el_47, null, null, null, null);
+        this._appEl_47 = t1;
+        this._RouterOutlet_47_5 = U.RouterOutlet$(new R.ViewContainerRef(t1), t2.$get$1(C.Type_ComponentResolver_r9K), t2.$get$1(C.Type_Router_yx3), null);
+        _text_48 = document.createTextNode("\n    ");
+        this._AppComponent_template$_el_23.appendChild(_text_48);
+        this.dbgElm$4(_text_48, 48, 37, 39);
+        _text_49 = document.createTextNode("\n");
+        this._el_18.appendChild(_text_49);
+        this.dbgElm$4(_text_49, 49, 38, 10);
         t2 = this.renderer;
         t1 = this._AppComponent_template$_el_0;
         t3 = this.evt$1(this.get$_handle_semantic_ui_sidebar_0_0());
@@ -23434,10 +23498,15 @@
         J.addEventListener$3$x(t1._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t2));
         this._arr_4 = Q.pureProxy1(new V.ViewAppComponent0_createInternal_closure3());
         t2 = this.renderer;
-        t3 = this._AppComponent_template$_el_25;
-        t1 = this.evt$1(this.get$_handle_click_25_0());
+        t3 = this._AppComponent_template$_el_27;
+        t1 = this.evt$1(this.get$_AppComponent_template$_handle_click_27_0());
         J.addEventListener$3$x(t2._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t1));
-        this.init$3([], [this._AppComponent_template$_el_0, _text_1, this._AppComponent_template$_el_2, _text_3, _text_4, this._AppComponent_template$_el_5, _text_6, _text_7, this._AppComponent_template$_el_8, _text_9, _text_10, this._AppComponent_template$_el_11, _text_12, _text_13, this._AppComponent_template$_el_14, _text_15, _text_16, _text_17, this._el_18, _text_19, this._el_20, _text_21, _text_22, this._AppComponent_template$_el_23, _text_24, this._AppComponent_template$_el_25, _text_26, this._AppComponent_template$_el_27, _text_28, _text_29, this._el_30, _text_31, _text_32, this._AppComponent_template$_el_33, _text_34, _text_35], [subscription_0]);
+        t1 = this.renderer;
+        t3 = this._el_32;
+        t2 = this.evt$1(this.get$_handle_click_32_0());
+        J.addEventListener$3$x(t1._rootRenderer.eventManager, t3, "click", X.decoratePreventDefault(t2));
+        this._arr_5 = Q.pureProxy1(new V.ViewAppComponent0_createInternal_closure4());
+        this.init$3([], [this._AppComponent_template$_el_0, _text_1, this._AppComponent_template$_el_2, _text_3, _text_4, this._AppComponent_template$_el_5, _text_6, _text_7, this._AppComponent_template$_el_8, _text_9, _text_10, this._AppComponent_template$_el_11, _text_12, _text_13, this._AppComponent_template$_el_14, _text_15, _text_16, _text_17, this._el_18, _text_19, this._el_20, _text_21, _text_22, this._AppComponent_template$_el_23, _text_24, this._AppComponent_template$_el_25, _text_26, this._AppComponent_template$_el_27, _text_28, this._AppComponent_template$_el_29, _text_30, _text_31, this._el_32, _text_33, this._el_34, _text_35, _text_36, _text_37, this._AppComponent_template$_el_38, _text_39, this._el_40, _text_41, this._AppComponent_template$_el_42, _text_43, _text_44, _text_45, _text_46, this._AppComponent_template$_el_47, _text_48, _text_49], [subscription_0]);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
@@ -23478,25 +23547,33 @@
         if (t1) {
           if (typeof requestNodeIndex !== "number")
             return H.iae(requestNodeIndex);
-          t1 = 14 <= requestNodeIndex && requestNodeIndex <= 15;
+          t2 = 14 <= requestNodeIndex && requestNodeIndex <= 15;
         } else
-          t1 = false;
-        if (t1)
+          t2 = false;
+        if (t2)
           return this._RouterLink_14_3;
         if (token === C.Type_SidebarDirective_Qs9) {
           if (typeof requestNodeIndex !== "number")
             return H.iae(requestNodeIndex);
-          t1 = 0 <= requestNodeIndex && requestNodeIndex <= 16;
+          t2 = 0 <= requestNodeIndex && requestNodeIndex <= 16;
+        } else
+          t2 = false;
+        if (t2)
+          return this._SidebarDirective_0_3;
+        if (t1) {
+          if (typeof requestNodeIndex !== "number")
+            return H.iae(requestNodeIndex);
+          t1 = 32 <= requestNodeIndex && requestNodeIndex <= 36;
         } else
           t1 = false;
         if (t1)
-          return this._SidebarDirective_0_3;
-        if (token === C.Type_RouterOutlet_B8J && 33 === requestNodeIndex)
-          return this._RouterOutlet_33_5;
+          return this._RouterLink_32_3;
+        if (token === C.Type_RouterOutlet_B8J && 47 === requestNodeIndex)
+          return this._RouterOutlet_47_5;
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var t1, currVal_2, t2, currVal_6, currVal_10, currVal_14, currVal_18, t3, currVal_3, currVal_4, currVal_7, currVal_8, currVal_11, currVal_12, currVal_15, currVal_16, currVal_19, currVal_20;
+        var t1, currVal_2, t2, currVal_6, currVal_10, currVal_14, currVal_18, currVal_23, t3, currVal_3, currVal_4, currVal_7, currVal_8, currVal_11, currVal_12, currVal_15, currVal_16, currVal_19, currVal_20, currVal_24, currVal_25;
         t1 = [null];
         this._currentDebugContext = new Z.DebugContext(this, 2, 1, 20, t1);
         currVal_2 = this._AppComponent_template$_arr_0.call$1("Home");
@@ -23537,6 +23614,14 @@
           t2._routeParams = currVal_18;
           t2._updateLink$0();
           this._expr_18 = currVal_18;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 32, 25, 28, t1);
+        currVal_23 = this._arr_5.call$1("Home");
+        if (Q.checkBinding(this._expr_23, currVal_23)) {
+          t2 = this._RouterLink_32_3;
+          t2._routeParams = currVal_23;
+          t2._updateLink$0();
+          this._expr_23 = currVal_23;
         }
         this.detectContentChildrenChanges$0();
         if (!$.AppViewUtils_throwOnChanges) {
@@ -23617,15 +23702,29 @@
         this._currentDebugContext = new Z.DebugContext(this, 14, 13, 4, t1);
         currVal_20 = this._RouterLink_14_3.visibleHref;
         if (Q.checkBinding(this._expr_20, currVal_20)) {
-          t1 = this._AppComponent_template$_el_14;
-          this.setAttr$3(t1, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20)));
+          t2 = this._AppComponent_template$_el_14;
+          this.setAttr$3(t2, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_20)));
           this._expr_20 = currVal_20;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 32, 25, 12, t1);
+        t2 = this._RouterLink_32_3;
+        currVal_24 = t2._router.isRouteActive$1(t2._navigationInstruction);
+        if (Q.checkBinding(this._expr_24, currVal_24)) {
+          this.updateClass$3(this._el_32, "router-link-active", currVal_24);
+          this._expr_24 = currVal_24;
+        }
+        this._currentDebugContext = new Z.DebugContext(this, 32, 25, 12, t1);
+        currVal_25 = this._RouterLink_32_3.visibleHref;
+        if (Q.checkBinding(this._expr_25, currVal_25)) {
+          t1 = this._el_32;
+          this.setAttr$3(t1, "href", $.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_25) == null ? null : J.toString$0$($.appViewUtils.get$sanitizer().sanitizeUrl$1(currVal_25)));
+          this._expr_25 = currVal_25;
         }
         this.detectViewChildrenChanges$0();
       },
       destroyInternal$0: function() {
-        this._currentDebugContext = new Z.DebugContext(this, 33, 28, 8, [null]);
-        var t1 = this._RouterOutlet_33_5;
+        this._currentDebugContext = new Z.DebugContext(this, 47, 37, 8, [null]);
+        var t1 = this._RouterOutlet_47_5;
         t1._parentRouter.unregisterPrimaryOutlet$1(t1);
       },
       _handle_semantic_ui_sidebar_0_0$1: [function($$event) {
@@ -23669,12 +23768,19 @@
         pd_0 = this._RouterLink_14_3.onClick$0(0);
         return pd_0;
       }, "call$1", "get$_handle_click_14_0", 2, 0, 3],
-      _handle_click_25_0$1: [function($$event) {
+      _AppComponent_template$_handle_click_27_0$1: [function($$event) {
         this.markPathToRootAsCheckOnce$0();
-        this._currentDebugContext = new Z.DebugContext(this, 25, 21, 16, [null]);
+        this._currentDebugContext = new Z.DebugContext(this, 27, 22, 28, [null]);
         this.ctx.onToggleSidebarButtonClicked$0();
         return true;
-      }, "call$1", "get$_handle_click_25_0", 2, 0, 3],
+      }, "call$1", "get$_AppComponent_template$_handle_click_27_0", 2, 0, 3],
+      _handle_click_32_0$1: [function($$event) {
+        var pd_0;
+        this.markPathToRootAsCheckOnce$0();
+        this._currentDebugContext = new Z.DebugContext(this, 32, 25, 12, [null]);
+        pd_0 = this._RouterLink_32_3.onClick$0(0);
+        return pd_0;
+      }, "call$1", "get$_handle_click_32_0", 2, 0, 3],
       $asDebugAppView: function() {
         return [D.AppComponent];
       },
@@ -23712,6 +23818,12 @@
         return [p0];
       }
     },
+    ViewAppComponent0_createInternal_closure4: {
+      "^": "Closure:0;",
+      call$1: function(p0) {
+        return [p0];
+      }
+    },
     ViewAppComponentHost0: {
       "^": "DebugAppView;_AppComponent_template$_el_0,_AppComponent_template$_appEl_0,_AppComponent_0_4,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
@@ -23730,7 +23842,7 @@
         }
         t4 = $.uninitialized;
         t5 = P.LinkedHashMap__makeEmpty();
-        compView_0 = new V.ViewAppComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_ksx, null, C.Type_ViewAppComponent0_wMy, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
+        compView_0 = new V.ViewAppComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_2Ys, null, C.Type_ViewAppComponent0_wMy, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
         compView_0.AppView$7(C.Type_ViewAppComponent0_wMy, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, D.AppComponent);
         t2 = new D.AppComponent(null);
         this._AppComponent_0_4 = t2;
@@ -24453,9 +24565,9 @@
       U.initReflector3();
     },
     ViewHomeComponent0: {
-      "^": "DebugAppView;_HomeComponent_template$_el_0,_el_2,_el_6,_el_8,_HomeComponent_template$_el_11,_el_13,_HomeComponent_template$_el_15,_RouterLink_15_3,_HomeComponent_template$_el_19,_el_21,_RouterLink_21_3,_el_25,_el_27,_RouterLink_27_3,_el_31,_el_33,_RouterLink_33_3,_el_38,_el_41,_el_43,_el_46,_el_49,_el_52,_el_55,_el_58,_el_61,_el_64,_el_67,_el_70,_el_73,_el_76,_el_79,_el_82,_arr_0,_HomeComponent_template$_expr_1,_HomeComponent_template$_expr_2,_HomeComponent_template$_expr_3,_arr_1,_HomeComponent_template$_expr_5,_HomeComponent_template$_expr_6,_HomeComponent_template$_expr_7,_arr_2,_HomeComponent_template$_expr_9,_expr_10,_expr_11,_arr_3,_expr_13,_expr_14,_expr_15,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
+      "^": "DebugAppView;_HomeComponent_template$_el_0,_el_2,_el_6,_el_8,_HomeComponent_template$_el_11,_el_13,_HomeComponent_template$_el_15,_RouterLink_15_3,_HomeComponent_template$_el_19,_el_21,_RouterLink_21_3,_el_25,_el_27,_RouterLink_27_3,_el_31,_el_33,_RouterLink_33_3,_el_38,_el_41,_el_43,_el_46,_el_49,_el_52,_el_55,_el_58,_el_61,_el_64,_el_67,_el_70,_el_73,_el_76,_el_79,_arr_0,_HomeComponent_template$_expr_1,_HomeComponent_template$_expr_2,_HomeComponent_template$_expr_3,_arr_1,_HomeComponent_template$_expr_5,_HomeComponent_template$_expr_6,_HomeComponent_template$_expr_7,_arr_2,_HomeComponent_template$_expr_9,_expr_10,_expr_11,_arr_3,_expr_13,_expr_14,_expr_15,staticNodeDebugInfos,_currentDebugContext,clazz,componentType,type,locals,parentInjector,declarationAppElement,_cdMode,_skipChangeDetection,ref,rootNodesOrAppElements,allNodes,_onDestroyCallbacks,subscriptions,contentChildren,viewChildren,renderParent,viewContainerElement,_cdState,ctx,projectableNodes,destroyed,renderer,_hasExternalHostElement",
       createInternal$1: function(rootSelector) {
-        var parentRenderNode, t1, t2, _text_1, _text_3, _text_4, _text_5, _text_7, _text_9, _text_10, _text_12, _text_14, _text_16, _text_17, _text_18, t3, _text_20, _text_22, _text_23, _text_24, _text_26, _text_28, _text_29, _text_30, _text_32, _text_34, _text_35, _text_36, _text_37, _text_39, _text_40, _text_42, _text_44, _text_45, _text_47, _text_48, _text_50, _text_51, _text_53, _text_54, _text_56, _text_57, _text_59, _text_60, _text_62, _text_63, _text_65, _text_66, _text_68, _text_69, _text_71, _text_72, _text_74, _text_75, _text_77, _text_78, _text_80, _text_81, _text_83, _text_84, _text_85, _text_86;
+        var parentRenderNode, t1, t2, _text_1, _text_3, _text_4, _text_5, _text_7, _text_9, _text_10, _text_12, _text_14, _text_16, _text_17, _text_18, t3, _text_20, _text_22, _text_23, _text_24, _text_26, _text_28, _text_29, _text_30, _text_32, _text_34, _text_35, _text_36, _text_37, _text_39, _text_40, _text_42, _text_44, _text_45, _text_47, _text_48, _text_50, _text_51, _text_53, _text_54, _text_56, _text_57, _text_59, _text_60, _text_62, _text_63, _text_65, _text_66, _text_68, _text_69, _text_71, _text_72, _text_74, _text_75, _text_77, _text_78, _text_80, _text_81, _text_82, _text_83;
         parentRenderNode = this.initViewRoot$1(this.declarationAppElement.nativeElement);
         t1 = document;
         t1 = t1.createElement("div");
@@ -24757,40 +24869,29 @@
         this._el_76 = t1;
         this._el_41.appendChild(t1);
         this.dbgElm$4(this._el_76, 76, 43, 8);
-        _text_77 = document.createTextNode("Sidebar");
+        _text_77 = document.createTextNode("Sticky");
         this._el_76.appendChild(_text_77);
         this.dbgElm$4(_text_77, 77, 43, 12);
         _text_78 = document.createTextNode("\n        ");
         this._el_41.appendChild(_text_78);
-        this.dbgElm$4(_text_78, 78, 43, 24);
+        this.dbgElm$4(_text_78, 78, 43, 23);
         t1 = document;
         t1 = t1.createElement("li");
         this._el_79 = t1;
         this._el_41.appendChild(t1);
         this.dbgElm$4(this._el_79, 79, 44, 8);
-        _text_80 = document.createTextNode("Sticky");
+        _text_80 = document.createTextNode("Transition");
         this._el_79.appendChild(_text_80);
         this.dbgElm$4(_text_80, 80, 44, 12);
-        _text_81 = document.createTextNode("\n        ");
+        _text_81 = document.createTextNode("\n    ");
         this._el_41.appendChild(_text_81);
-        this.dbgElm$4(_text_81, 81, 44, 23);
-        t1 = document;
-        t1 = t1.createElement("li");
-        this._el_82 = t1;
-        this._el_41.appendChild(t1);
-        this.dbgElm$4(this._el_82, 82, 45, 8);
-        _text_83 = document.createTextNode("Transition");
-        this._el_82.appendChild(_text_83);
-        this.dbgElm$4(_text_83, 83, 45, 12);
-        _text_84 = document.createTextNode("\n    ");
-        this._el_41.appendChild(_text_84);
-        this.dbgElm$4(_text_84, 84, 45, 27);
-        _text_85 = document.createTextNode("\n");
-        this._el_6.appendChild(_text_85);
-        this.dbgElm$4(_text_85, 85, 46, 9);
-        _text_86 = document.createTextNode("\n");
-        t2.append$1(parentRenderNode, _text_86);
-        this.dbgElm$4(_text_86, 86, 47, 6);
+        this.dbgElm$4(_text_81, 81, 44, 27);
+        _text_82 = document.createTextNode("\n");
+        this._el_6.appendChild(_text_82);
+        this.dbgElm$4(_text_82, 82, 45, 9);
+        _text_83 = document.createTextNode("\n");
+        t2.append$1(parentRenderNode, _text_83);
+        this.dbgElm$4(_text_83, 83, 46, 6);
         t2 = this.renderer;
         t1 = this._HomeComponent_template$_el_15;
         t3 = this.evt$1(this.get$_handle_click_15_0());
@@ -24811,7 +24912,7 @@
         t2 = this.evt$1(this.get$_handle_click_33_0());
         J.addEventListener$3$x(t3._rootRenderer.eventManager, t1, "click", X.decoratePreventDefault(t2));
         this._arr_3 = Q.pureProxy1(new B.ViewHomeComponent0_createInternal_closure2());
-        this.init$3([], [this._HomeComponent_template$_el_0, _text_1, this._el_2, _text_3, _text_4, _text_5, this._el_6, _text_7, this._el_8, _text_9, _text_10, this._HomeComponent_template$_el_11, _text_12, this._el_13, _text_14, this._HomeComponent_template$_el_15, _text_16, _text_17, _text_18, this._HomeComponent_template$_el_19, _text_20, this._el_21, _text_22, _text_23, _text_24, this._el_25, _text_26, this._el_27, _text_28, _text_29, _text_30, this._el_31, _text_32, this._el_33, _text_34, _text_35, _text_36, _text_37, this._el_38, _text_39, _text_40, this._el_41, _text_42, this._el_43, _text_44, _text_45, this._el_46, _text_47, _text_48, this._el_49, _text_50, _text_51, this._el_52, _text_53, _text_54, this._el_55, _text_56, _text_57, this._el_58, _text_59, _text_60, this._el_61, _text_62, _text_63, this._el_64, _text_65, _text_66, this._el_67, _text_68, _text_69, this._el_70, _text_71, _text_72, this._el_73, _text_74, _text_75, this._el_76, _text_77, _text_78, this._el_79, _text_80, _text_81, this._el_82, _text_83, _text_84, _text_85, _text_86], []);
+        this.init$3([], [this._HomeComponent_template$_el_0, _text_1, this._el_2, _text_3, _text_4, _text_5, this._el_6, _text_7, this._el_8, _text_9, _text_10, this._HomeComponent_template$_el_11, _text_12, this._el_13, _text_14, this._HomeComponent_template$_el_15, _text_16, _text_17, _text_18, this._HomeComponent_template$_el_19, _text_20, this._el_21, _text_22, _text_23, _text_24, this._el_25, _text_26, this._el_27, _text_28, _text_29, _text_30, this._el_31, _text_32, this._el_33, _text_34, _text_35, _text_36, _text_37, this._el_38, _text_39, _text_40, this._el_41, _text_42, this._el_43, _text_44, _text_45, this._el_46, _text_47, _text_48, this._el_49, _text_50, _text_51, this._el_52, _text_53, _text_54, this._el_55, _text_56, _text_57, this._el_58, _text_59, _text_60, this._el_61, _text_62, _text_63, this._el_64, _text_65, _text_66, this._el_67, _text_68, _text_69, this._el_70, _text_71, _text_72, this._el_73, _text_74, _text_75, this._el_76, _text_77, _text_78, this._el_79, _text_80, _text_81, _text_82, _text_83], []);
         return;
       },
       injectorGetInternal$3: function(token, requestNodeIndex, notFoundResult) {
@@ -25022,7 +25123,7 @@
         }
         t4 = $.uninitialized;
         t5 = P.LinkedHashMap__makeEmpty();
-        compView_0 = new B.ViewHomeComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_4AN, null, C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
+        compView_0 = new B.ViewHomeComponent0(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, null, t4, t4, t4, C.List_JmU, null, C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, false, null, null, null, H.setRuntimeTypeInfo([], [{func: 1, v: true}]), null, [], [], null, null, C.ChangeDetectorState_0, null, null, false, null, null);
         compView_0.AppView$7(C.Type_ViewHomeComponent0_Iwn, t3, C.ViewType_1, t5, t1, t2, C.ChangeDetectionStrategy_2, Y.HomeComponent);
         t2 = new Y.HomeComponent();
         this._HomeComponent_0_4 = t2;
@@ -26200,6 +26301,18 @@
   C.List_wwi = Isolate.makeConstantList([C.Type_AppComponent_EOZ, C.List_Zie]);
   C.ComponentFactory_O12 = new D.ComponentFactory("my-app", V.AppComponent_template__viewFactory_AppComponentHost0$closure(), C.Type_AppComponent_EOZ, C.List_wwi);
   C.List_23B = Isolate.makeConstantList([C.RouteConfig_QKc, C.ComponentFactory_O12]);
+  C.Type_SidebarDirective_Qs9 = H.createRuntimeType("SidebarDirective");
+  C.List_Type_SidebarDirective_Qs9 = Isolate.makeConstantList([C.Type_SidebarDirective_Qs9]);
+  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.String]);
+  C.Map_empty1 = new H.ConstantStringMap(0, {}, C.List_empty1, [P.String, null]);
+  C.StaticNodeDebugInfo_JCa = new Z.StaticNodeDebugInfo(C.List_Type_SidebarDirective_Qs9, null, C.Map_empty1);
+  C.Type_RouterLink_O12 = H.createRuntimeType("RouterLink");
+  C.List_Type_RouterLink_O12 = Isolate.makeConstantList([C.Type_RouterLink_O12]);
+  C.StaticNodeDebugInfo_E4y = new Z.StaticNodeDebugInfo(C.List_Type_RouterLink_O12, null, C.Map_empty1);
+  C.Type_RouterOutlet_B8J = H.createRuntimeType("RouterOutlet");
+  C.List_Type_RouterOutlet_B8J = Isolate.makeConstantList([C.Type_RouterOutlet_B8J]);
+  C.StaticNodeDebugInfo_LtW = new Z.StaticNodeDebugInfo(C.List_Type_RouterOutlet_B8J, null, C.Map_empty1);
+  C.List_2Ys = Isolate.makeConstantList([C.StaticNodeDebugInfo_JCa, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_LtW, null, null]);
   C.List_2jN0 = Isolate.makeConstantList([C.List_Type_ViewContainerRef_4AN, C.List_Type_TemplateRef_SSn]);
   C.Type_ControlContainer_chs = H.createRuntimeType("ControlContainer");
   C.C_SkipSelf = new B.SkipSelf();
@@ -26215,12 +26328,6 @@
   C.Inject_OpaqueToken_NgValueAccessor = new B.Inject(C.OpaqueToken_NgValueAccessor);
   C.List_yXb = Isolate.makeConstantList([C.Type_List_naM, C.C_Optional, C.C_Self, C.Inject_OpaqueToken_NgValueAccessor]);
   C.List_2jN = Isolate.makeConstantList([C.List_Type_ControlContainer_chs_SkipSelf, C.List_orF, C.List_gDw, C.List_yXb]);
-  C.Type_RouterLink_O12 = H.createRuntimeType("RouterLink");
-  C.List_Type_RouterLink_O12 = Isolate.makeConstantList([C.Type_RouterLink_O12]);
-  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.String]);
-  C.Map_empty1 = new H.ConstantStringMap(0, {}, C.List_empty1, [P.String, null]);
-  C.StaticNodeDebugInfo_E4y = new Z.StaticNodeDebugInfo(C.List_Type_RouterLink_O12, null, C.Map_empty1);
-  C.List_4AN = Isolate.makeConstantList([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.Type_Form_KLQ = H.createRuntimeType("Form");
   C.Type_OnChanges_JOo = H.createRuntimeType("OnChanges");
   C.List_4WI = Isolate.makeConstantList([C.Type_Form_KLQ, C.Type_OnChanges_JOo]);
@@ -26286,6 +26393,7 @@
   C.Type_SanitizationService_bRS = H.createRuntimeType("SanitizationService");
   C.List_Type_SanitizationService_bRS = Isolate.makeConstantList([C.Type_SanitizationService_bRS]);
   C.List_JYE = Isolate.makeConstantList([C.List_Type_RootRenderer_0, C.List_CFJ, C.List_Type_SanitizationService_bRS]);
+  C.List_JmU = Isolate.makeConstantList([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.OpaqueToken_DocumentToken = new S.OpaqueToken("DocumentToken");
   C.Inject_OpaqueToken_DocumentToken = new B.Inject(C.OpaqueToken_DocumentToken);
   C.List_gSn = Isolate.makeConstantList([C.Type_dynamic_0Rz, C.Inject_OpaqueToken_DocumentToken]);
@@ -26303,9 +26411,6 @@
   C.List_List_Type_NgLocalization_a9U = Isolate.makeConstantList([C.List_Type_NgLocalization_a9U]);
   C.List_List_Type_NgZone_6ty = Isolate.makeConstantList([C.List_Type_NgZone_6ty]);
   C.List_List_Type_ViewContainerRef_4AN = Isolate.makeConstantList([C.List_Type_ViewContainerRef_4AN]);
-  C.Type_SidebarDirective_Qs9 = H.createRuntimeType("SidebarDirective");
-  C.List_Type_SidebarDirective_Qs9 = Isolate.makeConstantList([C.Type_SidebarDirective_Qs9]);
-  C.StaticNodeDebugInfo_JCa = new Z.StaticNodeDebugInfo(C.List_Type_SidebarDirective_Qs9, null, C.Map_empty1);
   C.List_OH0 = Isolate.makeConstantList([null, null, null, null, null, C.StaticNodeDebugInfo_JCa, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   C.Type_OnInit_MMm = H.createRuntimeType("OnInit");
   C.Type_OnDestroy_AWG = H.createRuntimeType("OnDestroy");
@@ -26402,10 +26507,6 @@
   C.List_Type_TabDirective_27p = Isolate.makeConstantList([C.Type_TabDirective_27p]);
   C.StaticNodeDebugInfo_owA = new Z.StaticNodeDebugInfo(C.List_Type_TabDirective_27p, null, C.Map_empty1);
   C.List_iyO = Isolate.makeConstantList([null, null, null, C.StaticNodeDebugInfo_owA, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
-  C.Type_RouterOutlet_B8J = H.createRuntimeType("RouterOutlet");
-  C.List_Type_RouterOutlet_B8J = Isolate.makeConstantList([C.Type_RouterOutlet_B8J]);
-  C.StaticNodeDebugInfo_LtW = new Z.StaticNodeDebugInfo(C.List_Type_RouterOutlet_B8J, null, C.Map_empty1);
-  C.List_ksx = Isolate.makeConstantList([C.StaticNodeDebugInfo_JCa, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, C.StaticNodeDebugInfo_E4y, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, C.StaticNodeDebugInfo_LtW, null, null]);
   C.List_liq = Isolate.makeConstantList([C.Type_ControlValueAccessor_6pl, C.Type_OnDestroy_AWG, C.Type_OnInit_MMm]);
   C.List_mZ3 = Isolate.makeConstantList([C.Type_AfterViewInit_UKj, C.Type_ControlValueAccessor_6pl]);
   C.List_qVK = Isolate.makeConstantList([C.List_Type_Renderer_eoZ, C.List_Type_ElementRef_kOG]);
