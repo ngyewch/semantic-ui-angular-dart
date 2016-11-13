@@ -9,9 +9,8 @@ environment:
 
 dependencies:
   angular2: '>=2.0.0 <3.0.0'
-
-dev_dependencies:
   browser: ^0.10.0
+  http: ^0.11.0
 
 transformers:
 - angular2:
@@ -20,3 +19,5 @@ transformers:
     platform_pipes:
     - 'package:angular2/common.dart#COMMON_PIPES'
     entry_points: web/main.dart
+    resolved_identifiers:
+        BrowserClient: 'package:http/browser_client.dart'
