@@ -14,6 +14,7 @@ import 'package:angular2/core.dart';
 import 'package:angular2/platform/browser_static.dart';
 import 'package:angular2/platform/common.dart';
 import 'package:angular2/router.dart';
+import 'package:http/browser_client.dart';
 import 'AppComponent.dart';
 import 'package:angular2/core.template.dart' as i0;
 import 'package:angular2/platform/browser_static.template.dart' as i1;

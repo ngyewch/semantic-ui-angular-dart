@@ -12,3 +12,14 @@
         Selected start date: {{startDate}}
     </div>
 </div>
+
+<div semantic_ui_tab class="ui top attached tabular menu">
+    <div class="active item" data-tab="tab-html">HTML</div>
+    <div class="item" data-tab="tab-dart">Dart</div>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="tab-html">
+    <div [source_include]="'CalendarComponent.html'"></div>
+</div>
+<div class="ui bottom attached tab segment" data-tab="tab-dart">
+    <div [source_include]="'CalendarComponent.dart'"></div>
+</div>

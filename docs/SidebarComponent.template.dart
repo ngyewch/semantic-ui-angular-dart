@@ -13,34 +13,43 @@ import 'SidebarComponent.dart';
 import 'package:angular2/src/core/reflection/reflection.dart' as _ngRef;
 import 'package:angular2/core.dart';
 import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
+import 'IncludeComponent.dart' show IncludeComponent;
 import 'package:angular2/core.template.dart' as i0;
 import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.template.dart' as i1;
+import 'IncludeComponent.template.dart' as i2;
 export 'SidebarComponent.dart';
 import 'package:angular2/src/debug/debug_context.dart';
 import 'package:semantic_ui_angular_dart/src/SidebarDirective.dart' as import1;
+import 'package:semantic_ui_angular_dart/src/TabDirective.dart' as import2;
+import 'IncludeComponent.dart' as import3;
 import 'package:angular2/src/core/render/api.dart';
 import 'package:angular2/src/debug/debug_app_view.dart';
-import 'SidebarComponent.dart' as import4;
+import 'SidebarComponent.dart' as import6;
 import 'dart:html';
-import 'package:angular2/src/core/di/injector.dart' as import6;
 import 'package:angular2/src/core/linker/app_element.dart';
-import 'package:angular2/src/core/linker/view_type.dart' as import8;
 import 'package:angular2/src/core/change_detection/change_detection.dart';
+import 'package:angular2/src/core/di/injector.dart' as import10;
+import 'package:angular2/src/core/linker/view_type.dart' as import11;
 import 'package:angular2/src/core/linker/element_ref.dart';
-import 'package:angular2/src/core/linker/app_view_utils.dart' as import11;
+import 'IncludeComponent.template.dart' as import13;
+import 'package:http/browser_client.dart' as import14;
+import 'package:angular2/src/core/linker/app_view_utils.dart' as import15;
 import 'package:angular2/src/core/linker/app_view.dart';
-import 'package:angular2/src/core/metadata/view.dart' as import13;
-import 'package:angular2/src/core/linker/component_factory.dart' as import14;
+import 'package:angular2/src/core/metadata/view.dart' as import17;
+import 'package:angular2/src/core/linker/component_factory.dart' as import18;
 const List<dynamic> styles_SidebarComponent = const [];
 const List<StaticNodeDebugInfo> nodeDebugInfos_SidebarComponent0 = const [
   null,null,null,null,null,const StaticNodeDebugInfo(const [import1.SidebarDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import2.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import3.IncludeComponent],import3.IncludeComponent,const <String, dynamic>{}),
+  null,null,null,null,const StaticNodeDebugInfo(const [import3.IncludeComponent],import3.IncludeComponent,const <String, dynamic>{}),
+  null,null
 ]
 ;
 RenderComponentType renderType_SidebarComponent;
-class ViewSidebarComponent0 extends DebugAppView<import4.SidebarComponent> {
+class ViewSidebarComponent0 extends DebugAppView<import6.SidebarComponent> {
   Element _el_0;
   Element _el_3;
   Element _el_5;
@@ -61,7 +70,21 @@ class ViewSidebarComponent0 extends DebugAppView<import4.SidebarComponent> {
   Element _el_44;
   Element _el_47;
   Element _el_50;
-  ViewSidebarComponent0(import6.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponent0,renderType_SidebarComponent,import8.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponent0);
+  Element _el_56;
+  import2.TabDirective _TabDirective_56_3;
+  Element _el_58;
+  Element _el_61;
+  Element _el_65;
+  Element _el_67;
+  AppElement _appEl_67;
+  import3.IncludeComponent _IncludeComponent_67_4;
+  Element _el_70;
+  Element _el_72;
+  AppElement _appEl_72;
+  import3.IncludeComponent _IncludeComponent_72_4;
+  var _expr_2 = uninitialized;
+  var _expr_3 = uninitialized;
+  ViewSidebarComponent0(import10.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponent0,renderType_SidebarComponent,import11.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponent0);
   AppElement createInternal(dynamic rootSelector) {
     final parentRenderNode = initViewRoot(this.declarationAppElement.nativeElement);
     _el_0 = document.createElement('h2');
@@ -245,9 +268,87 @@ class ViewSidebarComponent0 extends DebugAppView<import4.SidebarComponent> {
     Text _text_54 = new Text('\n');
     _el_3.append(_text_54);
     dbgElm(_text_54,54,48,10);
-    Text _text_55 = new Text('\n');
+    Text _text_55 = new Text('\n\n');
     parentRenderNode.append(_text_55);
     dbgElm(_text_55,55,49,6);
+    _el_56 = document.createElement('div');
+    parentRenderNode.append(_el_56);
+    dbgElm(_el_56,56,51,0);
+    setAttr(_el_56,'class','ui top attached tabular menu');
+    setAttr(_el_56,'semantic_ui_tab','');
+    _TabDirective_56_3 = new import2.TabDirective(new ElementRef(_el_56));
+    Text _text_57 = new Text('\n    ');
+    _el_56.append(_text_57);
+    dbgElm(_text_57,57,51,58);
+    _el_58 = document.createElement('div');
+    _el_56.append(_el_58);
+    dbgElm(_el_58,58,52,4);
+    setAttr(_el_58,'class','active item');
+    setAttr(_el_58,'data-tab','tab-html');
+    Text _text_59 = new Text('HTML');
+    _el_58.append(_text_59);
+    dbgElm(_text_59,59,52,49);
+    Text _text_60 = new Text('\n    ');
+    _el_56.append(_text_60);
+    dbgElm(_text_60,60,52,59);
+    _el_61 = document.createElement('div');
+    _el_56.append(_el_61);
+    dbgElm(_el_61,61,53,4);
+    setAttr(_el_61,'class','item');
+    setAttr(_el_61,'data-tab','tab-dart');
+    Text _text_62 = new Text('Dart');
+    _el_61.append(_text_62);
+    dbgElm(_text_62,62,53,42);
+    Text _text_63 = new Text('\n');
+    _el_56.append(_text_63);
+    dbgElm(_text_63,63,53,52);
+    Text _text_64 = new Text('\n');
+    parentRenderNode.append(_text_64);
+    dbgElm(_text_64,64,54,6);
+    _el_65 = document.createElement('div');
+    parentRenderNode.append(_el_65);
+    dbgElm(_el_65,65,55,0);
+    setAttr(_el_65,'class','ui bottom attached active tab segment');
+    setAttr(_el_65,'data-tab','tab-html');
+    Text _text_66 = new Text('\n    ');
+    _el_65.append(_text_66);
+    dbgElm(_text_66,66,55,71);
+    _el_67 = document.createElement('div');
+    _el_65.append(_el_67);
+    dbgElm(_el_67,67,56,4);
+    _appEl_67 = new AppElement(67,65,this,_el_67);
+    var compView_67 = import13.viewFactory_IncludeComponent0(this.injector(67),_appEl_67);
+    _IncludeComponent_67_4 = new import3.IncludeComponent(new ElementRef(_el_67),this.parentInjector.get(import14.BrowserClient));
+    _appEl_67.initComponent(_IncludeComponent_67_4,[],compView_67);
+    compView_67.createComp([],null);
+    Text _text_68 = new Text('\n');
+    _el_65.append(_text_68);
+    dbgElm(_text_68,68,56,58);
+    Text _text_69 = new Text('\n');
+    parentRenderNode.append(_text_69);
+    dbgElm(_text_69,69,57,6);
+    _el_70 = document.createElement('div');
+    parentRenderNode.append(_el_70);
+    dbgElm(_el_70,70,58,0);
+    setAttr(_el_70,'class','ui bottom attached tab segment');
+    setAttr(_el_70,'data-tab','tab-dart');
+    Text _text_71 = new Text('\n    ');
+    _el_70.append(_text_71);
+    dbgElm(_text_71,71,58,64);
+    _el_72 = document.createElement('div');
+    _el_70.append(_el_72);
+    dbgElm(_el_72,72,59,4);
+    _appEl_72 = new AppElement(72,70,this,_el_72);
+    var compView_72 = import13.viewFactory_IncludeComponent0(this.injector(72),_appEl_72);
+    _IncludeComponent_72_4 = new import3.IncludeComponent(new ElementRef(_el_72),this.parentInjector.get(import14.BrowserClient));
+    _appEl_72.initComponent(_IncludeComponent_72_4,[],compView_72);
+    compView_72.createComp([],null);
+    Text _text_73 = new Text('\n');
+    _el_70.append(_text_73);
+    dbgElm(_text_73,73,59,58);
+    Text _text_74 = new Text('\n');
+    parentRenderNode.append(_text_74);
+    dbgElm(_text_74,74,60,6);
     renderer.listen(_el_5,'semantic_ui_sidebar',evt(_handle_semantic_ui_sidebar_5_0));
     final subscription_0 = _SidebarDirective_5_3.eventEmitter.listen(evt(_handle_semantic_ui_sidebar_5_0));
     renderer.listen(_el_37,'click',evt(_handle_click_37_0));
@@ -257,22 +358,47 @@ class ViewSidebarComponent0 extends DebugAppView<import4.SidebarComponent> {
       _text_21,_el_22,_text_23,_text_24,_el_25,_text_26,_text_27,_el_28,_text_29,_text_30,
       _el_31,_text_32,_text_33,_text_34,_el_35,_text_36,_el_37,_text_38,_el_39,_text_40,
       _text_41,_el_42,_text_43,_el_44,_text_45,_text_46,_el_47,_text_48,_text_49,_el_50,
-      _text_51,_text_52,_text_53,_text_54,_text_55
+      _text_51,_text_52,_text_53,_text_54,_text_55,_el_56,_text_57,_el_58,_text_59,_text_60,
+      _el_61,_text_62,_text_63,_text_64,_el_65,_text_66,_el_67,_text_68,_text_69,_el_70,
+      _text_71,_el_72,_text_73,_text_74
     ]
     ,[subscription_0]);
     return null;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
     if ((identical(token, import1.SidebarDirective) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return _SidebarDirective_5_3; }
+    if ((identical(token, import2.TabDirective) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return _TabDirective_56_3; }
+    if ((identical(token, import3.IncludeComponent) && identical(67, requestNodeIndex))) { return _IncludeComponent_67_4; }
+    if ((identical(token, import3.IncludeComponent) && identical(72, requestNodeIndex))) { return _IncludeComponent_72_4; }
     return notFoundResult;
   }
   void detectChangesInternal() {
+    dbg(67,56,9);
+    final currVal_2 = 'SidebarComponent.html';
+    if (import15.checkBinding(_expr_2,currVal_2)) {
+      _IncludeComponent_67_4.src = currVal_2;
+      _expr_2 = currVal_2;
+    }
+    dbg(72,59,9);
+    final currVal_3 = 'SidebarComponent.dart';
+    if (import15.checkBinding(_expr_3,currVal_3)) {
+      _IncludeComponent_72_4.src = currVal_3;
+      _expr_3 = currVal_3;
+    }
     this.detectContentChildrenChanges();
-    if (!import11.AppViewUtils.throwOnChanges) {
+    if (!import15.AppViewUtils.throwOnChanges) {
       dbg(5,3,4);
       if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _SidebarDirective_5_3.ngAfterContentInit(); }
     }
     this.detectViewChildrenChanges();
+    if (!import15.AppViewUtils.throwOnChanges) {
+      dbg(56,51,0);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_56_3.ngAfterViewInit(); }
+      dbg(67,56,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_67_4.ngAfterViewInit(); }
+      dbg(72,59,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_72_4.ngAfterViewInit(); }
+    }
   }
   bool _handle_semantic_ui_sidebar_5_0($event) {
     this.markPathToRootAsCheckOnce();
@@ -287,38 +413,38 @@ class ViewSidebarComponent0 extends DebugAppView<import4.SidebarComponent> {
     return (true && pd_0);
   }
 }
-AppView viewFactory_SidebarComponent0(import6.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_SidebarComponent, null)) { (renderType_SidebarComponent = import11.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/SidebarComponent.html',0,import13.ViewEncapsulation.None,styles_SidebarComponent)); }
+AppView viewFactory_SidebarComponent0(import10.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_SidebarComponent, null)) { (renderType_SidebarComponent = import15.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/SidebarComponent.html',0,import17.ViewEncapsulation.None,styles_SidebarComponent)); }
   return new ViewSidebarComponent0(parentInjector,declarationEl);
 }
 const List<dynamic> styles_SidebarComponentHost = const [];
-const List<StaticNodeDebugInfo> nodeDebugInfos_SidebarComponentHost0 = const [const StaticNodeDebugInfo(const [import4.SidebarComponent],import4.SidebarComponent,const <String, dynamic>{})];
+const List<StaticNodeDebugInfo> nodeDebugInfos_SidebarComponentHost0 = const [const StaticNodeDebugInfo(const [import6.SidebarComponent],import6.SidebarComponent,const <String, dynamic>{})];
 RenderComponentType renderType_SidebarComponentHost;
 class ViewSidebarComponentHost0 extends DebugAppView<dynamic> {
   Element _el_0;
   AppElement _appEl_0;
-  import4.SidebarComponent _SidebarComponent_0_4;
-  ViewSidebarComponentHost0(import6.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponentHost0,renderType_SidebarComponentHost,import8.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponentHost0);
+  import6.SidebarComponent _SidebarComponent_0_4;
+  ViewSidebarComponentHost0(import10.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponentHost0,renderType_SidebarComponentHost,import11.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
     _el_0 = selectOrCreateHostElement('sidebar-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_SidebarComponent0(this.injector(0),_appEl_0);
-    _SidebarComponent_0_4 = new import4.SidebarComponent();
+    _SidebarComponent_0_4 = new import6.SidebarComponent();
     _appEl_0.initComponent(_SidebarComponent_0_4,[],compView_0);
     compView_0.createComp(projectableNodes,null);
     init([_el_0],[_el_0],[]);
     return _appEl_0;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
-    if ((identical(token, import4.SidebarComponent) && identical(0, requestNodeIndex))) { return _SidebarComponent_0_4; }
+    if ((identical(token, import6.SidebarComponent) && identical(0, requestNodeIndex))) { return _SidebarComponent_0_4; }
     return notFoundResult;
   }
 }
-AppView viewFactory_SidebarComponentHost0(import6.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_SidebarComponentHost, null)) { (renderType_SidebarComponentHost = import11.appViewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.Emulated,styles_SidebarComponentHost)); }
+AppView viewFactory_SidebarComponentHost0(import10.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_SidebarComponentHost, null)) { (renderType_SidebarComponentHost = import15.appViewUtils.createRenderComponentType('',0,import17.ViewEncapsulation.Emulated,styles_SidebarComponentHost)); }
   return new ViewSidebarComponentHost0(parentInjector,declarationEl);
 }
-const import14.ComponentFactory SidebarComponentNgFactory = const import14.ComponentFactory('sidebar-example',viewFactory_SidebarComponentHost0,import4.SidebarComponent,_METADATA);
+const import18.ComponentFactory SidebarComponentNgFactory = const import18.ComponentFactory('sidebar-example',viewFactory_SidebarComponentHost0,import6.SidebarComponent,_METADATA);
 const _METADATA = const <dynamic>[SidebarComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {
@@ -332,4 +458,5 @@ const [],
 ;
 i0.initReflector();
 i1.initReflector();
+i2.initReflector();
 }

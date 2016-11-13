@@ -9,6 +9,13 @@
       {
         "1": "package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart",
         "5": false
+      },
+      {
+        "1": "IncludeComponent.dart",
+        "2": [
+          "IncludeComponent"
+        ],
+        "5": false
       }
     ],
     "5": [
@@ -17,6 +24,9 @@
         "7": [
           {
             "2": "SEMANTIC_UI_DIRECTIVES"
+          },
+          {
+            "2": "IncludeComponent"
           }
         ]
       }
@@ -30,6 +40,10 @@
       {
         "1": "package:semantic_ui_angular_dart/semantic_ui_angular_dart.template.dart",
         "4": "i1"
+      },
+      {
+        "1": "IncludeComponent.template.dart",
+        "4": "i2"
       }
     ]
   },
@@ -58,7 +72,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h2 class=\"ui header\">Dropdown</h2>\r\n\r\n<div>\r\n    <div semantic_ui_dropdown [(ngModel)]=\"gender\" class=\"ui selection dropdown\">\r\n        <input type=\"hidden\" name=\"gender\">\r\n        <i class=\"dropdown icon\"></i>\r\n        <div class=\"default text\">Gender</div>\r\n        <div class=\"menu\">\r\n            <div class=\"item\" data-value=\"male\">Male</div>\r\n            <div class=\"item\" data-value=\"female\">Female</div>\r\n        </div>\r\n    </div>\r\n    <div class=\"ui basic segment\">\r\n        gender = {{gender}}\r\n    </div>\r\n</div>\r\n<!--\r\n<div>\r\n    <select semantic_ui_dropdown [(ngModel)]=\"gender2\" class=\"ui dropdown\">\r\n        <option value=\"\">Gender</option>\r\n        <option value=\"male\">Male</option>\r\n        <option value=\"female\">Female</option>\r\n    </select>\r\n    <div>\r\n        gender2 = {{gender2}}\r\n    </div>\r\n</div>\r\n-->",
+        "template": "<h2 class=\"ui header\">Dropdown</h2>\r\n\r\n<div>\r\n    <div semantic_ui_dropdown [(ngModel)]=\"gender\" class=\"ui selection dropdown\">\r\n        <input type=\"hidden\" name=\"gender\">\r\n        <i class=\"dropdown icon\"></i>\r\n        <div class=\"default text\">Gender</div>\r\n        <div class=\"menu\">\r\n            <div class=\"item\" data-value=\"male\">Male</div>\r\n            <div class=\"item\" data-value=\"female\">Female</div>\r\n        </div>\r\n    </div>\r\n    <div class=\"ui basic segment\">\r\n        gender = {{gender}}\r\n    </div>\r\n</div>\r\n\r\n<div semantic_ui_tab class=\"ui top attached tabular menu\">\r\n    <div class=\"active item\" data-tab=\"tab-html\">HTML</div>\r\n    <div class=\"item\" data-tab=\"tab-dart\">Dart</div>\r\n</div>\r\n<div class=\"ui bottom attached active tab segment\" data-tab=\"tab-html\">\r\n    <div [source_include]=\"'DropdownComponent.html'\"></div>\r\n</div>\r\n<div class=\"ui bottom attached tab segment\" data-tab=\"tab-dart\">\r\n    <div [source_include]=\"'DropdownComponent.dart'\"></div>\r\n</div>\r\n",
         "templateUrl": "asset:semantic_ui_angular_dart/web/DropdownComponent.html",
         "styles": [],
         "styleUrls": [],

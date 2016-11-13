@@ -19,6 +19,10 @@
         "5": false
       },
       {
+        "1": "package:http/browser_client.dart",
+        "5": false
+      },
+      {
         "1": "AppComponent.dart",
         "5": false
       }
@@ -48,6 +52,13 @@
     ]
   },
   "type": {
+    "HttpClientBackendServiceFactory": {
+      "class": "Identifier",
+      "name": "HttpClientBackendServiceFactory",
+      "moduleUrl": "asset:semantic_ui_angular_dart/web/main.dart",
+      "prefix": null,
+      "value": null
+    },
     "main": {
       "class": "Identifier",
       "name": "main",

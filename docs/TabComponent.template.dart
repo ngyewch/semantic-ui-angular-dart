@@ -13,33 +13,41 @@ import 'TabComponent.dart';
 import 'package:angular2/src/core/reflection/reflection.dart' as _ngRef;
 import 'package:angular2/core.dart';
 import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
+import 'IncludeComponent.dart' show IncludeComponent;
 import 'package:angular2/core.template.dart' as i0;
 import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.template.dart' as i1;
+import 'IncludeComponent.template.dart' as i2;
 export 'TabComponent.dart';
 import 'package:angular2/src/debug/debug_context.dart';
 import 'package:semantic_ui_angular_dart/src/TabDirective.dart' as import1;
+import 'IncludeComponent.dart' as import2;
 import 'package:angular2/src/core/render/api.dart';
 import 'package:angular2/src/debug/debug_app_view.dart';
-import 'TabComponent.dart' as import4;
+import 'TabComponent.dart' as import5;
 import 'dart:html';
-import 'package:angular2/src/core/di/injector.dart' as import6;
 import 'package:angular2/src/core/linker/app_element.dart';
-import 'package:angular2/src/core/linker/view_type.dart' as import8;
 import 'package:angular2/src/core/change_detection/change_detection.dart';
+import 'package:angular2/src/core/di/injector.dart' as import9;
+import 'package:angular2/src/core/linker/view_type.dart' as import10;
 import 'package:angular2/src/core/linker/element_ref.dart';
-import 'package:angular2/src/core/linker/app_view_utils.dart' as import11;
+import 'IncludeComponent.template.dart' as import12;
+import 'package:http/browser_client.dart' as import13;
+import 'package:angular2/src/core/linker/app_view_utils.dart' as import14;
 import 'package:angular2/src/core/linker/app_view.dart';
-import 'package:angular2/src/core/metadata/view.dart' as import13;
-import 'package:angular2/src/core/linker/component_factory.dart' as import14;
+import 'package:angular2/src/core/metadata/view.dart' as import16;
+import 'package:angular2/src/core/linker/component_factory.dart' as import17;
 const List<dynamic> styles_TabComponent = const [];
 const List<StaticNodeDebugInfo> nodeDebugInfos_TabComponent0 = const [
   null,null,null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null
+  null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import2.IncludeComponent],import2.IncludeComponent,const <String, dynamic>{}),
+  null,null,null,null,const StaticNodeDebugInfo(const [import2.IncludeComponent],import2.IncludeComponent,const <String, dynamic>{}),
+  null,null
 ]
 ;
 RenderComponentType renderType_TabComponent;
-class ViewTabComponent0 extends DebugAppView<import4.TabComponent> {
+class ViewTabComponent0 extends DebugAppView<import5.TabComponent> {
   Element _el_0;
   Element _el_3;
   import1.TabDirective _TabDirective_3_3;
@@ -52,7 +60,21 @@ class ViewTabComponent0 extends DebugAppView<import4.TabComponent> {
   Element _el_23;
   Element _el_27;
   Element _el_29;
-  ViewTabComponent0(import6.Injector parentInjector,AppElement declarationEl): super(ViewTabComponent0,renderType_TabComponent,import8.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponent0);
+  Element _el_33;
+  import1.TabDirective _TabDirective_33_3;
+  Element _el_35;
+  Element _el_38;
+  Element _el_42;
+  Element _el_44;
+  AppElement _appEl_44;
+  import2.IncludeComponent _IncludeComponent_44_4;
+  Element _el_47;
+  Element _el_49;
+  AppElement _appEl_49;
+  import2.IncludeComponent _IncludeComponent_49_4;
+  var _expr_0 = uninitialized;
+  var _expr_1 = uninitialized;
+  ViewTabComponent0(import9.Injector parentInjector,AppElement declarationEl): super(ViewTabComponent0,renderType_TabComponent,import10.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponent0);
   AppElement createInternal(dynamic rootSelector) {
     final parentRenderNode = initViewRoot(this.declarationAppElement.nativeElement);
     _el_0 = document.createElement('h2');
@@ -167,63 +189,164 @@ class ViewTabComponent0 extends DebugAppView<import4.TabComponent> {
     Text _text_31 = new Text('\n');
     _el_27.append(_text_31);
     dbgElm(_text_31,31,20,8);
-    Text _text_32 = new Text('\n');
+    Text _text_32 = new Text('\n\n');
     parentRenderNode.append(_text_32);
     dbgElm(_text_32,32,21,6);
+    _el_33 = document.createElement('div');
+    parentRenderNode.append(_el_33);
+    dbgElm(_el_33,33,23,0);
+    setAttr(_el_33,'class','ui top attached tabular menu');
+    setAttr(_el_33,'semantic_ui_tab','');
+    _TabDirective_33_3 = new import1.TabDirective(new ElementRef(_el_33));
+    Text _text_34 = new Text('\n    ');
+    _el_33.append(_text_34);
+    dbgElm(_text_34,34,23,58);
+    _el_35 = document.createElement('div');
+    _el_33.append(_el_35);
+    dbgElm(_el_35,35,24,4);
+    setAttr(_el_35,'class','active item');
+    setAttr(_el_35,'data-tab','tab-html');
+    Text _text_36 = new Text('HTML');
+    _el_35.append(_text_36);
+    dbgElm(_text_36,36,24,49);
+    Text _text_37 = new Text('\n    ');
+    _el_33.append(_text_37);
+    dbgElm(_text_37,37,24,59);
+    _el_38 = document.createElement('div');
+    _el_33.append(_el_38);
+    dbgElm(_el_38,38,25,4);
+    setAttr(_el_38,'class','item');
+    setAttr(_el_38,'data-tab','tab-dart');
+    Text _text_39 = new Text('Dart');
+    _el_38.append(_text_39);
+    dbgElm(_text_39,39,25,42);
+    Text _text_40 = new Text('\n');
+    _el_33.append(_text_40);
+    dbgElm(_text_40,40,25,52);
+    Text _text_41 = new Text('\n');
+    parentRenderNode.append(_text_41);
+    dbgElm(_text_41,41,26,6);
+    _el_42 = document.createElement('div');
+    parentRenderNode.append(_el_42);
+    dbgElm(_el_42,42,27,0);
+    setAttr(_el_42,'class','ui bottom attached active tab segment');
+    setAttr(_el_42,'data-tab','tab-html');
+    Text _text_43 = new Text('\n    ');
+    _el_42.append(_text_43);
+    dbgElm(_text_43,43,27,71);
+    _el_44 = document.createElement('div');
+    _el_42.append(_el_44);
+    dbgElm(_el_44,44,28,4);
+    _appEl_44 = new AppElement(44,42,this,_el_44);
+    var compView_44 = import12.viewFactory_IncludeComponent0(this.injector(44),_appEl_44);
+    _IncludeComponent_44_4 = new import2.IncludeComponent(new ElementRef(_el_44),this.parentInjector.get(import13.BrowserClient));
+    _appEl_44.initComponent(_IncludeComponent_44_4,[],compView_44);
+    compView_44.createComp([],null);
+    Text _text_45 = new Text('\n');
+    _el_42.append(_text_45);
+    dbgElm(_text_45,45,28,54);
+    Text _text_46 = new Text('\n');
+    parentRenderNode.append(_text_46);
+    dbgElm(_text_46,46,29,6);
+    _el_47 = document.createElement('div');
+    parentRenderNode.append(_el_47);
+    dbgElm(_el_47,47,30,0);
+    setAttr(_el_47,'class','ui bottom attached tab segment');
+    setAttr(_el_47,'data-tab','tab-dart');
+    Text _text_48 = new Text('\n    ');
+    _el_47.append(_text_48);
+    dbgElm(_text_48,48,30,64);
+    _el_49 = document.createElement('div');
+    _el_47.append(_el_49);
+    dbgElm(_el_49,49,31,4);
+    _appEl_49 = new AppElement(49,47,this,_el_49);
+    var compView_49 = import12.viewFactory_IncludeComponent0(this.injector(49),_appEl_49);
+    _IncludeComponent_49_4 = new import2.IncludeComponent(new ElementRef(_el_49),this.parentInjector.get(import13.BrowserClient));
+    _appEl_49.initComponent(_IncludeComponent_49_4,[],compView_49);
+    compView_49.createComp([],null);
+    Text _text_50 = new Text('\n');
+    _el_47.append(_text_50);
+    dbgElm(_text_50,50,31,54);
+    Text _text_51 = new Text('\n');
+    parentRenderNode.append(_text_51);
+    dbgElm(_text_51,51,32,6);
     init([],[
       _el_0,_text_1,_text_2,_el_3,_text_4,_el_5,_text_6,_text_7,_el_8,_text_9,_text_10,
       _el_11,_text_12,_text_13,_text_14,_el_15,_text_16,_el_17,_text_18,_text_19,_text_20,
       _el_21,_text_22,_el_23,_text_24,_text_25,_text_26,_el_27,_text_28,_el_29,_text_30,
-      _text_31,_text_32
+      _text_31,_text_32,_el_33,_text_34,_el_35,_text_36,_text_37,_el_38,_text_39,_text_40,
+      _text_41,_el_42,_text_43,_el_44,_text_45,_text_46,_el_47,_text_48,_el_49,_text_50,
+      _text_51
     ]
     ,[]);
     return null;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
     if ((identical(token, import1.TabDirective) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 13)))) { return _TabDirective_3_3; }
+    if ((identical(token, import1.TabDirective) && ((33 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return _TabDirective_33_3; }
+    if ((identical(token, import2.IncludeComponent) && identical(44, requestNodeIndex))) { return _IncludeComponent_44_4; }
+    if ((identical(token, import2.IncludeComponent) && identical(49, requestNodeIndex))) { return _IncludeComponent_49_4; }
     return notFoundResult;
   }
   void detectChangesInternal() {
+    dbg(44,28,9);
+    final currVal_0 = 'TabComponent.html';
+    if (import14.checkBinding(_expr_0,currVal_0)) {
+      _IncludeComponent_44_4.src = currVal_0;
+      _expr_0 = currVal_0;
+    }
+    dbg(49,31,9);
+    final currVal_1 = 'TabComponent.dart';
+    if (import14.checkBinding(_expr_1,currVal_1)) {
+      _IncludeComponent_49_4.src = currVal_1;
+      _expr_1 = currVal_1;
+    }
     this.detectContentChildrenChanges();
     this.detectViewChildrenChanges();
-    if (!import11.AppViewUtils.throwOnChanges) {
+    if (!import14.AppViewUtils.throwOnChanges) {
       dbg(3,2,0);
       if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_3_3.ngAfterViewInit(); }
+      dbg(33,23,0);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_33_3.ngAfterViewInit(); }
+      dbg(44,28,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_44_4.ngAfterViewInit(); }
+      dbg(49,31,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_49_4.ngAfterViewInit(); }
     }
   }
 }
-AppView viewFactory_TabComponent0(import6.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_TabComponent, null)) { (renderType_TabComponent = import11.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/TabComponent.html',0,import13.ViewEncapsulation.None,styles_TabComponent)); }
+AppView viewFactory_TabComponent0(import9.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_TabComponent, null)) { (renderType_TabComponent = import14.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/TabComponent.html',0,import16.ViewEncapsulation.None,styles_TabComponent)); }
   return new ViewTabComponent0(parentInjector,declarationEl);
 }
 const List<dynamic> styles_TabComponentHost = const [];
-const List<StaticNodeDebugInfo> nodeDebugInfos_TabComponentHost0 = const [const StaticNodeDebugInfo(const [import4.TabComponent],import4.TabComponent,const <String, dynamic>{})];
+const List<StaticNodeDebugInfo> nodeDebugInfos_TabComponentHost0 = const [const StaticNodeDebugInfo(const [import5.TabComponent],import5.TabComponent,const <String, dynamic>{})];
 RenderComponentType renderType_TabComponentHost;
 class ViewTabComponentHost0 extends DebugAppView<dynamic> {
   Element _el_0;
   AppElement _appEl_0;
-  import4.TabComponent _TabComponent_0_4;
-  ViewTabComponentHost0(import6.Injector parentInjector,AppElement declarationEl): super(ViewTabComponentHost0,renderType_TabComponentHost,import8.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponentHost0);
+  import5.TabComponent _TabComponent_0_4;
+  ViewTabComponentHost0(import9.Injector parentInjector,AppElement declarationEl): super(ViewTabComponentHost0,renderType_TabComponentHost,import10.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
     _el_0 = selectOrCreateHostElement('tab-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_TabComponent0(this.injector(0),_appEl_0);
-    _TabComponent_0_4 = new import4.TabComponent();
+    _TabComponent_0_4 = new import5.TabComponent();
     _appEl_0.initComponent(_TabComponent_0_4,[],compView_0);
     compView_0.createComp(projectableNodes,null);
     init([_el_0],[_el_0],[]);
     return _appEl_0;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
-    if ((identical(token, import4.TabComponent) && identical(0, requestNodeIndex))) { return _TabComponent_0_4; }
+    if ((identical(token, import5.TabComponent) && identical(0, requestNodeIndex))) { return _TabComponent_0_4; }
     return notFoundResult;
   }
 }
-AppView viewFactory_TabComponentHost0(import6.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_TabComponentHost, null)) { (renderType_TabComponentHost = import11.appViewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.Emulated,styles_TabComponentHost)); }
+AppView viewFactory_TabComponentHost0(import9.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_TabComponentHost, null)) { (renderType_TabComponentHost = import14.appViewUtils.createRenderComponentType('',0,import16.ViewEncapsulation.Emulated,styles_TabComponentHost)); }
   return new ViewTabComponentHost0(parentInjector,declarationEl);
 }
-const import14.ComponentFactory TabComponentNgFactory = const import14.ComponentFactory('tab-example',viewFactory_TabComponentHost0,import4.TabComponent,_METADATA);
+const import17.ComponentFactory TabComponentNgFactory = const import17.ComponentFactory('tab-example',viewFactory_TabComponentHost0,import5.TabComponent,_METADATA);
 const _METADATA = const <dynamic>[TabComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {
@@ -237,4 +360,5 @@ const [],
 ;
 i0.initReflector();
 i1.initReflector();
+i2.initReflector();
 }
