@@ -37,7 +37,7 @@
     "CalendarComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "calendar",
+      "selector": "calendar-example",
       "exportAs": null,
       "type": {
         "class": "Type",

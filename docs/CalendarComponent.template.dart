@@ -245,7 +245,7 @@ class ViewCalendarComponentHost0 extends DebugAppView<dynamic> {
   import8.CalendarComponent _CalendarComponent_0_4;
   ViewCalendarComponentHost0(import11.Injector parentInjector,AppElement declarationEl): super(ViewCalendarComponentHost0,renderType_CalendarComponentHost,import13.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_CalendarComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
-    _el_0 = selectOrCreateHostElement('calendar',rootSelector,dbg(0,0,0));
+    _el_0 = selectOrCreateHostElement('calendar-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_CalendarComponent0(this.injector(0),_appEl_0);
     _CalendarComponent_0_4 = new import8.CalendarComponent();
@@ -263,7 +263,7 @@ AppView viewFactory_CalendarComponentHost0(import11.Injector parentInjector,AppE
   if (identical(renderType_CalendarComponentHost, null)) { (renderType_CalendarComponentHost = import15.appViewUtils.createRenderComponentType('',0,import17.ViewEncapsulation.Emulated,styles_CalendarComponentHost)); }
   return new ViewCalendarComponentHost0(parentInjector,declarationEl);
 }
-const import18.ComponentFactory CalendarComponentNgFactory = const import18.ComponentFactory('calendar',viewFactory_CalendarComponentHost0,import8.CalendarComponent,_METADATA);
+const import18.ComponentFactory CalendarComponentNgFactory = const import18.ComponentFactory('calendar-example',viewFactory_CalendarComponentHost0,import8.CalendarComponent,_METADATA);
 const _METADATA = const <dynamic>[CalendarComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {

@@ -8,6 +8,8 @@ library semantic_ui_angular_dart;
 
 export 'src/CalendarDirective.dart';
 export 'src/DropdownDirective.dart';
+export 'src/Progress.dart';
+export 'src/ProgressDirective.dart';
 export 'src/Sidebar.dart';
 export 'src/SidebarDirective.dart';
 export 'src/TabDirective.dart';
@@ -16,7 +18,8 @@ export 'src/TabDirective.dart';
 
 import 'src/CalendarDirective.dart' show CalendarDirective;
 import 'src/DropdownDirective.dart' show DropdownDirective;
+import 'src/ProgressDirective.dart' show ProgressDirective;
 import 'src/SidebarDirective.dart' show SidebarDirective;
 import 'src/TabDirective.dart' show TabDirective;
 
-const List<dynamic> SEMANTIC_UI_DIRECTIVES = const [CalendarDirective, DropdownDirective, SidebarDirective, TabDirective];
+const List<dynamic> SEMANTIC_UI_DIRECTIVES = const [CalendarDirective, DropdownDirective, ProgressDirective, SidebarDirective, TabDirective];

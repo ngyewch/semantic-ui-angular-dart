@@ -205,7 +205,7 @@ class ViewTabComponentHost0 extends DebugAppView<dynamic> {
   import4.TabComponent _TabComponent_0_4;
   ViewTabComponentHost0(import6.Injector parentInjector,AppElement declarationEl): super(ViewTabComponentHost0,renderType_TabComponentHost,import8.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
-    _el_0 = selectOrCreateHostElement('tab',rootSelector,dbg(0,0,0));
+    _el_0 = selectOrCreateHostElement('tab-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_TabComponent0(this.injector(0),_appEl_0);
     _TabComponent_0_4 = new import4.TabComponent();
@@ -223,7 +223,7 @@ AppView viewFactory_TabComponentHost0(import6.Injector parentInjector,AppElement
   if (identical(renderType_TabComponentHost, null)) { (renderType_TabComponentHost = import11.appViewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.Emulated,styles_TabComponentHost)); }
   return new ViewTabComponentHost0(parentInjector,declarationEl);
 }
-const import14.ComponentFactory TabComponentNgFactory = const import14.ComponentFactory('tab',viewFactory_TabComponentHost0,import4.TabComponent,_METADATA);
+const import14.ComponentFactory TabComponentNgFactory = const import14.ComponentFactory('tab-example',viewFactory_TabComponentHost0,import4.TabComponent,_METADATA);
 const _METADATA = const <dynamic>[TabComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {

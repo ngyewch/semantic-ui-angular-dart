@@ -26,23 +26,24 @@ import 'package:angular2/src/common/forms/directives/ng_model.dart' as import4;
 import 'package:angular2/src/common/forms/directives/ng_control.dart' as import5;
 import 'package:angular2/src/common/forms/directives/ng_control_status.dart' as import6;
 import 'package:semantic_ui_angular_dart/src/DropdownDirective.dart' as import7;
-import 'package:semantic_ui_angular_dart/src/SidebarDirective.dart' as import8;
-import 'package:semantic_ui_angular_dart/src/TabDirective.dart' as import9;
+import 'package:semantic_ui_angular_dart/src/ProgressDirective.dart' as import8;
+import 'package:semantic_ui_angular_dart/src/SidebarDirective.dart' as import9;
+import 'package:semantic_ui_angular_dart/src/TabDirective.dart' as import10;
 import 'package:angular2/src/core/render/api.dart';
 import 'package:angular2/src/debug/debug_app_view.dart';
-import 'HomeComponent.dart' as import12;
+import 'HomeComponent.dart' as import13;
 import 'dart:html';
 import 'package:angular2/src/core/change_detection/change_detection.dart';
-import 'package:angular2/src/core/di/injector.dart' as import15;
+import 'package:angular2/src/core/di/injector.dart' as import16;
 import 'package:angular2/src/core/linker/app_element.dart';
-import 'package:angular2/src/core/linker/view_type.dart' as import17;
-import 'package:angular2/src/router/router.dart' as import18;
-import 'package:angular2/src/platform/browser/location/location.dart' as import19;
+import 'package:angular2/src/core/linker/view_type.dart' as import18;
+import 'package:angular2/src/router/router.dart' as import19;
+import 'package:angular2/src/platform/browser/location/location.dart' as import20;
 import 'package:angular2/src/core/linker/element_ref.dart';
-import 'package:angular2/src/core/linker/app_view_utils.dart' as import21;
+import 'package:angular2/src/core/linker/app_view_utils.dart' as import22;
 import 'package:angular2/src/core/linker/app_view.dart';
-import 'package:angular2/src/core/metadata/view.dart' as import23;
-import 'package:angular2/src/core/linker/component_factory.dart' as import24;
+import 'package:angular2/src/core/metadata/view.dart' as import24;
+import 'package:angular2/src/core/linker/component_factory.dart' as import25;
 const List<dynamic> styles_HomeComponent = const [];
 const List<StaticNodeDebugInfo> nodeDebugInfos_HomeComponent0 = const [
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.RouterLink],null,const <String, dynamic>{}),
@@ -58,19 +59,21 @@ const List<StaticNodeDebugInfo> nodeDebugInfos_HomeComponent0 = const [
   ]
   ,null,const <String, dynamic>{}),null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.RouterLink],null,const <String, dynamic>{}),
-  null,null,null,null,null,const StaticNodeDebugInfo(const [import8.SidebarDirective],null,const <String, dynamic>{}),
+  null,null,null,const StaticNodeDebugInfo(const [import8.ProgressDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.RouterLink],null,const <String, dynamic>{}),
+  null,null,null,null,null,const StaticNodeDebugInfo(const [import9.SidebarDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.RouterLink],null,const <String, dynamic>{}),
-  null,null,null,const StaticNodeDebugInfo(const [import9.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,const StaticNodeDebugInfo(const [import10.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null,null
+  null,null,null,null,null,null,null,null,null,null
 ]
 ;
 RenderComponentType renderType_HomeComponent;
-class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
+class ViewHomeComponent0 extends DebugAppView<import13.HomeComponent> {
   Element _el_0;
   Element _el_2;
   Element _el_6;
@@ -110,48 +113,56 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
   AnchorElement _el_65;
   import1.RouterLink _RouterLink_65_3;
   Element _el_69;
+  import8.ProgressDirective _ProgressDirective_69_3;
   Element _el_71;
-  import8.SidebarDirective _SidebarDirective_71_3;
-  AnchorElement _el_73;
-  AnchorElement _el_76;
-  AnchorElement _el_79;
+  Element _el_73;
+  Element _el_76;
+  Element _el_81;
   Element _el_83;
-  ButtonElement _el_85;
-  Element _el_87;
-  Element _el_90;
-  Element _el_92;
-  Element _el_99;
-  Element _el_101;
-  AnchorElement _el_103;
-  import1.RouterLink _RouterLink_103_3;
+  AnchorElement _el_85;
+  import1.RouterLink _RouterLink_85_3;
+  Element _el_89;
+  Element _el_91;
+  import9.SidebarDirective _SidebarDirective_91_3;
+  AnchorElement _el_93;
+  AnchorElement _el_96;
+  AnchorElement _el_99;
+  Element _el_103;
+  ButtonElement _el_105;
   Element _el_107;
-  import9.TabDirective _TabDirective_107_3;
-  Element _el_109;
+  Element _el_110;
   Element _el_112;
-  Element _el_115;
   Element _el_119;
   Element _el_121;
-  Element _el_125;
+  AnchorElement _el_123;
+  import1.RouterLink _RouterLink_123_3;
   Element _el_127;
-  Element _el_131;
-  Element _el_133;
+  import10.TabDirective _TabDirective_127_3;
+  Element _el_129;
+  Element _el_132;
+  Element _el_135;
   Element _el_139;
   Element _el_141;
-  Element _el_143;
-  UListElement _el_146;
-  Element _el_148;
+  Element _el_145;
+  Element _el_147;
   Element _el_151;
-  Element _el_154;
-  Element _el_157;
-  Element _el_160;
+  Element _el_153;
+  Element _el_159;
+  Element _el_161;
   Element _el_163;
-  Element _el_166;
-  Element _el_169;
-  Element _el_172;
-  Element _el_175;
-  Element _el_178;
-  Element _el_181;
-  Element _el_184;
+  UListElement _el_166;
+  Element _el_168;
+  Element _el_171;
+  Element _el_174;
+  Element _el_177;
+  Element _el_180;
+  Element _el_183;
+  Element _el_186;
+  Element _el_189;
+  Element _el_192;
+  Element _el_195;
+  Element _el_198;
+  Element _el_201;
   var _arr_0;
   var _expr_1 = uninitialized;
   var _expr_2 = uninitialized;
@@ -179,11 +190,16 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
   var _expr_26 = uninitialized;
   var _expr_27 = uninitialized;
   var _expr_28 = uninitialized;
+  var _expr_30 = uninitialized;
   var _arr_3;
   var _expr_32 = uninitialized;
   var _expr_33 = uninitialized;
   var _expr_34 = uninitialized;
-  ViewHomeComponent0(import15.Injector parentInjector,AppElement declarationEl): super(ViewHomeComponent0,renderType_HomeComponent,import17.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_HomeComponent0);
+  var _arr_4;
+  var _expr_38 = uninitialized;
+  var _expr_39 = uninitialized;
+  var _expr_40 = uninitialized;
+  ViewHomeComponent0(import16.Injector parentInjector,AppElement declarationEl): super(ViewHomeComponent0,renderType_HomeComponent,import18.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_HomeComponent0);
   AppElement createInternal(dynamic rootSelector) {
     final parentRenderNode = initViewRoot(this.declarationAppElement.nativeElement);
     _el_0 = document.createElement('div');
@@ -241,7 +257,7 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     _el_13.append(_el_15);
     dbgElm(_el_15,15,10,12);
     setAttr(_el_15,'class','item');
-    _RouterLink_15_3 = new import1.RouterLink(this.parentInjector.get(import18.Router),this.parentInjector.get(import19.Location));
+    _RouterLink_15_3 = new import1.RouterLink(this.parentInjector.get(import19.Router),this.parentInjector.get(import20.Location));
     Text _text_16 = new Text('\n                Calendar\n            ');
     _el_15.append(_text_16);
     dbgElm(_text_16,16,10,56);
@@ -321,7 +337,7 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     _el_35.append(_el_37);
     dbgElm(_el_37,37,25,12);
     setAttr(_el_37,'class','item');
-    _RouterLink_37_3 = new import1.RouterLink(this.parentInjector.get(import18.Router),this.parentInjector.get(import19.Location));
+    _RouterLink_37_3 = new import1.RouterLink(this.parentInjector.get(import19.Router),this.parentInjector.get(import20.Location));
     Text _text_38 = new Text('\n                Dropdown\n            ');
     _el_37.append(_text_38);
     dbgElm(_text_38,38,25,56);
@@ -425,10 +441,10 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     _el_63.append(_el_65);
     dbgElm(_el_65,65,41,12);
     setAttr(_el_65,'class','item');
-    _RouterLink_65_3 = new import1.RouterLink(this.parentInjector.get(import18.Router),this.parentInjector.get(import19.Location));
-    Text _text_66 = new Text('\n                Sidebar\n            ');
+    _RouterLink_65_3 = new import1.RouterLink(this.parentInjector.get(import19.Router),this.parentInjector.get(import20.Location));
+    Text _text_66 = new Text('\n                Progress\n            ');
     _el_65.append(_text_66);
-    dbgElm(_text_66,66,41,55);
+    dbgElm(_text_66,66,41,56);
     Text _text_67 = new Text('\n        ');
     _el_63.append(_text_67);
     dbgElm(_text_67,67,43,16);
@@ -438,415 +454,481 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     _el_69 = document.createElement('div');
     _el_61.append(_el_69);
     dbgElm(_el_69,69,45,8);
+    setAttr(_el_69,'class','ui progress');
+    _ProgressDirective_69_3 = new import8.ProgressDirective(new ElementRef(_el_69));
     Text _text_70 = new Text('\n            ');
     _el_69.append(_text_70);
-    dbgElm(_text_70,70,45,13);
+    dbgElm(_text_70,70,45,94);
     _el_71 = document.createElement('div');
     _el_69.append(_el_71);
     dbgElm(_el_71,71,46,12);
-    setAttr(_el_71,'class','ui sidebar inverted vertical menu');
-    _SidebarDirective_71_3 = new import8.SidebarDirective(new ElementRef(_el_71));
+    setAttr(_el_71,'class','bar');
     Text _text_72 = new Text('\n                ');
     _el_71.append(_text_72);
-    dbgElm(_text_72,72,46,103);
-    _el_73 = document.createElement('a');
+    dbgElm(_text_72,72,46,29);
+    _el_73 = document.createElement('div');
     _el_71.append(_el_73);
     dbgElm(_el_73,73,47,16);
-    setAttr(_el_73,'class','item');
-    Text _text_74 = new Text('\n                    Menu item 1\n                ');
-    _el_73.append(_text_74);
-    dbgElm(_text_74,74,47,32);
-    Text _text_75 = new Text('\n                ');
-    _el_71.append(_text_75);
-    dbgElm(_text_75,75,49,20);
-    _el_76 = document.createElement('a');
-    _el_71.append(_el_76);
-    dbgElm(_el_76,76,50,16);
-    setAttr(_el_76,'class','item');
-    Text _text_77 = new Text('\n                    Menu item 2\n                ');
+    setAttr(_el_73,'class','progress');
+    Text _text_74 = new Text('\n            ');
+    _el_71.append(_text_74);
+    dbgElm(_text_74,74,47,44);
+    Text _text_75 = new Text('\n            ');
+    _el_69.append(_text_75);
+    dbgElm(_text_75,75,48,18);
+    _el_76 = document.createElement('div');
+    _el_69.append(_el_76);
+    dbgElm(_el_76,76,49,12);
+    setAttr(_el_76,'class','label');
+    Text _text_77 = new Text('Uploading Files');
     _el_76.append(_text_77);
-    dbgElm(_text_77,77,50,32);
-    Text _text_78 = new Text('\n                ');
-    _el_71.append(_text_78);
-    dbgElm(_text_78,78,52,20);
-    _el_79 = document.createElement('a');
-    _el_71.append(_el_79);
-    dbgElm(_el_79,79,53,16);
-    setAttr(_el_79,'class','item');
-    Text _text_80 = new Text('\n                    Menu item 3\n                ');
-    _el_79.append(_text_80);
-    dbgElm(_text_80,80,53,32);
-    Text _text_81 = new Text('\n            ');
-    _el_71.append(_text_81);
-    dbgElm(_text_81,81,55,20);
-    Text _text_82 = new Text('\n            ');
-    _el_69.append(_text_82);
-    dbgElm(_text_82,82,56,18);
-    _el_83 = document.createElement('div');
-    _el_69.append(_el_83);
-    dbgElm(_el_83,83,57,12);
-    setAttr(_el_83,'class','pusher');
-    Text _text_84 = new Text('\n                ');
+    dbgElm(_text_77,77,49,31);
+    Text _text_78 = new Text('\n        ');
+    _el_69.append(_text_78);
+    dbgElm(_text_78,78,49,52);
+    Text _text_79 = new Text('\n    ');
+    _el_61.append(_text_79);
+    dbgElm(_text_79,79,50,14);
+    Text _text_80 = new Text('\n    ');
+    _el_9.append(_text_80);
+    dbgElm(_text_80,80,51,10);
+    _el_81 = document.createElement('div');
+    _el_9.append(_el_81);
+    dbgElm(_el_81,81,52,4);
+    setAttr(_el_81,'class','column');
+    Text _text_82 = new Text('\n        ');
+    _el_81.append(_text_82);
+    dbgElm(_text_82,82,52,24);
+    _el_83 = document.createElement('h4');
+    _el_81.append(_el_83);
+    dbgElm(_el_83,83,53,8);
+    setAttr(_el_83,'class','ui header');
+    Text _text_84 = new Text('\n            ');
     _el_83.append(_text_84);
-    dbgElm(_text_84,84,57,32);
-    _el_85 = document.createElement('button');
+    dbgElm(_text_84,84,53,30);
+    _el_85 = document.createElement('a');
     _el_83.append(_el_85);
-    dbgElm(_el_85,85,58,16);
-    setAttr(_el_85,'class','ui labeled icon primary button');
-    Text _text_86 = new Text('\n                    ');
+    dbgElm(_el_85,85,54,12);
+    setAttr(_el_85,'class','item');
+    _RouterLink_85_3 = new import1.RouterLink(this.parentInjector.get(import19.Router),this.parentInjector.get(import20.Location));
+    Text _text_86 = new Text('\n                Sidebar\n            ');
     _el_85.append(_text_86);
-    dbgElm(_text_86,86,58,104);
-    _el_87 = document.createElement('i');
-    _el_85.append(_el_87);
-    dbgElm(_el_87,87,59,20);
-    setAttr(_el_87,'class','sidebar icon');
-    Text _text_88 = new Text('\n                    Show sidebar\n                ');
-    _el_85.append(_text_88);
-    dbgElm(_text_88,88,59,48);
-    Text _text_89 = new Text('\n                ');
-    _el_83.append(_text_89);
-    dbgElm(_text_89,89,61,25);
-    _el_90 = document.createElement('div');
-    _el_83.append(_el_90);
-    dbgElm(_el_90,90,62,16);
-    setAttr(_el_90,'class','ui basic segment');
-    Text _text_91 = new Text('\n                    ');
-    _el_90.append(_text_91);
-    dbgElm(_text_91,91,62,46);
-    _el_92 = document.createElement('p');
-    _el_90.append(_el_92);
-    dbgElm(_el_92,92,63,20);
-    Text _text_93 = new Text('\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n                    ');
-    _el_92.append(_text_93);
-    dbgElm(_text_93,93,63,23);
-    Text _text_94 = new Text('\n                ');
-    _el_90.append(_text_94);
-    dbgElm(_text_94,94,65,24);
-    Text _text_95 = new Text('\n            ');
-    _el_83.append(_text_95);
-    dbgElm(_text_95,95,66,22);
-    Text _text_96 = new Text('\n        ');
-    _el_69.append(_text_96);
-    dbgElm(_text_96,96,67,18);
-    Text _text_97 = new Text('\n    ');
-    _el_61.append(_text_97);
-    dbgElm(_text_97,97,68,14);
-    Text _text_98 = new Text('\n    ');
-    _el_9.append(_text_98);
-    dbgElm(_text_98,98,69,10);
-    _el_99 = document.createElement('div');
-    _el_9.append(_el_99);
-    dbgElm(_el_99,99,70,4);
-    setAttr(_el_99,'class','column');
-    Text _text_100 = new Text('\n        ');
+    dbgElm(_text_86,86,54,55);
+    Text _text_87 = new Text('\n        ');
+    _el_83.append(_text_87);
+    dbgElm(_text_87,87,56,16);
+    Text _text_88 = new Text('\n        ');
+    _el_81.append(_text_88);
+    dbgElm(_text_88,88,57,13);
+    _el_89 = document.createElement('div');
+    _el_81.append(_el_89);
+    dbgElm(_el_89,89,58,8);
+    Text _text_90 = new Text('\n            ');
+    _el_89.append(_text_90);
+    dbgElm(_text_90,90,58,13);
+    _el_91 = document.createElement('div');
+    _el_89.append(_el_91);
+    dbgElm(_el_91,91,59,12);
+    setAttr(_el_91,'class','ui sidebar inverted vertical menu');
+    _SidebarDirective_91_3 = new import9.SidebarDirective(new ElementRef(_el_91));
+    Text _text_92 = new Text('\n                ');
+    _el_91.append(_text_92);
+    dbgElm(_text_92,92,59,103);
+    _el_93 = document.createElement('a');
+    _el_91.append(_el_93);
+    dbgElm(_el_93,93,60,16);
+    setAttr(_el_93,'class','item');
+    Text _text_94 = new Text('\n                    Menu item 1\n                ');
+    _el_93.append(_text_94);
+    dbgElm(_text_94,94,60,32);
+    Text _text_95 = new Text('\n                ');
+    _el_91.append(_text_95);
+    dbgElm(_text_95,95,62,20);
+    _el_96 = document.createElement('a');
+    _el_91.append(_el_96);
+    dbgElm(_el_96,96,63,16);
+    setAttr(_el_96,'class','item');
+    Text _text_97 = new Text('\n                    Menu item 2\n                ');
+    _el_96.append(_text_97);
+    dbgElm(_text_97,97,63,32);
+    Text _text_98 = new Text('\n                ');
+    _el_91.append(_text_98);
+    dbgElm(_text_98,98,65,20);
+    _el_99 = document.createElement('a');
+    _el_91.append(_el_99);
+    dbgElm(_el_99,99,66,16);
+    setAttr(_el_99,'class','item');
+    Text _text_100 = new Text('\n                    Menu item 3\n                ');
     _el_99.append(_text_100);
-    dbgElm(_text_100,100,70,24);
-    _el_101 = document.createElement('h4');
-    _el_99.append(_el_101);
-    dbgElm(_el_101,101,71,8);
-    setAttr(_el_101,'class','ui header');
+    dbgElm(_text_100,100,66,32);
+    Text _text_101 = new Text('\n            ');
+    _el_91.append(_text_101);
+    dbgElm(_text_101,101,68,20);
     Text _text_102 = new Text('\n            ');
-    _el_101.append(_text_102);
-    dbgElm(_text_102,102,71,30);
-    _el_103 = document.createElement('a');
-    _el_101.append(_el_103);
-    dbgElm(_el_103,103,72,12);
-    setAttr(_el_103,'class','item');
-    _RouterLink_103_3 = new import1.RouterLink(this.parentInjector.get(import18.Router),this.parentInjector.get(import19.Location));
-    Text _text_104 = new Text('\n                Tab\n            ');
+    _el_89.append(_text_102);
+    dbgElm(_text_102,102,69,18);
+    _el_103 = document.createElement('div');
+    _el_89.append(_el_103);
+    dbgElm(_el_103,103,70,12);
+    setAttr(_el_103,'class','pusher');
+    Text _text_104 = new Text('\n                ');
     _el_103.append(_text_104);
-    dbgElm(_text_104,104,72,51);
-    Text _text_105 = new Text('\n        ');
-    _el_101.append(_text_105);
-    dbgElm(_text_105,105,74,16);
-    Text _text_106 = new Text('\n        ');
-    _el_99.append(_text_106);
-    dbgElm(_text_106,106,75,13);
-    _el_107 = document.createElement('div');
-    _el_99.append(_el_107);
-    dbgElm(_el_107,107,76,8);
-    setAttr(_el_107,'class','ui tabular menu');
-    setAttr(_el_107,'semantic_ui_tab','');
-    _TabDirective_107_3 = new import9.TabDirective(new ElementRef(_el_107));
-    Text _text_108 = new Text('\n            ');
-    _el_107.append(_text_108);
-    dbgElm(_text_108,108,76,53);
-    _el_109 = document.createElement('div');
-    _el_107.append(_el_109);
-    dbgElm(_el_109,109,77,12);
-    setAttr(_el_109,'class','active item');
-    setAttr(_el_109,'data-tab','tab-1');
-    Text _text_110 = new Text('Tab 1');
-    _el_109.append(_text_110);
-    dbgElm(_text_110,110,77,54);
-    Text _text_111 = new Text('\n            ');
-    _el_107.append(_text_111);
-    dbgElm(_text_111,111,77,65);
-    _el_112 = document.createElement('div');
-    _el_107.append(_el_112);
-    dbgElm(_el_112,112,78,12);
-    setAttr(_el_112,'class','item');
-    setAttr(_el_112,'data-tab','tab-2');
-    Text _text_113 = new Text('Tab 2');
+    dbgElm(_text_104,104,70,32);
+    _el_105 = document.createElement('button');
+    _el_103.append(_el_105);
+    dbgElm(_el_105,105,71,16);
+    setAttr(_el_105,'class','ui labeled icon primary button');
+    Text _text_106 = new Text('\n                    ');
+    _el_105.append(_text_106);
+    dbgElm(_text_106,106,71,104);
+    _el_107 = document.createElement('i');
+    _el_105.append(_el_107);
+    dbgElm(_el_107,107,72,20);
+    setAttr(_el_107,'class','sidebar icon');
+    Text _text_108 = new Text('\n                    Show sidebar\n                ');
+    _el_105.append(_text_108);
+    dbgElm(_text_108,108,72,48);
+    Text _text_109 = new Text('\n                ');
+    _el_103.append(_text_109);
+    dbgElm(_text_109,109,74,25);
+    _el_110 = document.createElement('div');
+    _el_103.append(_el_110);
+    dbgElm(_el_110,110,75,16);
+    setAttr(_el_110,'class','ui basic segment');
+    Text _text_111 = new Text('\n                    ');
+    _el_110.append(_text_111);
+    dbgElm(_text_111,111,75,46);
+    _el_112 = document.createElement('p');
+    _el_110.append(_el_112);
+    dbgElm(_el_112,112,76,20);
+    Text _text_113 = new Text('\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n                    ');
     _el_112.append(_text_113);
-    dbgElm(_text_113,113,78,47);
-    Text _text_114 = new Text('\n            ');
-    _el_107.append(_text_114);
-    dbgElm(_text_114,114,78,58);
-    _el_115 = document.createElement('div');
-    _el_107.append(_el_115);
-    dbgElm(_el_115,115,79,12);
-    setAttr(_el_115,'class','item');
-    setAttr(_el_115,'data-tab','tab-3');
-    Text _text_116 = new Text('Tab 3');
-    _el_115.append(_text_116);
-    dbgElm(_text_116,116,79,47);
-    Text _text_117 = new Text('\n        ');
-    _el_107.append(_text_117);
-    dbgElm(_text_117,117,79,58);
-    Text _text_118 = new Text('\n        ');
-    _el_99.append(_text_118);
-    dbgElm(_text_118,118,80,14);
+    dbgElm(_text_113,113,76,23);
+    Text _text_114 = new Text('\n                ');
+    _el_110.append(_text_114);
+    dbgElm(_text_114,114,78,24);
+    Text _text_115 = new Text('\n            ');
+    _el_103.append(_text_115);
+    dbgElm(_text_115,115,79,22);
+    Text _text_116 = new Text('\n        ');
+    _el_89.append(_text_116);
+    dbgElm(_text_116,116,80,18);
+    Text _text_117 = new Text('\n    ');
+    _el_81.append(_text_117);
+    dbgElm(_text_117,117,81,14);
+    Text _text_118 = new Text('\n    ');
+    _el_9.append(_text_118);
+    dbgElm(_text_118,118,82,10);
     _el_119 = document.createElement('div');
-    _el_99.append(_el_119);
-    dbgElm(_el_119,119,81,8);
-    setAttr(_el_119,'class','ui active tab');
-    setAttr(_el_119,'data-tab','tab-1');
-    Text _text_120 = new Text('\n            ');
+    _el_9.append(_el_119);
+    dbgElm(_el_119,119,83,4);
+    setAttr(_el_119,'class','column');
+    Text _text_120 = new Text('\n        ');
     _el_119.append(_text_120);
-    dbgElm(_text_120,120,81,52);
-    _el_121 = document.createElement('p');
+    dbgElm(_text_120,120,83,24);
+    _el_121 = document.createElement('h4');
     _el_119.append(_el_121);
-    dbgElm(_el_121,121,82,12);
-    Text _text_122 = new Text('\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            ');
+    dbgElm(_el_121,121,84,8);
+    setAttr(_el_121,'class','ui header');
+    Text _text_122 = new Text('\n            ');
     _el_121.append(_text_122);
-    dbgElm(_text_122,122,82,15);
-    Text _text_123 = new Text('\n        ');
-    _el_119.append(_text_123);
-    dbgElm(_text_123,123,84,16);
-    Text _text_124 = new Text('\n        ');
-    _el_99.append(_text_124);
-    dbgElm(_text_124,124,85,14);
-    _el_125 = document.createElement('div');
-    _el_99.append(_el_125);
-    dbgElm(_el_125,125,86,8);
-    setAttr(_el_125,'class','ui tab');
-    setAttr(_el_125,'data-tab','tab-2');
-    Text _text_126 = new Text('\n            ');
-    _el_125.append(_text_126);
-    dbgElm(_text_126,126,86,45);
-    _el_127 = document.createElement('p');
-    _el_125.append(_el_127);
-    dbgElm(_el_127,127,87,12);
-    Text _text_128 = new Text('\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n            ');
+    dbgElm(_text_122,122,84,30);
+    _el_123 = document.createElement('a');
+    _el_121.append(_el_123);
+    dbgElm(_el_123,123,85,12);
+    setAttr(_el_123,'class','item');
+    _RouterLink_123_3 = new import1.RouterLink(this.parentInjector.get(import19.Router),this.parentInjector.get(import20.Location));
+    Text _text_124 = new Text('\n                Tab\n            ');
+    _el_123.append(_text_124);
+    dbgElm(_text_124,124,85,51);
+    Text _text_125 = new Text('\n        ');
+    _el_121.append(_text_125);
+    dbgElm(_text_125,125,87,16);
+    Text _text_126 = new Text('\n        ');
+    _el_119.append(_text_126);
+    dbgElm(_text_126,126,88,13);
+    _el_127 = document.createElement('div');
+    _el_119.append(_el_127);
+    dbgElm(_el_127,127,89,8);
+    setAttr(_el_127,'class','ui tabular menu');
+    setAttr(_el_127,'semantic_ui_tab','');
+    _TabDirective_127_3 = new import10.TabDirective(new ElementRef(_el_127));
+    Text _text_128 = new Text('\n            ');
     _el_127.append(_text_128);
-    dbgElm(_text_128,128,87,15);
-    Text _text_129 = new Text('\n        ');
-    _el_125.append(_text_129);
-    dbgElm(_text_129,129,89,16);
-    Text _text_130 = new Text('\n        ');
-    _el_99.append(_text_130);
-    dbgElm(_text_130,130,90,14);
-    _el_131 = document.createElement('div');
-    _el_99.append(_el_131);
-    dbgElm(_el_131,131,91,8);
-    setAttr(_el_131,'class','ui tab');
-    setAttr(_el_131,'data-tab','tab-3');
-    Text _text_132 = new Text('\n            ');
-    _el_131.append(_text_132);
-    dbgElm(_text_132,132,91,45);
-    _el_133 = document.createElement('p');
-    _el_131.append(_el_133);
-    dbgElm(_el_133,133,92,12);
-    Text _text_134 = new Text('\n                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n            ');
-    _el_133.append(_text_134);
-    dbgElm(_text_134,134,92,15);
-    Text _text_135 = new Text('\n        ');
-    _el_131.append(_text_135);
-    dbgElm(_text_135,135,94,16);
-    Text _text_136 = new Text('\n    ');
-    _el_99.append(_text_136);
-    dbgElm(_text_136,136,95,14);
-    Text _text_137 = new Text('\n');
-    _el_9.append(_text_137);
-    dbgElm(_text_137,137,96,10);
-    Text _text_138 = new Text('\n\n');
-    parentRenderNode.append(_text_138);
-    dbgElm(_text_138,138,97,6);
+    dbgElm(_text_128,128,89,53);
+    _el_129 = document.createElement('div');
+    _el_127.append(_el_129);
+    dbgElm(_el_129,129,90,12);
+    setAttr(_el_129,'class','active item');
+    setAttr(_el_129,'data-tab','tab-1');
+    Text _text_130 = new Text('Tab 1');
+    _el_129.append(_text_130);
+    dbgElm(_text_130,130,90,54);
+    Text _text_131 = new Text('\n            ');
+    _el_127.append(_text_131);
+    dbgElm(_text_131,131,90,65);
+    _el_132 = document.createElement('div');
+    _el_127.append(_el_132);
+    dbgElm(_el_132,132,91,12);
+    setAttr(_el_132,'class','item');
+    setAttr(_el_132,'data-tab','tab-2');
+    Text _text_133 = new Text('Tab 2');
+    _el_132.append(_text_133);
+    dbgElm(_text_133,133,91,47);
+    Text _text_134 = new Text('\n            ');
+    _el_127.append(_text_134);
+    dbgElm(_text_134,134,91,58);
+    _el_135 = document.createElement('div');
+    _el_127.append(_el_135);
+    dbgElm(_el_135,135,92,12);
+    setAttr(_el_135,'class','item');
+    setAttr(_el_135,'data-tab','tab-3');
+    Text _text_136 = new Text('Tab 3');
+    _el_135.append(_text_136);
+    dbgElm(_text_136,136,92,47);
+    Text _text_137 = new Text('\n        ');
+    _el_127.append(_text_137);
+    dbgElm(_text_137,137,92,58);
+    Text _text_138 = new Text('\n        ');
+    _el_119.append(_text_138);
+    dbgElm(_text_138,138,93,14);
     _el_139 = document.createElement('div');
-    parentRenderNode.append(_el_139);
-    dbgElm(_el_139,139,99,0);
-    setAttr(_el_139,'class','ui divider');
-    Text _text_140 = new Text('\n\n');
-    parentRenderNode.append(_text_140);
-    dbgElm(_text_140,140,99,30);
-    _el_141 = document.createElement('div');
-    parentRenderNode.append(_el_141);
-    dbgElm(_el_141,141,101,0);
-    setAttr(_el_141,'class','ui basic segment');
-    Text _text_142 = new Text('\n    ');
+    _el_119.append(_el_139);
+    dbgElm(_el_139,139,94,8);
+    setAttr(_el_139,'class','ui active tab');
+    setAttr(_el_139,'data-tab','tab-1');
+    Text _text_140 = new Text('\n            ');
+    _el_139.append(_text_140);
+    dbgElm(_text_140,140,94,52);
+    _el_141 = document.createElement('p');
+    _el_139.append(_el_141);
+    dbgElm(_el_141,141,95,12);
+    Text _text_142 = new Text('\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            ');
     _el_141.append(_text_142);
-    dbgElm(_text_142,142,101,30);
-    _el_143 = document.createElement('h2');
-    _el_141.append(_el_143);
-    dbgElm(_el_143,143,102,4);
-    setAttr(_el_143,'class','ui header');
-    Text _text_144 = new Text('To-do');
-    _el_143.append(_text_144);
-    dbgElm(_text_144,144,102,26);
-    Text _text_145 = new Text('\n    ');
-    _el_141.append(_text_145);
-    dbgElm(_text_145,145,102,36);
-    _el_146 = document.createElement('ul');
-    _el_141.append(_el_146);
-    dbgElm(_el_146,146,103,4);
-    Text _text_147 = new Text('\n        ');
-    _el_146.append(_text_147);
-    dbgElm(_text_147,147,103,8);
-    _el_148 = document.createElement('li');
-    _el_146.append(_el_148);
-    dbgElm(_el_148,148,104,8);
-    Text _text_149 = new Text('Accordion');
-    _el_148.append(_text_149);
-    dbgElm(_text_149,149,104,12);
+    dbgElm(_text_142,142,95,15);
+    Text _text_143 = new Text('\n        ');
+    _el_139.append(_text_143);
+    dbgElm(_text_143,143,97,16);
+    Text _text_144 = new Text('\n        ');
+    _el_119.append(_text_144);
+    dbgElm(_text_144,144,98,14);
+    _el_145 = document.createElement('div');
+    _el_119.append(_el_145);
+    dbgElm(_el_145,145,99,8);
+    setAttr(_el_145,'class','ui tab');
+    setAttr(_el_145,'data-tab','tab-2');
+    Text _text_146 = new Text('\n            ');
+    _el_145.append(_text_146);
+    dbgElm(_text_146,146,99,45);
+    _el_147 = document.createElement('p');
+    _el_145.append(_el_147);
+    dbgElm(_el_147,147,100,12);
+    Text _text_148 = new Text('\n                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n            ');
+    _el_147.append(_text_148);
+    dbgElm(_text_148,148,100,15);
+    Text _text_149 = new Text('\n        ');
+    _el_145.append(_text_149);
+    dbgElm(_text_149,149,102,16);
     Text _text_150 = new Text('\n        ');
-    _el_146.append(_text_150);
-    dbgElm(_text_150,150,104,26);
-    _el_151 = document.createElement('li');
-    _el_146.append(_el_151);
-    dbgElm(_el_151,151,105,8);
-    Text _text_152 = new Text('Checkbox');
+    _el_119.append(_text_150);
+    dbgElm(_text_150,150,103,14);
+    _el_151 = document.createElement('div');
+    _el_119.append(_el_151);
+    dbgElm(_el_151,151,104,8);
+    setAttr(_el_151,'class','ui tab');
+    setAttr(_el_151,'data-tab','tab-3');
+    Text _text_152 = new Text('\n            ');
     _el_151.append(_text_152);
-    dbgElm(_text_152,152,105,12);
-    Text _text_153 = new Text('\n        ');
-    _el_146.append(_text_153);
-    dbgElm(_text_153,153,105,25);
-    _el_154 = document.createElement('li');
-    _el_146.append(_el_154);
-    dbgElm(_el_154,154,106,8);
-    Text _text_155 = new Text('Dimmer');
-    _el_154.append(_text_155);
-    dbgElm(_text_155,155,106,12);
-    Text _text_156 = new Text('\n        ');
-    _el_146.append(_text_156);
-    dbgElm(_text_156,156,106,23);
-    _el_157 = document.createElement('li');
-    _el_146.append(_el_157);
-    dbgElm(_el_157,157,107,8);
-    Text _text_158 = new Text('Embed');
-    _el_157.append(_text_158);
-    dbgElm(_text_158,158,107,12);
-    Text _text_159 = new Text('\n        ');
-    _el_146.append(_text_159);
-    dbgElm(_text_159,159,107,22);
-    _el_160 = document.createElement('li');
-    _el_146.append(_el_160);
-    dbgElm(_el_160,160,108,8);
-    Text _text_161 = new Text('Modal');
-    _el_160.append(_text_161);
-    dbgElm(_text_161,161,108,12);
-    Text _text_162 = new Text('\n        ');
-    _el_146.append(_text_162);
-    dbgElm(_text_162,162,108,22);
-    _el_163 = document.createElement('li');
-    _el_146.append(_el_163);
-    dbgElm(_el_163,163,109,8);
-    Text _text_164 = new Text('Nag');
+    dbgElm(_text_152,152,104,45);
+    _el_153 = document.createElement('p');
+    _el_151.append(_el_153);
+    dbgElm(_el_153,153,105,12);
+    Text _text_154 = new Text('\n                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n            ');
+    _el_153.append(_text_154);
+    dbgElm(_text_154,154,105,15);
+    Text _text_155 = new Text('\n        ');
+    _el_151.append(_text_155);
+    dbgElm(_text_155,155,107,16);
+    Text _text_156 = new Text('\n    ');
+    _el_119.append(_text_156);
+    dbgElm(_text_156,156,108,14);
+    Text _text_157 = new Text('\n');
+    _el_9.append(_text_157);
+    dbgElm(_text_157,157,109,10);
+    Text _text_158 = new Text('\n\n');
+    parentRenderNode.append(_text_158);
+    dbgElm(_text_158,158,110,6);
+    _el_159 = document.createElement('div');
+    parentRenderNode.append(_el_159);
+    dbgElm(_el_159,159,112,0);
+    setAttr(_el_159,'class','ui divider');
+    Text _text_160 = new Text('\n\n');
+    parentRenderNode.append(_text_160);
+    dbgElm(_text_160,160,112,30);
+    _el_161 = document.createElement('div');
+    parentRenderNode.append(_el_161);
+    dbgElm(_el_161,161,114,0);
+    setAttr(_el_161,'class','ui basic segment');
+    Text _text_162 = new Text('\n    ');
+    _el_161.append(_text_162);
+    dbgElm(_text_162,162,114,30);
+    _el_163 = document.createElement('h2');
+    _el_161.append(_el_163);
+    dbgElm(_el_163,163,115,4);
+    setAttr(_el_163,'class','ui header');
+    Text _text_164 = new Text('To-do');
     _el_163.append(_text_164);
-    dbgElm(_text_164,164,109,12);
-    Text _text_165 = new Text('\n        ');
-    _el_146.append(_text_165);
-    dbgElm(_text_165,165,109,20);
-    _el_166 = document.createElement('li');
-    _el_146.append(_el_166);
-    dbgElm(_el_166,166,110,8);
-    Text _text_167 = new Text('Popup');
+    dbgElm(_text_164,164,115,26);
+    Text _text_165 = new Text('\n    ');
+    _el_161.append(_text_165);
+    dbgElm(_text_165,165,115,36);
+    _el_166 = document.createElement('ul');
+    _el_161.append(_el_166);
+    dbgElm(_el_166,166,116,4);
+    Text _text_167 = new Text('\n        ');
     _el_166.append(_text_167);
-    dbgElm(_text_167,167,110,12);
-    Text _text_168 = new Text('\n        ');
-    _el_146.append(_text_168);
-    dbgElm(_text_168,168,110,22);
-    _el_169 = document.createElement('li');
-    _el_146.append(_el_169);
-    dbgElm(_el_169,169,111,8);
-    Text _text_170 = new Text('Progress');
-    _el_169.append(_text_170);
-    dbgElm(_text_170,170,111,12);
-    Text _text_171 = new Text('\n        ');
-    _el_146.append(_text_171);
-    dbgElm(_text_171,171,111,25);
-    _el_172 = document.createElement('li');
-    _el_146.append(_el_172);
-    dbgElm(_el_172,172,112,8);
-    Text _text_173 = new Text('Rating');
-    _el_172.append(_text_173);
-    dbgElm(_text_173,173,112,12);
-    Text _text_174 = new Text('\n        ');
-    _el_146.append(_text_174);
-    dbgElm(_text_174,174,112,23);
-    _el_175 = document.createElement('li');
-    _el_146.append(_el_175);
-    dbgElm(_el_175,175,113,8);
-    Text _text_176 = new Text('Search');
-    _el_175.append(_text_176);
-    dbgElm(_text_176,176,113,12);
-    Text _text_177 = new Text('\n        ');
-    _el_146.append(_text_177);
-    dbgElm(_text_177,177,113,23);
-    _el_178 = document.createElement('li');
-    _el_146.append(_el_178);
-    dbgElm(_el_178,178,114,8);
-    Text _text_179 = new Text('Shape');
-    _el_178.append(_text_179);
-    dbgElm(_text_179,179,114,12);
-    Text _text_180 = new Text('\n        ');
-    _el_146.append(_text_180);
-    dbgElm(_text_180,180,114,22);
-    _el_181 = document.createElement('li');
-    _el_146.append(_el_181);
-    dbgElm(_el_181,181,115,8);
-    Text _text_182 = new Text('Sticky');
-    _el_181.append(_text_182);
-    dbgElm(_text_182,182,115,12);
-    Text _text_183 = new Text('\n        ');
-    _el_146.append(_text_183);
-    dbgElm(_text_183,183,115,23);
-    _el_184 = document.createElement('li');
-    _el_146.append(_el_184);
-    dbgElm(_el_184,184,116,8);
-    Text _text_185 = new Text('Transition');
-    _el_184.append(_text_185);
-    dbgElm(_text_185,185,116,12);
-    Text _text_186 = new Text('\n    ');
-    _el_146.append(_text_186);
-    dbgElm(_text_186,186,116,27);
-    Text _text_187 = new Text('\n');
-    _el_141.append(_text_187);
-    dbgElm(_text_187,187,117,9);
-    Text _text_188 = new Text('\n');
-    parentRenderNode.append(_text_188);
-    dbgElm(_text_188,188,118,6);
+    dbgElm(_text_167,167,116,8);
+    _el_168 = document.createElement('li');
+    _el_166.append(_el_168);
+    dbgElm(_el_168,168,117,8);
+    Text _text_169 = new Text('Accordion');
+    _el_168.append(_text_169);
+    dbgElm(_text_169,169,117,12);
+    Text _text_170 = new Text('\n        ');
+    _el_166.append(_text_170);
+    dbgElm(_text_170,170,117,26);
+    _el_171 = document.createElement('li');
+    _el_166.append(_el_171);
+    dbgElm(_el_171,171,118,8);
+    Text _text_172 = new Text('Checkbox');
+    _el_171.append(_text_172);
+    dbgElm(_text_172,172,118,12);
+    Text _text_173 = new Text('\n        ');
+    _el_166.append(_text_173);
+    dbgElm(_text_173,173,118,25);
+    _el_174 = document.createElement('li');
+    _el_166.append(_el_174);
+    dbgElm(_el_174,174,119,8);
+    Text _text_175 = new Text('Dimmer');
+    _el_174.append(_text_175);
+    dbgElm(_text_175,175,119,12);
+    Text _text_176 = new Text('\n        ');
+    _el_166.append(_text_176);
+    dbgElm(_text_176,176,119,23);
+    _el_177 = document.createElement('li');
+    _el_166.append(_el_177);
+    dbgElm(_el_177,177,120,8);
+    Text _text_178 = new Text('Embed');
+    _el_177.append(_text_178);
+    dbgElm(_text_178,178,120,12);
+    Text _text_179 = new Text('\n        ');
+    _el_166.append(_text_179);
+    dbgElm(_text_179,179,120,22);
+    _el_180 = document.createElement('li');
+    _el_166.append(_el_180);
+    dbgElm(_el_180,180,121,8);
+    Text _text_181 = new Text('Modal');
+    _el_180.append(_text_181);
+    dbgElm(_text_181,181,121,12);
+    Text _text_182 = new Text('\n        ');
+    _el_166.append(_text_182);
+    dbgElm(_text_182,182,121,22);
+    _el_183 = document.createElement('li');
+    _el_166.append(_el_183);
+    dbgElm(_el_183,183,122,8);
+    Text _text_184 = new Text('Nag');
+    _el_183.append(_text_184);
+    dbgElm(_text_184,184,122,12);
+    Text _text_185 = new Text('\n        ');
+    _el_166.append(_text_185);
+    dbgElm(_text_185,185,122,20);
+    _el_186 = document.createElement('li');
+    _el_166.append(_el_186);
+    dbgElm(_el_186,186,123,8);
+    Text _text_187 = new Text('Popup');
+    _el_186.append(_text_187);
+    dbgElm(_text_187,187,123,12);
+    Text _text_188 = new Text('\n        ');
+    _el_166.append(_text_188);
+    dbgElm(_text_188,188,123,22);
+    _el_189 = document.createElement('li');
+    _el_166.append(_el_189);
+    dbgElm(_el_189,189,124,8);
+    Text _text_190 = new Text('Rating');
+    _el_189.append(_text_190);
+    dbgElm(_text_190,190,124,12);
+    Text _text_191 = new Text('\n        ');
+    _el_166.append(_text_191);
+    dbgElm(_text_191,191,124,23);
+    _el_192 = document.createElement('li');
+    _el_166.append(_el_192);
+    dbgElm(_el_192,192,125,8);
+    Text _text_193 = new Text('Search');
+    _el_192.append(_text_193);
+    dbgElm(_text_193,193,125,12);
+    Text _text_194 = new Text('\n        ');
+    _el_166.append(_text_194);
+    dbgElm(_text_194,194,125,23);
+    _el_195 = document.createElement('li');
+    _el_166.append(_el_195);
+    dbgElm(_el_195,195,126,8);
+    Text _text_196 = new Text('Shape');
+    _el_195.append(_text_196);
+    dbgElm(_text_196,196,126,12);
+    Text _text_197 = new Text('\n        ');
+    _el_166.append(_text_197);
+    dbgElm(_text_197,197,126,22);
+    _el_198 = document.createElement('li');
+    _el_166.append(_el_198);
+    dbgElm(_el_198,198,127,8);
+    Text _text_199 = new Text('Sticky');
+    _el_198.append(_text_199);
+    dbgElm(_text_199,199,127,12);
+    Text _text_200 = new Text('\n        ');
+    _el_166.append(_text_200);
+    dbgElm(_text_200,200,127,23);
+    _el_201 = document.createElement('li');
+    _el_166.append(_el_201);
+    dbgElm(_el_201,201,128,8);
+    Text _text_202 = new Text('Transition');
+    _el_201.append(_text_202);
+    dbgElm(_text_202,202,128,12);
+    Text _text_203 = new Text('\n    ');
+    _el_166.append(_text_203);
+    dbgElm(_text_203,203,128,27);
+    Text _text_204 = new Text('\n');
+    _el_161.append(_text_204);
+    dbgElm(_text_204,204,129,9);
+    Text _text_205 = new Text('\n');
+    parentRenderNode.append(_text_205);
+    dbgElm(_text_205,205,130,6);
     renderer.listen(_el_15,'click',evt(_handle_click_15_0));
-    this._arr_0 = import21.pureProxy1((p0) {
+    this._arr_0 = import22.pureProxy1((p0) {
       return [p0];
     });
     renderer.listen(_el_19,'ngModelChange',evt(_handle_ngModelChange_19_0));
     final subscription_0 = _NgModel_19_5.update.listen(evt(_handle_ngModelChange_19_0));
     renderer.listen(_el_37,'click',evt(_handle_click_37_0));
-    this._arr_1 = import21.pureProxy1((p0) {
+    this._arr_1 = import22.pureProxy1((p0) {
       return [p0];
     });
     renderer.listen(_el_41,'ngModelChange',evt(_handle_ngModelChange_41_0));
     final subscription_1 = _NgModel_41_5.update.listen(evt(_handle_ngModelChange_41_0));
     renderer.listen(_el_65,'click',evt(_handle_click_65_0));
-    this._arr_2 = import21.pureProxy1((p0) {
+    this._arr_2 = import22.pureProxy1((p0) {
       return [p0];
     });
-    renderer.listen(_el_71,'semantic_ui_sidebar',evt(_handle_semantic_ui_sidebar_71_0));
-    final subscription_2 = _SidebarDirective_71_3.eventEmitter.listen(evt(_handle_semantic_ui_sidebar_71_0));
+    renderer.listen(_el_69,'semantic_ui_progress',evt(_handle_semantic_ui_progress_69_0));
+    final subscription_2 = _ProgressDirective_69_3.eventEmitter.listen(evt(_handle_semantic_ui_progress_69_0));
     renderer.listen(_el_85,'click',evt(_handle_click_85_0));
-    renderer.listen(_el_103,'click',evt(_handle_click_103_0));
-    this._arr_3 = import21.pureProxy1((p0) {
+    this._arr_3 = import22.pureProxy1((p0) {
+      return [p0];
+    });
+    renderer.listen(_el_91,'semantic_ui_sidebar',evt(_handle_semantic_ui_sidebar_91_0));
+    final subscription_3 = _SidebarDirective_91_3.eventEmitter.listen(evt(_handle_semantic_ui_sidebar_91_0));
+    renderer.listen(_el_105,'click',evt(_handle_click_105_0));
+    renderer.listen(_el_123,'click',evt(_handle_click_123_0));
+    this._arr_4 = import22.pureProxy1((p0) {
       return [p0];
     });
     init([],[
@@ -857,22 +939,24 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
       _el_41,_text_42,_el_43,_text_44,_el_45,_text_46,_el_47,_text_48,_text_49,_el_50,
       _text_51,_el_52,_text_53,_text_54,_el_55,_text_56,_text_57,_text_58,_text_59,_text_60,
       _el_61,_text_62,_el_63,_text_64,_el_65,_text_66,_text_67,_text_68,_el_69,_text_70,
-      _el_71,_text_72,_el_73,_text_74,_text_75,_el_76,_text_77,_text_78,_el_79,_text_80,
-      _text_81,_text_82,_el_83,_text_84,_el_85,_text_86,_el_87,_text_88,_text_89,_el_90,
-      _text_91,_el_92,_text_93,_text_94,_text_95,_text_96,_text_97,_text_98,_el_99,_text_100,
-      _el_101,_text_102,_el_103,_text_104,_text_105,_text_106,_el_107,_text_108,_el_109,
-      _text_110,_text_111,_el_112,_text_113,_text_114,_el_115,_text_116,_text_117,_text_118,
-      _el_119,_text_120,_el_121,_text_122,_text_123,_text_124,_el_125,_text_126,_el_127,
-      _text_128,_text_129,_text_130,_el_131,_text_132,_el_133,_text_134,_text_135,_text_136,
-      _text_137,_text_138,_el_139,_text_140,_el_141,_text_142,_el_143,_text_144,_text_145,
-      _el_146,_text_147,_el_148,_text_149,_text_150,_el_151,_text_152,_text_153,_el_154,
-      _text_155,_text_156,_el_157,_text_158,_text_159,_el_160,_text_161,_text_162,_el_163,
-      _text_164,_text_165,_el_166,_text_167,_text_168,_el_169,_text_170,_text_171,_el_172,
-      _text_173,_text_174,_el_175,_text_176,_text_177,_el_178,_text_179,_text_180,_el_181,
-      _text_182,_text_183,_el_184,_text_185,_text_186,_text_187,_text_188
+      _el_71,_text_72,_el_73,_text_74,_text_75,_el_76,_text_77,_text_78,_text_79,_text_80,
+      _el_81,_text_82,_el_83,_text_84,_el_85,_text_86,_text_87,_text_88,_el_89,_text_90,
+      _el_91,_text_92,_el_93,_text_94,_text_95,_el_96,_text_97,_text_98,_el_99,_text_100,
+      _text_101,_text_102,_el_103,_text_104,_el_105,_text_106,_el_107,_text_108,_text_109,
+      _el_110,_text_111,_el_112,_text_113,_text_114,_text_115,_text_116,_text_117,_text_118,
+      _el_119,_text_120,_el_121,_text_122,_el_123,_text_124,_text_125,_text_126,_el_127,
+      _text_128,_el_129,_text_130,_text_131,_el_132,_text_133,_text_134,_el_135,_text_136,
+      _text_137,_text_138,_el_139,_text_140,_el_141,_text_142,_text_143,_text_144,_el_145,
+      _text_146,_el_147,_text_148,_text_149,_text_150,_el_151,_text_152,_el_153,_text_154,
+      _text_155,_text_156,_text_157,_text_158,_el_159,_text_160,_el_161,_text_162,_el_163,
+      _text_164,_text_165,_el_166,_text_167,_el_168,_text_169,_text_170,_el_171,_text_172,
+      _text_173,_el_174,_text_175,_text_176,_el_177,_text_178,_text_179,_el_180,_text_181,
+      _text_182,_el_183,_text_184,_text_185,_el_186,_text_187,_text_188,_el_189,_text_190,
+      _text_191,_el_192,_text_193,_text_194,_el_195,_text_196,_text_197,_el_198,_text_199,
+      _text_200,_el_201,_text_202,_text_203,_text_204,_text_205
     ]
     ,[
-      subscription_0,subscription_1,subscription_2
+      subscription_0,subscription_1,subscription_2,subscription_3
     ]
     );
     return null;
@@ -891,22 +975,24 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     if ((identical(token, import5.NgControl) && ((41 <= requestNodeIndex) && (requestNodeIndex <= 58)))) { return _NgControl_41_6; }
     if ((identical(token, import6.NgControlStatus) && ((41 <= requestNodeIndex) && (requestNodeIndex <= 58)))) { return _NgControlStatus_41_7; }
     if ((identical(token, import1.RouterLink) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return _RouterLink_65_3; }
-    if ((identical(token, import8.SidebarDirective) && ((71 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return _SidebarDirective_71_3; }
-    if ((identical(token, import1.RouterLink) && ((103 <= requestNodeIndex) && (requestNodeIndex <= 104)))) { return _RouterLink_103_3; }
-    if ((identical(token, import9.TabDirective) && ((107 <= requestNodeIndex) && (requestNodeIndex <= 117)))) { return _TabDirective_107_3; }
+    if ((identical(token, import8.ProgressDirective) && ((69 <= requestNodeIndex) && (requestNodeIndex <= 78)))) { return _ProgressDirective_69_3; }
+    if ((identical(token, import1.RouterLink) && ((85 <= requestNodeIndex) && (requestNodeIndex <= 86)))) { return _RouterLink_85_3; }
+    if ((identical(token, import9.SidebarDirective) && ((91 <= requestNodeIndex) && (requestNodeIndex <= 101)))) { return _SidebarDirective_91_3; }
+    if ((identical(token, import1.RouterLink) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 124)))) { return _RouterLink_123_3; }
+    if ((identical(token, import10.TabDirective) && ((127 <= requestNodeIndex) && (requestNodeIndex <= 137)))) { return _TabDirective_127_3; }
     return notFoundResult;
   }
   void detectChangesInternal() {
     Map<String, SimpleChange> changes;
     dbg(15,10,28);
     final currVal_1 = _arr_0('Calendar');
-    if (import21.checkBinding(_expr_1,currVal_1)) {
+    if (import22.checkBinding(_expr_1,currVal_1)) {
       _RouterLink_15_3.routeParams = currVal_1;
       _expr_1 = currVal_1;
     }
     dbg(19,14,13);
     final currVal_5 = ctx.dateSettings;
-    if (import21.checkBinding(_expr_5,currVal_5)) {
+    if (import22.checkBinding(_expr_5,currVal_5)) {
       _CalendarDirective_19_3.settings = currVal_5;
       _expr_5 = currVal_5;
     }
@@ -914,7 +1000,7 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     changes = null;
     dbg(19,14,51);
     final currVal_6 = ctx.date;
-    if (import21.checkBinding(_expr_6,currVal_6)) {
+    if (import22.checkBinding(_expr_6,currVal_6)) {
       _NgModel_19_5.model = currVal_6;
       if (identical(changes, null)) { (changes = <String, SimpleChange>{}); }
       changes['model'] = new SimpleChange(_expr_6,currVal_6);
@@ -923,7 +1009,7 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     if (!identical(changes, null)) { _NgModel_19_5.ngOnChanges(changes); }
     dbg(37,25,28);
     final currVal_14 = _arr_1('Dropdown');
-    if (import21.checkBinding(_expr_14,currVal_14)) {
+    if (import22.checkBinding(_expr_14,currVal_14)) {
       _RouterLink_37_3.routeParams = currVal_14;
       _expr_14 = currVal_14;
     }
@@ -931,7 +1017,7 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     changes = null;
     dbg(41,29,34);
     final currVal_18 = ctx.gender;
-    if (import21.checkBinding(_expr_18,currVal_18)) {
+    if (import22.checkBinding(_expr_18,currVal_18)) {
       _NgModel_41_5.model = currVal_18;
       if (identical(changes, null)) { (changes = <String, SimpleChange>{}); }
       changes['model'] = new SimpleChange(_expr_18,currVal_18);
@@ -939,150 +1025,176 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     }
     if (!identical(changes, null)) { _NgModel_41_5.ngOnChanges(changes); }
     dbg(65,41,28);
-    final currVal_26 = _arr_2('Sidebar');
-    if (import21.checkBinding(_expr_26,currVal_26)) {
+    final currVal_26 = _arr_2('Progress');
+    if (import22.checkBinding(_expr_26,currVal_26)) {
       _RouterLink_65_3.routeParams = currVal_26;
       _expr_26 = currVal_26;
     }
-    dbg(103,72,28);
-    final currVal_32 = _arr_3('Tab');
-    if (import21.checkBinding(_expr_32,currVal_32)) {
-      _RouterLink_103_3.routeParams = currVal_32;
+    dbg(69,45,59);
+    final currVal_30 = 30;
+    if (import22.checkBinding(_expr_30,currVal_30)) {
+      _ProgressDirective_69_3.percent = currVal_30;
+      _expr_30 = currVal_30;
+    }
+    dbg(85,54,28);
+    final currVal_32 = _arr_3('Sidebar');
+    if (import22.checkBinding(_expr_32,currVal_32)) {
+      _RouterLink_85_3.routeParams = currVal_32;
       _expr_32 = currVal_32;
     }
+    dbg(123,85,28);
+    final currVal_38 = _arr_4('Tab');
+    if (import22.checkBinding(_expr_38,currVal_38)) {
+      _RouterLink_123_3.routeParams = currVal_38;
+      _expr_38 = currVal_38;
+    }
     this.detectContentChildrenChanges();
-    if (!import21.AppViewUtils.throwOnChanges) {
-      dbg(71,46,12);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _SidebarDirective_71_3.ngAfterContentInit(); }
+    if (!import22.AppViewUtils.throwOnChanges) {
+      dbg(69,45,8);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _ProgressDirective_69_3.ngAfterContentInit(); }
+      dbg(91,59,12);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _SidebarDirective_91_3.ngAfterContentInit(); }
     }
     dbg(15,10,12);
     final currVal_2 = _RouterLink_15_3.isRouteActive;
-    if (import21.checkBinding(_expr_2,currVal_2)) {
+    if (import22.checkBinding(_expr_2,currVal_2)) {
       updateClass(_el_15,'router-link-active',currVal_2);
       _expr_2 = currVal_2;
     }
     dbg(15,10,12);
     final currVal_3 = _RouterLink_15_3.visibleHref;
-    if (import21.checkBinding(_expr_3,currVal_3)) {
-      setAttr(_el_15,'href',((import21.appViewUtils.sanitizer.sanitizeUrl(currVal_3) == null)? null: import21.appViewUtils.sanitizer.sanitizeUrl(currVal_3).toString()));
+    if (import22.checkBinding(_expr_3,currVal_3)) {
+      setAttr(_el_15,'href',((import22.appViewUtils.sanitizer.sanitizeUrl(currVal_3) == null)? null: import22.appViewUtils.sanitizer.sanitizeUrl(currVal_3).toString()));
       _expr_3 = currVal_3;
     }
     dbg(19,14,8);
     final currVal_7 = _NgControlStatus_19_7.ngClassInvalid;
-    if (import21.checkBinding(_expr_7,currVal_7)) {
+    if (import22.checkBinding(_expr_7,currVal_7)) {
       updateClass(_el_19,'ng-invalid',currVal_7);
       _expr_7 = currVal_7;
     }
     dbg(19,14,8);
     final currVal_8 = _NgControlStatus_19_7.ngClassTouched;
-    if (import21.checkBinding(_expr_8,currVal_8)) {
+    if (import22.checkBinding(_expr_8,currVal_8)) {
       updateClass(_el_19,'ng-touched',currVal_8);
       _expr_8 = currVal_8;
     }
     dbg(19,14,8);
     final currVal_9 = _NgControlStatus_19_7.ngClassUntouched;
-    if (import21.checkBinding(_expr_9,currVal_9)) {
+    if (import22.checkBinding(_expr_9,currVal_9)) {
       updateClass(_el_19,'ng-untouched',currVal_9);
       _expr_9 = currVal_9;
     }
     dbg(19,14,8);
     final currVal_10 = _NgControlStatus_19_7.ngClassValid;
-    if (import21.checkBinding(_expr_10,currVal_10)) {
+    if (import22.checkBinding(_expr_10,currVal_10)) {
       updateClass(_el_19,'ng-valid',currVal_10);
       _expr_10 = currVal_10;
     }
     dbg(19,14,8);
     final currVal_11 = _NgControlStatus_19_7.ngClassDirty;
-    if (import21.checkBinding(_expr_11,currVal_11)) {
+    if (import22.checkBinding(_expr_11,currVal_11)) {
       updateClass(_el_19,'ng-dirty',currVal_11);
       _expr_11 = currVal_11;
     }
     dbg(19,14,8);
     final currVal_12 = _NgControlStatus_19_7.ngClassPristine;
-    if (import21.checkBinding(_expr_12,currVal_12)) {
+    if (import22.checkBinding(_expr_12,currVal_12)) {
       updateClass(_el_19,'ng-pristine',currVal_12);
       _expr_12 = currVal_12;
     }
     dbg(37,25,12);
     final currVal_15 = _RouterLink_37_3.isRouteActive;
-    if (import21.checkBinding(_expr_15,currVal_15)) {
+    if (import22.checkBinding(_expr_15,currVal_15)) {
       updateClass(_el_37,'router-link-active',currVal_15);
       _expr_15 = currVal_15;
     }
     dbg(37,25,12);
     final currVal_16 = _RouterLink_37_3.visibleHref;
-    if (import21.checkBinding(_expr_16,currVal_16)) {
-      setAttr(_el_37,'href',((import21.appViewUtils.sanitizer.sanitizeUrl(currVal_16) == null)? null: import21.appViewUtils.sanitizer.sanitizeUrl(currVal_16).toString()));
+    if (import22.checkBinding(_expr_16,currVal_16)) {
+      setAttr(_el_37,'href',((import22.appViewUtils.sanitizer.sanitizeUrl(currVal_16) == null)? null: import22.appViewUtils.sanitizer.sanitizeUrl(currVal_16).toString()));
       _expr_16 = currVal_16;
     }
     dbg(41,29,8);
     final currVal_19 = _NgControlStatus_41_7.ngClassInvalid;
-    if (import21.checkBinding(_expr_19,currVal_19)) {
+    if (import22.checkBinding(_expr_19,currVal_19)) {
       updateClass(_el_41,'ng-invalid',currVal_19);
       _expr_19 = currVal_19;
     }
     dbg(41,29,8);
     final currVal_20 = _NgControlStatus_41_7.ngClassTouched;
-    if (import21.checkBinding(_expr_20,currVal_20)) {
+    if (import22.checkBinding(_expr_20,currVal_20)) {
       updateClass(_el_41,'ng-touched',currVal_20);
       _expr_20 = currVal_20;
     }
     dbg(41,29,8);
     final currVal_21 = _NgControlStatus_41_7.ngClassUntouched;
-    if (import21.checkBinding(_expr_21,currVal_21)) {
+    if (import22.checkBinding(_expr_21,currVal_21)) {
       updateClass(_el_41,'ng-untouched',currVal_21);
       _expr_21 = currVal_21;
     }
     dbg(41,29,8);
     final currVal_22 = _NgControlStatus_41_7.ngClassValid;
-    if (import21.checkBinding(_expr_22,currVal_22)) {
+    if (import22.checkBinding(_expr_22,currVal_22)) {
       updateClass(_el_41,'ng-valid',currVal_22);
       _expr_22 = currVal_22;
     }
     dbg(41,29,8);
     final currVal_23 = _NgControlStatus_41_7.ngClassDirty;
-    if (import21.checkBinding(_expr_23,currVal_23)) {
+    if (import22.checkBinding(_expr_23,currVal_23)) {
       updateClass(_el_41,'ng-dirty',currVal_23);
       _expr_23 = currVal_23;
     }
     dbg(41,29,8);
     final currVal_24 = _NgControlStatus_41_7.ngClassPristine;
-    if (import21.checkBinding(_expr_24,currVal_24)) {
+    if (import22.checkBinding(_expr_24,currVal_24)) {
       updateClass(_el_41,'ng-pristine',currVal_24);
       _expr_24 = currVal_24;
     }
     dbg(65,41,12);
     final currVal_27 = _RouterLink_65_3.isRouteActive;
-    if (import21.checkBinding(_expr_27,currVal_27)) {
+    if (import22.checkBinding(_expr_27,currVal_27)) {
       updateClass(_el_65,'router-link-active',currVal_27);
       _expr_27 = currVal_27;
     }
     dbg(65,41,12);
     final currVal_28 = _RouterLink_65_3.visibleHref;
-    if (import21.checkBinding(_expr_28,currVal_28)) {
-      setAttr(_el_65,'href',((import21.appViewUtils.sanitizer.sanitizeUrl(currVal_28) == null)? null: import21.appViewUtils.sanitizer.sanitizeUrl(currVal_28).toString()));
+    if (import22.checkBinding(_expr_28,currVal_28)) {
+      setAttr(_el_65,'href',((import22.appViewUtils.sanitizer.sanitizeUrl(currVal_28) == null)? null: import22.appViewUtils.sanitizer.sanitizeUrl(currVal_28).toString()));
       _expr_28 = currVal_28;
     }
-    dbg(103,72,12);
-    final currVal_33 = _RouterLink_103_3.isRouteActive;
-    if (import21.checkBinding(_expr_33,currVal_33)) {
-      updateClass(_el_103,'router-link-active',currVal_33);
+    dbg(85,54,12);
+    final currVal_33 = _RouterLink_85_3.isRouteActive;
+    if (import22.checkBinding(_expr_33,currVal_33)) {
+      updateClass(_el_85,'router-link-active',currVal_33);
       _expr_33 = currVal_33;
     }
-    dbg(103,72,12);
-    final currVal_34 = _RouterLink_103_3.visibleHref;
-    if (import21.checkBinding(_expr_34,currVal_34)) {
-      setAttr(_el_103,'href',((import21.appViewUtils.sanitizer.sanitizeUrl(currVal_34) == null)? null: import21.appViewUtils.sanitizer.sanitizeUrl(currVal_34).toString()));
+    dbg(85,54,12);
+    final currVal_34 = _RouterLink_85_3.visibleHref;
+    if (import22.checkBinding(_expr_34,currVal_34)) {
+      setAttr(_el_85,'href',((import22.appViewUtils.sanitizer.sanitizeUrl(currVal_34) == null)? null: import22.appViewUtils.sanitizer.sanitizeUrl(currVal_34).toString()));
       _expr_34 = currVal_34;
     }
+    dbg(123,85,12);
+    final currVal_39 = _RouterLink_123_3.isRouteActive;
+    if (import22.checkBinding(_expr_39,currVal_39)) {
+      updateClass(_el_123,'router-link-active',currVal_39);
+      _expr_39 = currVal_39;
+    }
+    dbg(123,85,12);
+    final currVal_40 = _RouterLink_123_3.visibleHref;
+    if (import22.checkBinding(_expr_40,currVal_40)) {
+      setAttr(_el_123,'href',((import22.appViewUtils.sanitizer.sanitizeUrl(currVal_40) == null)? null: import22.appViewUtils.sanitizer.sanitizeUrl(currVal_40).toString()));
+      _expr_40 = currVal_40;
+    }
     this.detectViewChildrenChanges();
-    if (!import21.AppViewUtils.throwOnChanges) {
+    if (!import22.AppViewUtils.throwOnChanges) {
       dbg(19,14,8);
       if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _CalendarDirective_19_3.ngAfterViewInit(); }
       dbg(41,29,8);
       if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _DropdownDirective_41_3.ngAfterViewInit(); }
-      dbg(107,76,8);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_107_3.ngAfterViewInit(); }
+      dbg(127,89,8);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_127_3.ngAfterViewInit(); }
     }
   }
   bool _handle_click_15_0($event) {
@@ -1115,57 +1227,69 @@ class ViewHomeComponent0 extends DebugAppView<import12.HomeComponent> {
     final dynamic pd_0 = !identical((_RouterLink_65_3.onClick() as dynamic), false);
     return (true && pd_0);
   }
-  bool _handle_semantic_ui_sidebar_71_0($event) {
+  bool _handle_semantic_ui_progress_69_0($event) {
     this.markPathToRootAsCheckOnce();
-    dbg(71,46,17);
-    final dynamic pd_0 = !identical((ctx.initSidebar($event) as dynamic), false);
+    dbg(69,45,13);
+    final dynamic pd_0 = !identical((ctx.initProgress($event) as dynamic), false);
     return (true && pd_0);
   }
   bool _handle_click_85_0($event) {
     this.markPathToRootAsCheckOnce();
-    dbg(85,58,63);
+    dbg(85,54,12);
+    final dynamic pd_0 = !identical((_RouterLink_85_3.onClick() as dynamic), false);
+    return (true && pd_0);
+  }
+  bool _handle_semantic_ui_sidebar_91_0($event) {
+    this.markPathToRootAsCheckOnce();
+    dbg(91,59,17);
+    final dynamic pd_0 = !identical((ctx.initSidebar($event) as dynamic), false);
+    return (true && pd_0);
+  }
+  bool _handle_click_105_0($event) {
+    this.markPathToRootAsCheckOnce();
+    dbg(105,71,63);
     final dynamic pd_0 = !identical((ctx.onToggleSidebarButtonClicked() as dynamic), false);
     return (true && pd_0);
   }
-  bool _handle_click_103_0($event) {
+  bool _handle_click_123_0($event) {
     this.markPathToRootAsCheckOnce();
-    dbg(103,72,12);
-    final dynamic pd_0 = !identical((_RouterLink_103_3.onClick() as dynamic), false);
+    dbg(123,85,12);
+    final dynamic pd_0 = !identical((_RouterLink_123_3.onClick() as dynamic), false);
     return (true && pd_0);
   }
 }
-AppView viewFactory_HomeComponent0(import15.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_HomeComponent, null)) { (renderType_HomeComponent = import21.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/HomeComponent.html',0,import23.ViewEncapsulation.None,styles_HomeComponent)); }
+AppView viewFactory_HomeComponent0(import16.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_HomeComponent, null)) { (renderType_HomeComponent = import22.appViewUtils.createRenderComponentType('asset:semantic_ui_angular_dart/web/HomeComponent.html',0,import24.ViewEncapsulation.None,styles_HomeComponent)); }
   return new ViewHomeComponent0(parentInjector,declarationEl);
 }
 const List<dynamic> styles_HomeComponentHost = const [];
-const List<StaticNodeDebugInfo> nodeDebugInfos_HomeComponentHost0 = const [const StaticNodeDebugInfo(const [import12.HomeComponent],import12.HomeComponent,const <String, dynamic>{})];
+const List<StaticNodeDebugInfo> nodeDebugInfos_HomeComponentHost0 = const [const StaticNodeDebugInfo(const [import13.HomeComponent],import13.HomeComponent,const <String, dynamic>{})];
 RenderComponentType renderType_HomeComponentHost;
 class ViewHomeComponentHost0 extends DebugAppView<dynamic> {
   Element _el_0;
   AppElement _appEl_0;
-  import12.HomeComponent _HomeComponent_0_4;
-  ViewHomeComponentHost0(import15.Injector parentInjector,AppElement declarationEl): super(ViewHomeComponentHost0,renderType_HomeComponentHost,import17.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_HomeComponentHost0);
+  import13.HomeComponent _HomeComponent_0_4;
+  ViewHomeComponentHost0(import16.Injector parentInjector,AppElement declarationEl): super(ViewHomeComponentHost0,renderType_HomeComponentHost,import18.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_HomeComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
-    _el_0 = selectOrCreateHostElement('home',rootSelector,dbg(0,0,0));
+    _el_0 = selectOrCreateHostElement('home-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_HomeComponent0(this.injector(0),_appEl_0);
-    _HomeComponent_0_4 = new import12.HomeComponent();
+    _HomeComponent_0_4 = new import13.HomeComponent();
     _appEl_0.initComponent(_HomeComponent_0_4,[],compView_0);
     compView_0.createComp(projectableNodes,null);
     init([_el_0],[_el_0],[]);
     return _appEl_0;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
-    if ((identical(token, import12.HomeComponent) && identical(0, requestNodeIndex))) { return _HomeComponent_0_4; }
+    if ((identical(token, import13.HomeComponent) && identical(0, requestNodeIndex))) { return _HomeComponent_0_4; }
     return notFoundResult;
   }
 }
-AppView viewFactory_HomeComponentHost0(import15.Injector parentInjector,AppElement declarationEl) {
-  if (identical(renderType_HomeComponentHost, null)) { (renderType_HomeComponentHost = import21.appViewUtils.createRenderComponentType('',0,import23.ViewEncapsulation.Emulated,styles_HomeComponentHost)); }
+AppView viewFactory_HomeComponentHost0(import16.Injector parentInjector,AppElement declarationEl) {
+  if (identical(renderType_HomeComponentHost, null)) { (renderType_HomeComponentHost = import22.appViewUtils.createRenderComponentType('',0,import24.ViewEncapsulation.Emulated,styles_HomeComponentHost)); }
   return new ViewHomeComponentHost0(parentInjector,declarationEl);
 }
-const import24.ComponentFactory HomeComponentNgFactory = const import24.ComponentFactory('home',viewFactory_HomeComponentHost0,import12.HomeComponent,_METADATA);
+const import25.ComponentFactory HomeComponentNgFactory = const import25.ComponentFactory('home-example',viewFactory_HomeComponentHost0,import13.HomeComponent,_METADATA);
 const _METADATA = const <dynamic>[HomeComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {

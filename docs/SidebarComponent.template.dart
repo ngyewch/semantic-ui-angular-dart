@@ -300,7 +300,7 @@ class ViewSidebarComponentHost0 extends DebugAppView<dynamic> {
   import4.SidebarComponent _SidebarComponent_0_4;
   ViewSidebarComponentHost0(import6.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponentHost0,renderType_SidebarComponentHost,import8.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
-    _el_0 = selectOrCreateHostElement('sidebar',rootSelector,dbg(0,0,0));
+    _el_0 = selectOrCreateHostElement('sidebar-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_SidebarComponent0(this.injector(0),_appEl_0);
     _SidebarComponent_0_4 = new import4.SidebarComponent();
@@ -318,7 +318,7 @@ AppView viewFactory_SidebarComponentHost0(import6.Injector parentInjector,AppEle
   if (identical(renderType_SidebarComponentHost, null)) { (renderType_SidebarComponentHost = import11.appViewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.Emulated,styles_SidebarComponentHost)); }
   return new ViewSidebarComponentHost0(parentInjector,declarationEl);
 }
-const import14.ComponentFactory SidebarComponentNgFactory = const import14.ComponentFactory('sidebar',viewFactory_SidebarComponentHost0,import4.SidebarComponent,_METADATA);
+const import14.ComponentFactory SidebarComponentNgFactory = const import14.ComponentFactory('sidebar-example',viewFactory_SidebarComponentHost0,import4.SidebarComponent,_METADATA);
 const _METADATA = const <dynamic>[SidebarComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {

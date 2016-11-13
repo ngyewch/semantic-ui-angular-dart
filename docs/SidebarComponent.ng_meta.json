@@ -37,7 +37,7 @@
     "SidebarComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "sidebar",
+      "selector": "sidebar-example",
       "exportAs": null,
       "type": {
         "class": "Type",

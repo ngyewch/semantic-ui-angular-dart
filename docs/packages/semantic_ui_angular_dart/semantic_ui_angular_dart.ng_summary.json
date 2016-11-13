@@ -17,6 +17,13 @@
         "5": false
       },
       {
+        "1": "src/ProgressDirective.dart",
+        "2": [
+          "ProgressDirective"
+        ],
+        "5": false
+      },
+      {
         "1": "src/SidebarDirective.dart",
         "2": [
           "SidebarDirective"
@@ -37,6 +44,12 @@
       },
       {
         "1": "src/DropdownDirective.dart"
+      },
+      {
+        "1": "src/Progress.dart"
+      },
+      {
+        "1": "src/ProgressDirective.dart"
       },
       {
         "1": "src/Sidebar.dart"
@@ -73,6 +86,13 @@
         },
         {
           "class": "Identifier",
+          "name": "ProgressDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
           "name": "SidebarDirective",
           "moduleUrl": null,
           "prefix": null,
@@ -92,6 +112,7 @@
     "SEMANTIC_UI_DIRECTIVES": [
       "CalendarDirective",
       "DropdownDirective",
+      "ProgressDirective",
       "SidebarDirective",
       "TabDirective"
     ]

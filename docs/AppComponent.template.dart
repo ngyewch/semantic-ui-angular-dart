@@ -17,6 +17,7 @@ import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
 import 'CalendarComponent.dart';
 import 'DropdownComponent.dart';
 import 'HomeComponent.dart';
+import 'ProgressComponent.dart';
 import 'SidebarComponent.dart';
 import 'TabComponent.dart';
 import 'package:angular2/core.template.dart' as i0;
@@ -25,8 +26,9 @@ import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.template.dart'
 import 'CalendarComponent.template.dart' as i3;
 import 'DropdownComponent.template.dart' as i4;
 import 'HomeComponent.template.dart' as i5;
-import 'SidebarComponent.template.dart' as i6;
-import 'TabComponent.template.dart' as i7;
+import 'ProgressComponent.template.dart' as i6;
+import 'SidebarComponent.template.dart' as i7;
+import 'TabComponent.template.dart' as i8;
 export 'AppComponent.dart';
 import 'AppComponent.css.shim.dart' as import0;
 import 'package:angular2/src/debug/debug_context.dart';
@@ -57,6 +59,7 @@ const List<StaticNodeDebugInfo> nodeDebugInfos_AppComponent0 = const [
   null,null,const StaticNodeDebugInfo(const [import3.RouterLink],null,const <String, dynamic>{}),
   null,null,const StaticNodeDebugInfo(const [import3.RouterLink],null,const <String, dynamic>{}),
   null,null,const StaticNodeDebugInfo(const [import3.RouterLink],null,const <String, dynamic>{}),
+  null,null,const StaticNodeDebugInfo(const [import3.RouterLink],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   const StaticNodeDebugInfo(const [import3.RouterLink],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import4.RouterOutlet],null,const <String, dynamic>{}),
@@ -77,21 +80,23 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
   import3.RouterLink _RouterLink_11_3;
   AnchorElement _el_14;
   import3.RouterLink _RouterLink_14_3;
-  Element _el_18;
-  Element _el_20;
+  AnchorElement _el_17;
+  import3.RouterLink _RouterLink_17_3;
+  Element _el_21;
   Element _el_23;
-  Element _el_25;
-  AnchorElement _el_27;
-  Element _el_29;
-  AnchorElement _el_32;
-  import3.RouterLink _RouterLink_32_3;
-  Element _el_34;
-  Element _el_38;
-  AnchorElement _el_40;
-  Element _el_42;
-  Element _el_47;
-  AppElement _appEl_47;
-  import4.RouterOutlet _RouterOutlet_47_5;
+  Element _el_26;
+  Element _el_28;
+  AnchorElement _el_30;
+  Element _el_32;
+  AnchorElement _el_35;
+  import3.RouterLink _RouterLink_35_3;
+  Element _el_37;
+  Element _el_41;
+  AnchorElement _el_43;
+  Element _el_45;
+  Element _el_50;
+  AppElement _appEl_50;
+  import4.RouterOutlet _RouterOutlet_50_5;
   var _arr_0;
   var _expr_2 = uninitialized;
   var _expr_3 = uninitialized;
@@ -113,9 +118,13 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
   var _expr_19 = uninitialized;
   var _expr_20 = uninitialized;
   var _arr_5;
+  var _expr_22 = uninitialized;
   var _expr_23 = uninitialized;
   var _expr_24 = uninitialized;
-  var _expr_25 = uninitialized;
+  var _arr_6;
+  var _expr_27 = uninitialized;
+  var _expr_28 = uninitialized;
+  var _expr_29 = uninitialized;
   ViewAppComponent0(import11.Injector parentInjector,AppElement declarationEl): super(ViewAppComponent0,renderType_AppComponent,import12.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_AppComponent0);
   AppElement createInternal(dynamic rootSelector) {
     final parentRenderNode = initViewRoot(this.declarationAppElement.nativeElement);
@@ -170,9 +179,9 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
     dbgElm(_el_11,11,10,4);
     setAttr(_el_11,'class','item');
     _RouterLink_11_3 = new import3.RouterLink(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.Location));
-    Text _text_12 = new Text('\n        Sidebar\n    ');
+    Text _text_12 = new Text('\n        Progress\n    ');
     _el_11.append(_text_12);
-    dbgElm(_text_12,12,10,47);
+    dbgElm(_text_12,12,10,48);
     Text _text_13 = new Text('\n    ');
     _el_0.append(_text_13);
     dbgElm(_text_13,13,12,8);
@@ -182,137 +191,149 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
     dbgElm(_el_14,14,13,4);
     setAttr(_el_14,'class','item');
     _RouterLink_14_3 = new import3.RouterLink(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.Location));
-    Text _text_15 = new Text('\n        Tab\n    ');
+    Text _text_15 = new Text('\n        Sidebar\n    ');
     _el_14.append(_text_15);
-    dbgElm(_text_15,15,13,43);
-    Text _text_16 = new Text('\n');
+    dbgElm(_text_15,15,13,47);
+    Text _text_16 = new Text('\n    ');
     _el_0.append(_text_16);
     dbgElm(_text_16,16,15,8);
-    Text _text_17 = new Text('\n');
-    parentRenderNode.append(_text_17);
-    dbgElm(_text_17,17,16,6);
-    _el_18 = document.createElement('div');
-    _el_18.setAttribute(shimCAttr,'');
-    parentRenderNode.append(_el_18);
-    dbgElm(_el_18,18,17,0);
-    setAttr(_el_18,'class','pusher');
-    Text _text_19 = new Text('\n    ');
-    _el_18.append(_text_19);
-    dbgElm(_text_19,19,17,20);
-    _el_20 = document.createElement('div');
-    _el_20.setAttribute(shimCAttr,'');
-    _el_18.append(_el_20);
-    dbgElm(_el_20,20,18,4);
-    Text _text_21 = new Text('\n    ');
-    _el_20.append(_text_21);
-    dbgElm(_text_21,21,18,9);
+    _el_17 = document.createElement('a');
+    _el_17.setAttribute(shimCAttr,'');
+    _el_0.append(_el_17);
+    dbgElm(_el_17,17,16,4);
+    setAttr(_el_17,'class','item');
+    _RouterLink_17_3 = new import3.RouterLink(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.Location));
+    Text _text_18 = new Text('\n        Tab\n    ');
+    _el_17.append(_text_18);
+    dbgElm(_text_18,18,16,43);
+    Text _text_19 = new Text('\n');
+    _el_0.append(_text_19);
+    dbgElm(_text_19,19,18,8);
+    Text _text_20 = new Text('\n');
+    parentRenderNode.append(_text_20);
+    dbgElm(_text_20,20,19,6);
+    _el_21 = document.createElement('div');
+    _el_21.setAttribute(shimCAttr,'');
+    parentRenderNode.append(_el_21);
+    dbgElm(_el_21,21,20,0);
+    setAttr(_el_21,'class','pusher');
     Text _text_22 = new Text('\n    ');
-    _el_18.append(_text_22);
-    dbgElm(_text_22,22,19,10);
+    _el_21.append(_text_22);
+    dbgElm(_text_22,22,20,20);
     _el_23 = document.createElement('div');
     _el_23.setAttribute(shimCAttr,'');
-    _el_18.append(_el_23);
-    dbgElm(_el_23,23,20,4);
-    setAttr(_el_23,'class','ui container');
-    Text _text_24 = new Text('\n        ');
+    _el_21.append(_el_23);
+    dbgElm(_el_23,23,21,4);
+    Text _text_24 = new Text('\n    ');
     _el_23.append(_text_24);
-    dbgElm(_text_24,24,20,30);
-    _el_25 = document.createElement('div');
-    _el_25.setAttribute(shimCAttr,'');
-    _el_23.append(_el_25);
-    dbgElm(_el_25,25,21,8);
-    setAttr(_el_25,'class','ui secondary menu');
-    Text _text_26 = new Text('\n            ');
-    _el_25.append(_text_26);
-    dbgElm(_text_26,26,21,39);
-    _el_27 = document.createElement('a');
-    _el_27.setAttribute(shimCAttr,'');
-    _el_25.append(_el_27);
-    dbgElm(_el_27,27,22,12);
-    setAttr(_el_27,'class','item');
-    Text _text_28 = new Text('\n                ');
-    _el_27.append(_text_28);
-    dbgElm(_text_28,28,22,69);
-    _el_29 = document.createElement('i');
-    _el_29.setAttribute(shimCAttr,'');
-    _el_27.append(_el_29);
-    dbgElm(_el_29,29,23,16);
-    setAttr(_el_29,'class','large sidebar icon');
-    Text _text_30 = new Text('\n            ');
-    _el_27.append(_text_30);
-    dbgElm(_text_30,30,23,50);
-    Text _text_31 = new Text('\n            ');
-    _el_25.append(_text_31);
-    dbgElm(_text_31,31,24,16);
-    _el_32 = document.createElement('a');
+    dbgElm(_text_24,24,21,9);
+    Text _text_25 = new Text('\n    ');
+    _el_21.append(_text_25);
+    dbgElm(_text_25,25,22,10);
+    _el_26 = document.createElement('div');
+    _el_26.setAttribute(shimCAttr,'');
+    _el_21.append(_el_26);
+    dbgElm(_el_26,26,23,4);
+    setAttr(_el_26,'class','ui container');
+    Text _text_27 = new Text('\n        ');
+    _el_26.append(_text_27);
+    dbgElm(_text_27,27,23,30);
+    _el_28 = document.createElement('div');
+    _el_28.setAttribute(shimCAttr,'');
+    _el_26.append(_el_28);
+    dbgElm(_el_28,28,24,8);
+    setAttr(_el_28,'class','ui secondary menu');
+    Text _text_29 = new Text('\n            ');
+    _el_28.append(_text_29);
+    dbgElm(_text_29,29,24,39);
+    _el_30 = document.createElement('a');
+    _el_30.setAttribute(shimCAttr,'');
+    _el_28.append(_el_30);
+    dbgElm(_el_30,30,25,12);
+    setAttr(_el_30,'class','item');
+    Text _text_31 = new Text('\n                ');
+    _el_30.append(_text_31);
+    dbgElm(_text_31,31,25,69);
+    _el_32 = document.createElement('i');
     _el_32.setAttribute(shimCAttr,'');
-    _el_25.append(_el_32);
-    dbgElm(_el_32,32,25,12);
-    setAttr(_el_32,'class','item');
-    _RouterLink_32_3 = new import3.RouterLink(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.Location));
-    Text _text_33 = new Text('\n                ');
-    _el_32.append(_text_33);
-    dbgElm(_text_33,33,25,52);
-    _el_34 = document.createElement('span');
-    _el_34.setAttribute(shimCAttr,'');
-    _el_32.append(_el_34);
-    dbgElm(_el_34,34,26,16);
-    setAttr(_el_34,'class','ui header');
-    Text _text_35 = new Text('\n                    Semantic UI for Angular Dart\n                ');
-    _el_34.append(_text_35);
-    dbgElm(_text_35,35,26,40);
-    Text _text_36 = new Text('\n            ');
-    _el_32.append(_text_36);
-    dbgElm(_text_36,36,28,23);
-    Text _text_37 = new Text('\n            ');
-    _el_25.append(_text_37);
-    dbgElm(_text_37,37,29,16);
-    _el_38 = document.createElement('div');
-    _el_38.setAttribute(shimCAttr,'');
-    _el_25.append(_el_38);
-    dbgElm(_el_38,38,30,12);
-    setAttr(_el_38,'class','right menu');
-    Text _text_39 = new Text('\n                ');
-    _el_38.append(_text_39);
-    dbgElm(_text_39,39,30,36);
-    _el_40 = document.createElement('a');
-    _el_40.setAttribute(shimCAttr,'');
-    _el_38.append(_el_40);
-    dbgElm(_el_40,40,31,16);
-    setAttr(_el_40,'class','ui item');
-    setAttr(_el_40,'href','https://github.com/ngyewch/semantic-ui-angular-dart');
-    Text _text_41 = new Text('\n                    ');
-    _el_40.append(_text_41);
-    dbgElm(_text_41,41,31,94);
-    _el_42 = document.createElement('i');
-    _el_42.setAttribute(shimCAttr,'');
-    _el_40.append(_el_42);
-    dbgElm(_el_42,42,32,20);
-    setAttr(_el_42,'class','github icon');
-    Text _text_43 = new Text(' Github\n                ');
-    _el_40.append(_text_43);
-    dbgElm(_text_43,43,32,47);
-    Text _text_44 = new Text('\n            ');
-    _el_38.append(_text_44);
-    dbgElm(_text_44,44,33,20);
-    Text _text_45 = new Text('\n        ');
-    _el_25.append(_text_45);
-    dbgElm(_text_45,45,34,18);
-    Text _text_46 = new Text('\n\n        ');
-    _el_23.append(_text_46);
-    dbgElm(_text_46,46,35,14);
-    _el_47 = document.createElement('router-outlet');
-    _el_47.setAttribute(shimCAttr,'');
-    _el_23.append(_el_47);
-    dbgElm(_el_47,47,37,8);
-    _appEl_47 = new AppElement(47,23,this,_el_47);
-    _RouterOutlet_47_5 = new import4.RouterOutlet(_appEl_47.vcRef,this.parentInjector.get(import16.ComponentResolver),this.parentInjector.get(import14.Router),null);
-    Text _text_48 = new Text('\n    ');
-    _el_23.append(_text_48);
-    dbgElm(_text_48,48,37,39);
-    Text _text_49 = new Text('\n');
-    _el_18.append(_text_49);
-    dbgElm(_text_49,49,38,10);
+    _el_30.append(_el_32);
+    dbgElm(_el_32,32,26,16);
+    setAttr(_el_32,'class','large sidebar icon');
+    Text _text_33 = new Text('\n            ');
+    _el_30.append(_text_33);
+    dbgElm(_text_33,33,26,50);
+    Text _text_34 = new Text('\n            ');
+    _el_28.append(_text_34);
+    dbgElm(_text_34,34,27,16);
+    _el_35 = document.createElement('a');
+    _el_35.setAttribute(shimCAttr,'');
+    _el_28.append(_el_35);
+    dbgElm(_el_35,35,28,12);
+    setAttr(_el_35,'class','item');
+    _RouterLink_35_3 = new import3.RouterLink(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.Location));
+    Text _text_36 = new Text('\n                ');
+    _el_35.append(_text_36);
+    dbgElm(_text_36,36,28,52);
+    _el_37 = document.createElement('span');
+    _el_37.setAttribute(shimCAttr,'');
+    _el_35.append(_el_37);
+    dbgElm(_el_37,37,29,16);
+    setAttr(_el_37,'class','ui header');
+    Text _text_38 = new Text('\n                    Semantic UI for Angular Dart\n                ');
+    _el_37.append(_text_38);
+    dbgElm(_text_38,38,29,40);
+    Text _text_39 = new Text('\n            ');
+    _el_35.append(_text_39);
+    dbgElm(_text_39,39,31,23);
+    Text _text_40 = new Text('\n            ');
+    _el_28.append(_text_40);
+    dbgElm(_text_40,40,32,16);
+    _el_41 = document.createElement('div');
+    _el_41.setAttribute(shimCAttr,'');
+    _el_28.append(_el_41);
+    dbgElm(_el_41,41,33,12);
+    setAttr(_el_41,'class','right menu');
+    Text _text_42 = new Text('\n                ');
+    _el_41.append(_text_42);
+    dbgElm(_text_42,42,33,36);
+    _el_43 = document.createElement('a');
+    _el_43.setAttribute(shimCAttr,'');
+    _el_41.append(_el_43);
+    dbgElm(_el_43,43,34,16);
+    setAttr(_el_43,'class','ui item');
+    setAttr(_el_43,'href','https://github.com/ngyewch/semantic-ui-angular-dart');
+    Text _text_44 = new Text('\n                    ');
+    _el_43.append(_text_44);
+    dbgElm(_text_44,44,34,94);
+    _el_45 = document.createElement('i');
+    _el_45.setAttribute(shimCAttr,'');
+    _el_43.append(_el_45);
+    dbgElm(_el_45,45,35,20);
+    setAttr(_el_45,'class','github icon');
+    Text _text_46 = new Text(' Github\n                ');
+    _el_43.append(_text_46);
+    dbgElm(_text_46,46,35,47);
+    Text _text_47 = new Text('\n            ');
+    _el_41.append(_text_47);
+    dbgElm(_text_47,47,36,20);
+    Text _text_48 = new Text('\n        ');
+    _el_28.append(_text_48);
+    dbgElm(_text_48,48,37,18);
+    Text _text_49 = new Text('\n\n        ');
+    _el_26.append(_text_49);
+    dbgElm(_text_49,49,38,14);
+    _el_50 = document.createElement('router-outlet');
+    _el_50.setAttribute(shimCAttr,'');
+    _el_26.append(_el_50);
+    dbgElm(_el_50,50,40,8);
+    _appEl_50 = new AppElement(50,26,this,_el_50);
+    _RouterOutlet_50_5 = new import4.RouterOutlet(_appEl_50.vcRef,this.parentInjector.get(import16.ComponentResolver),this.parentInjector.get(import14.Router),null);
+    Text _text_51 = new Text('\n    ');
+    _el_26.append(_text_51);
+    dbgElm(_text_51,51,40,39);
+    Text _text_52 = new Text('\n');
+    _el_21.append(_text_52);
+    dbgElm(_text_52,52,41,10);
     renderer.listen(_el_0,'semantic_ui_sidebar',evt(_handle_semantic_ui_sidebar_0_0));
     final subscription_0 = _SidebarDirective_0_3.eventEmitter.listen(evt(_handle_semantic_ui_sidebar_0_0));
     renderer.listen(_el_2,'click',evt(_handle_click_2_0));
@@ -335,17 +356,22 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
     this._arr_4 = import17.pureProxy1((p0) {
       return [p0];
     });
-    renderer.listen(_el_27,'click',evt(_handle_click_27_0));
-    renderer.listen(_el_32,'click',evt(_handle_click_32_0));
+    renderer.listen(_el_17,'click',evt(_handle_click_17_0));
     this._arr_5 = import17.pureProxy1((p0) {
+      return [p0];
+    });
+    renderer.listen(_el_30,'click',evt(_handle_click_30_0));
+    renderer.listen(_el_35,'click',evt(_handle_click_35_0));
+    this._arr_6 = import17.pureProxy1((p0) {
       return [p0];
     });
     init([],[
       _el_0,_text_1,_el_2,_text_3,_text_4,_el_5,_text_6,_text_7,_el_8,_text_9,_text_10,
-      _el_11,_text_12,_text_13,_el_14,_text_15,_text_16,_text_17,_el_18,_text_19,_el_20,
-      _text_21,_text_22,_el_23,_text_24,_el_25,_text_26,_el_27,_text_28,_el_29,_text_30,
-      _text_31,_el_32,_text_33,_el_34,_text_35,_text_36,_text_37,_el_38,_text_39,_el_40,
-      _text_41,_el_42,_text_43,_text_44,_text_45,_text_46,_el_47,_text_48,_text_49
+      _el_11,_text_12,_text_13,_el_14,_text_15,_text_16,_el_17,_text_18,_text_19,_text_20,
+      _el_21,_text_22,_el_23,_text_24,_text_25,_el_26,_text_27,_el_28,_text_29,_el_30,
+      _text_31,_el_32,_text_33,_text_34,_el_35,_text_36,_el_37,_text_38,_text_39,_text_40,
+      _el_41,_text_42,_el_43,_text_44,_el_45,_text_46,_text_47,_text_48,_text_49,_el_50,
+      _text_51,_text_52
     ]
     ,[subscription_0]);
     return null;
@@ -356,9 +382,10 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
     if ((identical(token, import3.RouterLink) && ((8 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return _RouterLink_8_3; }
     if ((identical(token, import3.RouterLink) && ((11 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return _RouterLink_11_3; }
     if ((identical(token, import3.RouterLink) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 15)))) { return _RouterLink_14_3; }
-    if ((identical(token, import2.SidebarDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return _SidebarDirective_0_3; }
-    if ((identical(token, import3.RouterLink) && ((32 <= requestNodeIndex) && (requestNodeIndex <= 36)))) { return _RouterLink_32_3; }
-    if ((identical(token, import4.RouterOutlet) && identical(47, requestNodeIndex))) { return _RouterOutlet_47_5; }
+    if ((identical(token, import3.RouterLink) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 18)))) { return _RouterLink_17_3; }
+    if ((identical(token, import2.SidebarDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 19)))) { return _SidebarDirective_0_3; }
+    if ((identical(token, import3.RouterLink) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return _RouterLink_35_3; }
+    if ((identical(token, import4.RouterOutlet) && identical(50, requestNodeIndex))) { return _RouterOutlet_50_5; }
     return notFoundResult;
   }
   void detectChangesInternal() {
@@ -381,22 +408,28 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
       _expr_10 = currVal_10;
     }
     dbg(11,10,20);
-    final currVal_14 = _arr_3('Sidebar');
+    final currVal_14 = _arr_3('Progress');
     if (import17.checkBinding(_expr_14,currVal_14)) {
       _RouterLink_11_3.routeParams = currVal_14;
       _expr_14 = currVal_14;
     }
     dbg(14,13,20);
-    final currVal_18 = _arr_4('Tab');
+    final currVal_18 = _arr_4('Sidebar');
     if (import17.checkBinding(_expr_18,currVal_18)) {
       _RouterLink_14_3.routeParams = currVal_18;
       _expr_18 = currVal_18;
     }
-    dbg(32,25,28);
-    final currVal_23 = _arr_5('Home');
-    if (import17.checkBinding(_expr_23,currVal_23)) {
-      _RouterLink_32_3.routeParams = currVal_23;
-      _expr_23 = currVal_23;
+    dbg(17,16,20);
+    final currVal_22 = _arr_5('Tab');
+    if (import17.checkBinding(_expr_22,currVal_22)) {
+      _RouterLink_17_3.routeParams = currVal_22;
+      _expr_22 = currVal_22;
+    }
+    dbg(35,28,28);
+    final currVal_27 = _arr_6('Home');
+    if (import17.checkBinding(_expr_27,currVal_27)) {
+      _RouterLink_35_3.routeParams = currVal_27;
+      _expr_27 = currVal_27;
     }
     this.detectContentChildrenChanges();
     if (!import17.AppViewUtils.throwOnChanges) {
@@ -463,23 +496,35 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
       setAttr(_el_14,'href',((import17.appViewUtils.sanitizer.sanitizeUrl(currVal_20) == null)? null: import17.appViewUtils.sanitizer.sanitizeUrl(currVal_20).toString()));
       _expr_20 = currVal_20;
     }
-    dbg(32,25,12);
-    final currVal_24 = _RouterLink_32_3.isRouteActive;
+    dbg(17,16,4);
+    final currVal_23 = _RouterLink_17_3.isRouteActive;
+    if (import17.checkBinding(_expr_23,currVal_23)) {
+      updateClass(_el_17,'router-link-active',currVal_23);
+      _expr_23 = currVal_23;
+    }
+    dbg(17,16,4);
+    final currVal_24 = _RouterLink_17_3.visibleHref;
     if (import17.checkBinding(_expr_24,currVal_24)) {
-      updateClass(_el_32,'router-link-active',currVal_24);
+      setAttr(_el_17,'href',((import17.appViewUtils.sanitizer.sanitizeUrl(currVal_24) == null)? null: import17.appViewUtils.sanitizer.sanitizeUrl(currVal_24).toString()));
       _expr_24 = currVal_24;
     }
-    dbg(32,25,12);
-    final currVal_25 = _RouterLink_32_3.visibleHref;
-    if (import17.checkBinding(_expr_25,currVal_25)) {
-      setAttr(_el_32,'href',((import17.appViewUtils.sanitizer.sanitizeUrl(currVal_25) == null)? null: import17.appViewUtils.sanitizer.sanitizeUrl(currVal_25).toString()));
-      _expr_25 = currVal_25;
+    dbg(35,28,12);
+    final currVal_28 = _RouterLink_35_3.isRouteActive;
+    if (import17.checkBinding(_expr_28,currVal_28)) {
+      updateClass(_el_35,'router-link-active',currVal_28);
+      _expr_28 = currVal_28;
+    }
+    dbg(35,28,12);
+    final currVal_29 = _RouterLink_35_3.visibleHref;
+    if (import17.checkBinding(_expr_29,currVal_29)) {
+      setAttr(_el_35,'href',((import17.appViewUtils.sanitizer.sanitizeUrl(currVal_29) == null)? null: import17.appViewUtils.sanitizer.sanitizeUrl(currVal_29).toString()));
+      _expr_29 = currVal_29;
     }
     this.detectViewChildrenChanges();
   }
   void destroyInternal() {
-    dbg(47,37,8);
-    _RouterOutlet_47_5.ngOnDestroy();
+    dbg(50,40,8);
+    _RouterOutlet_50_5.ngOnDestroy();
   }
   bool _handle_semantic_ui_sidebar_0_0($event) {
     this.markPathToRootAsCheckOnce();
@@ -517,16 +562,22 @@ class ViewAppComponent0 extends DebugAppView<import7.AppComponent> {
     final dynamic pd_0 = !identical((_RouterLink_14_3.onClick() as dynamic), false);
     return (true && pd_0);
   }
-  bool _handle_click_27_0($event) {
+  bool _handle_click_17_0($event) {
     this.markPathToRootAsCheckOnce();
-    dbg(27,22,28);
+    dbg(17,16,4);
+    final dynamic pd_0 = !identical((_RouterLink_17_3.onClick() as dynamic), false);
+    return (true && pd_0);
+  }
+  bool _handle_click_30_0($event) {
+    this.markPathToRootAsCheckOnce();
+    dbg(30,25,28);
     final dynamic pd_0 = !identical((ctx.onToggleSidebarButtonClicked() as dynamic), false);
     return (true && pd_0);
   }
-  bool _handle_click_32_0($event) {
+  bool _handle_click_35_0($event) {
     this.markPathToRootAsCheckOnce();
-    dbg(32,25,12);
-    final dynamic pd_0 = !identical((_RouterLink_32_3.onClick() as dynamic), false);
+    dbg(35,28,12);
+    final dynamic pd_0 = !identical((_RouterLink_35_3.onClick() as dynamic), false);
     return (true && pd_0);
   }
 }
@@ -562,13 +613,13 @@ AppView viewFactory_AppComponentHost0(import11.Injector parentInjector,AppElemen
   return new ViewAppComponentHost0(parentInjector,declarationEl);
 }
 const import20.ComponentFactory AppComponentNgFactory = const import20.ComponentFactory('my-app',viewFactory_AppComponentHost0,import7.AppComponent,_METADATA);
-const _METADATA = const <dynamic>[AppComponent, const <dynamic>[const RouteConfig(const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)])]];
+const _METADATA = const <dynamic>[AppComponent, const <dynamic>[const RouteConfig(const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/progress', name: 'Progress', component: ProgressComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)])]];
 var _visited = false;
 void initReflector() {
 if (_visited) return; _visited = true;
 _ngRef.reflector
 ..registerType(AppComponent, new _ngRef.ReflectionInfo(
-const <dynamic>[const RouteConfig(const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)]), AppComponentNgFactory],
+const <dynamic>[const RouteConfig(const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/progress', name: 'Progress', component: ProgressComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)]), AppComponentNgFactory],
 const [],
 () => new AppComponent())
 )
@@ -581,4 +632,5 @@ i4.initReflector();
 i5.initReflector();
 i6.initReflector();
 i7.initReflector();
+i8.initReflector();
 }

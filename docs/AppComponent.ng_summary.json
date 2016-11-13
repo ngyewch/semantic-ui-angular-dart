@@ -27,6 +27,10 @@
         "5": false
       },
       {
+        "1": "ProgressComponent.dart",
+        "5": false
+      },
+      {
         "1": "SidebarComponent.dart",
         "5": false
       },
@@ -42,7 +46,7 @@
           {
             "1": "RouteConfig",
             "2": [
-              "const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)]"
+              "const [const Route(path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true), const Route(path: '/calendar', name: 'Calendar', component: CalendarComponent), const Route(path: '/dropdown', name: 'Dropdown', component: DropdownComponent), const Route(path: '/progress', name: 'Progress', component: ProgressComponent), const Route(path: '/sidebar', name: 'Sidebar', component: SidebarComponent), const Route(path: '/tab', name: 'Tab', component: TabComponent)]"
             ],
             "4": false
           }
@@ -84,7 +88,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<div (semantic_ui_sidebar)=\"initSidebar($event)\" class=\"ui sidebar inverted vertical menu\">\r\n    <a class=\"item\" [routerLink]=\"['Home']\">\r\n        Home\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Calendar']\">\r\n        Calendar\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Dropdown']\">\r\n        Dropdown\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Sidebar']\">\r\n        Sidebar\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Tab']\">\r\n        Tab\r\n    </a>\r\n</div>\r\n<div class=\"pusher\">\r\n    <div>\r\n    </div>\r\n    <div class=\"ui container\">\r\n        <div class=\"ui secondary menu\">\r\n            <a class=\"item\" (click)=\"onToggleSidebarButtonClicked()\">\r\n                <i class=\"large sidebar icon\"></i>\r\n            </a>\r\n            <a class=\"item\" [routerLink]=\"['Home']\">\r\n                <span class=\"ui header\">\r\n                    Semantic UI for Angular Dart\r\n                </span>\r\n            </a>\r\n            <div class=\"right menu\">\r\n                <a class=\"ui item\" href=\"https://github.com/ngyewch/semantic-ui-angular-dart\">\r\n                    <i class=\"github icon\"></i> Github\r\n                </a>\r\n            </div>\r\n        </div>\r\n\r\n        <router-outlet></router-outlet>\r\n    </div>\r\n</div>",
+        "template": "<div (semantic_ui_sidebar)=\"initSidebar($event)\" class=\"ui sidebar inverted vertical menu\">\r\n    <a class=\"item\" [routerLink]=\"['Home']\">\r\n        Home\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Calendar']\">\r\n        Calendar\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Dropdown']\">\r\n        Dropdown\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Progress']\">\r\n        Progress\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Sidebar']\">\r\n        Sidebar\r\n    </a>\r\n    <a class=\"item\" [routerLink]=\"['Tab']\">\r\n        Tab\r\n    </a>\r\n</div>\r\n<div class=\"pusher\">\r\n    <div>\r\n    </div>\r\n    <div class=\"ui container\">\r\n        <div class=\"ui secondary menu\">\r\n            <a class=\"item\" (click)=\"onToggleSidebarButtonClicked()\">\r\n                <i class=\"large sidebar icon\"></i>\r\n            </a>\r\n            <a class=\"item\" [routerLink]=\"['Home']\">\r\n                <span class=\"ui header\">\r\n                    Semantic UI for Angular Dart\r\n                </span>\r\n            </a>\r\n            <div class=\"right menu\">\r\n                <a class=\"ui item\" href=\"https://github.com/ngyewch/semantic-ui-angular-dart\">\r\n                    <i class=\"github icon\"></i> Github\r\n                </a>\r\n            </div>\r\n        </div>\r\n\r\n        <router-outlet></router-outlet>\r\n    </div>\r\n</div>",
         "templateUrl": "asset:semantic_ui_angular_dart/web/AppComponent.html",
         "styles": [],
         "styleUrls": [

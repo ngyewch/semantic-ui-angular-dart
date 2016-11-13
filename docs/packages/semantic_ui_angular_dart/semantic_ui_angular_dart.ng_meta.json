@@ -17,6 +17,13 @@
         "5": false
       },
       {
+        "1": "src/ProgressDirective.dart",
+        "2": [
+          "ProgressDirective"
+        ],
+        "5": false
+      },
+      {
         "1": "src/SidebarDirective.dart",
         "2": [
           "SidebarDirective"
@@ -39,6 +46,12 @@
         "1": "src/DropdownDirective.dart"
       },
       {
+        "1": "src/Progress.dart"
+      },
+      {
+        "1": "src/ProgressDirective.dart"
+      },
+      {
         "1": "src/Sidebar.dart"
       },
       {
@@ -59,16 +72,24 @@
         "4": "i1"
       },
       {
-        "1": "src/SidebarDirective.template.dart",
+        "1": "src/ProgressDirective.template.dart",
         "4": "i2"
       },
       {
-        "1": "src/TabDirective.template.dart",
+        "1": "src/SidebarDirective.template.dart",
         "4": "i3"
       },
       {
-        "1": "src/Sidebar.template.dart",
+        "1": "src/TabDirective.template.dart",
         "4": "i4"
+      },
+      {
+        "1": "src/Progress.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "src/Sidebar.template.dart",
+        "4": "i6"
       }
     ]
   },
@@ -198,6 +219,83 @@
             "class": "Type",
             "name": "DropdownDirective",
             "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/DropdownDirective.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "ElementRef",
+                    "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "query": null,
+                "viewQuery": null,
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "useProperty": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "ProgressDirective",
+              "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/ProgressDirective.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "ElementRef",
+                      "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "ProgressDirective",
+            "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/ProgressDirective.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -613,6 +711,72 @@
       "queries": [],
       "viewQueries": []
     },
+    "Progress": {
+      "class": "Identifier",
+      "name": "Progress",
+      "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/Progress.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ProgressDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[semantic_ui_progress]",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProgressDirective",
+        "moduleUrl": "asset:semantic_ui_angular_dart/lib/src/ProgressDirective.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "percent": "percent"
+      },
+      "inputTypes": {
+        "percent": " double"
+      },
+      "outputs": {
+        "eventEmitter": "semantic_ui_progress"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        4
+      ],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
     "Sidebar": {
       "class": "Identifier",
       "name": "Sidebar",
@@ -733,6 +897,7 @@
     "SEMANTIC_UI_DIRECTIVES": [
       "CalendarDirective",
       "DropdownDirective",
+      "ProgressDirective",
       "SidebarDirective",
       "TabDirective"
     ]

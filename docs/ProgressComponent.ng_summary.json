@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "CalendarComponent",
+        "1": "ProgressComponent",
         "7": [
           {
             "2": "SEMANTIC_UI_DIRECTIVES"
@@ -21,18 +21,18 @@
         ]
       }
     ],
-    "6": "CalendarComponent.dart"
+    "6": "ProgressComponent.dart"
   },
   "type": {
-    "CalendarComponent": {
+    "ProgressComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "calendar-example",
+      "selector": "progress-example",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "CalendarComponent",
-        "moduleUrl": "asset:semantic_ui_angular_dart/web/CalendarComponent.dart",
+        "name": "ProgressComponent",
+        "moduleUrl": "asset:semantic_ui_angular_dart/web/ProgressComponent.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -48,8 +48,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h2 class=\"ui header\">Calendar</h2>\r\n\r\n<div [semantic_ui_calendar]=\"startDateSettings\" [(ngModel)]=\"startDate\" class=\"ui calendar\">\r\n    <div>\r\n        Start date:\r\n        <div class=\"ui input left icon\">\r\n            <i class=\"calendar icon\"></i>\r\n            <input type=\"text\" placeholder=\"Start date\"/>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        Selected start date: {{startDate}}\r\n    </div>\r\n</div>\r\n",
-        "templateUrl": "asset:semantic_ui_angular_dart/web/CalendarComponent.html",
+        "template": "<h2 class=\"ui header\">Progress</h2>\r\n\r\n<div (semantic_ui_progress)=\"initProgress($event)\" [percent]=\"30\" class=\"ui progress\">\r\n    <div class=\"bar\">\r\n        <div class=\"progress\"></div>\r\n    </div>\r\n    <div class=\"label\">Uploading Files</div>\r\n</div>\r\n",
+        "templateUrl": "asset:semantic_ui_angular_dart/web/ProgressComponent.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

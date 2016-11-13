@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "DropdownComponent",
+        "1": "ProgressComponent",
         "7": [
           {
             "2": "SEMANTIC_UI_DIRECTIVES"
@@ -21,7 +21,7 @@
         ]
       }
     ],
-    "6": "DropdownComponent.dart",
+    "6": "ProgressComponent.dart",
     "7": [
       {
         "1": "package:angular2/core.template.dart",
@@ -34,15 +34,15 @@
     ]
   },
   "type": {
-    "DropdownComponent": {
+    "ProgressComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "dropdown-example",
+      "selector": "progress-example",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "DropdownComponent",
-        "moduleUrl": "asset:semantic_ui_angular_dart/web/DropdownComponent.dart",
+        "name": "ProgressComponent",
+        "moduleUrl": "asset:semantic_ui_angular_dart/web/ProgressComponent.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -58,8 +58,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h2 class=\"ui header\">Dropdown</h2>\r\n\r\n<div>\r\n    <div semantic_ui_dropdown [(ngModel)]=\"gender\" class=\"ui selection dropdown\">\r\n        <input type=\"hidden\" name=\"gender\">\r\n        <i class=\"dropdown icon\"></i>\r\n        <div class=\"default text\">Gender</div>\r\n        <div class=\"menu\">\r\n            <div class=\"item\" data-value=\"male\">Male</div>\r\n            <div class=\"item\" data-value=\"female\">Female</div>\r\n        </div>\r\n    </div>\r\n    <div class=\"ui basic segment\">\r\n        gender = {{gender}}\r\n    </div>\r\n</div>\r\n<!--\r\n<div>\r\n    <select semantic_ui_dropdown [(ngModel)]=\"gender2\" class=\"ui dropdown\">\r\n        <option value=\"\">Gender</option>\r\n        <option value=\"male\">Male</option>\r\n        <option value=\"female\">Female</option>\r\n    </select>\r\n    <div>\r\n        gender2 = {{gender2}}\r\n    </div>\r\n</div>\r\n-->",
-        "templateUrl": "asset:semantic_ui_angular_dart/web/DropdownComponent.html",
+        "template": "<h2 class=\"ui header\">Progress</h2>\r\n\r\n<div (semantic_ui_progress)=\"initProgress($event)\" [percent]=\"30\" class=\"ui progress\">\r\n    <div class=\"bar\">\r\n        <div class=\"progress\"></div>\r\n    </div>\r\n    <div class=\"label\">Uploading Files</div>\r\n</div>\r\n",
+        "templateUrl": "asset:semantic_ui_angular_dart/web/ProgressComponent.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

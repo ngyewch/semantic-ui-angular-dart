@@ -37,7 +37,7 @@
     "TabComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "tab",
+      "selector": "tab-example",
       "exportAs": null,
       "type": {
         "class": "Type",

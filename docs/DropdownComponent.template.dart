@@ -276,7 +276,7 @@ class ViewDropdownComponentHost0 extends DebugAppView<dynamic> {
   import8.DropdownComponent _DropdownComponent_0_4;
   ViewDropdownComponentHost0(import11.Injector parentInjector,AppElement declarationEl): super(ViewDropdownComponentHost0,renderType_DropdownComponentHost,import13.ViewType.HOST,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_DropdownComponentHost0);
   AppElement createInternal(dynamic rootSelector) {
-    _el_0 = selectOrCreateHostElement('dropdown',rootSelector,dbg(0,0,0));
+    _el_0 = selectOrCreateHostElement('dropdown-example',rootSelector,dbg(0,0,0));
     _appEl_0 = new AppElement(0,null,this,_el_0);
     var compView_0 = viewFactory_DropdownComponent0(this.injector(0),_appEl_0);
     _DropdownComponent_0_4 = new import8.DropdownComponent();
@@ -294,7 +294,7 @@ AppView viewFactory_DropdownComponentHost0(import11.Injector parentInjector,AppE
   if (identical(renderType_DropdownComponentHost, null)) { (renderType_DropdownComponentHost = import15.appViewUtils.createRenderComponentType('',0,import17.ViewEncapsulation.Emulated,styles_DropdownComponentHost)); }
   return new ViewDropdownComponentHost0(parentInjector,declarationEl);
 }
-const import18.ComponentFactory DropdownComponentNgFactory = const import18.ComponentFactory('dropdown',viewFactory_DropdownComponentHost0,import8.DropdownComponent,_METADATA);
+const import18.ComponentFactory DropdownComponentNgFactory = const import18.ComponentFactory('dropdown-example',viewFactory_DropdownComponentHost0,import8.DropdownComponent,_METADATA);
 const _METADATA = const <dynamic>[DropdownComponent, const <dynamic>[]];
 var _visited = false;
 void initReflector() {

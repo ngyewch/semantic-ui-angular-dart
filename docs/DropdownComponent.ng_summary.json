@@ -27,7 +27,7 @@
     "DropdownComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "dropdown",
+      "selector": "dropdown-example",
       "exportAs": null,
       "type": {
         "class": "Type",
