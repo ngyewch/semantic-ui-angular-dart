@@ -74,6 +74,25 @@ Dart:
 
     var gender;
 
+### Progress
+
+HTML:
+
+    <div (semantic_ui_progress)="initProgress($event)" [percent]="30" class="ui progress">
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        <div class="label">Uploading Files</div>
+    </div>
+
+Dart:
+
+    Progress progress;
+    
+    initProgress(Progress progress) {
+      this.progress = progress;
+    }
+
 ### Sidebar
 
 HTML:

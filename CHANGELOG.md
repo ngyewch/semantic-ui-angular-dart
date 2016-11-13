@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Added semantic_ui_progress directive.
+
 ## 0.1.4
 
 - Added semantic_ui_tab directive.

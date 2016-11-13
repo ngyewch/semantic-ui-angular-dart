@@ -6,6 +6,7 @@ import 'package:semantic_ui_angular_dart/semantic_ui_angular_dart.dart';
 import 'CalendarComponent.dart';
 import 'DropdownComponent.dart';
 import 'HomeComponent.dart';
+import 'ProgressComponent.dart';
 import 'SidebarComponent.dart';
 import 'TabComponent.dart';
 
@@ -26,6 +27,9 @@ import 'TabComponent.dart';
   const Route(path: '/dropdown',
       name: 'Dropdown',
       component: DropdownComponent),
+  const Route(path: '/progress',
+      name: 'Progress',
+      component: ProgressComponent),
   const Route(path: '/sidebar',
       name: 'Sidebar',
       component: SidebarComponent),

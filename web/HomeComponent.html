@@ -39,6 +39,19 @@
     </div>
     <div class="column">
         <h4 class="ui header">
+            <a class="item" [routerLink]="['Progress']">
+                Progress
+            </a>
+        </h4>
+        <div (semantic_ui_progress)="initProgress($event)" [percent]="30" class="ui progress">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">Uploading Files</div>
+        </div>
+    </div>
+    <div class="column">
+        <h4 class="ui header">
             <a class="item" [routerLink]="['Sidebar']">
                 Sidebar
             </a>
@@ -109,7 +122,6 @@
         <li>Modal</li>
         <li>Nag</li>
         <li>Popup</li>
-        <li>Progress</li>
         <li>Rating</li>
         <li>Search</li>
         <li>Shape</li>
