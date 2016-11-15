@@ -115,7 +115,7 @@
       ],
       "template": {
         "encapsulation": 2,
-        "template": "<xmp [innerHTML]=\"source\"></xmp>",
+        "template": "<xmp>{{source}}</xmp>",
         "templateUrl": "asset:semantic_ui_angular_dart/web/IncludeComponent.dart",
         "styles": [],
         "styleUrls": [],

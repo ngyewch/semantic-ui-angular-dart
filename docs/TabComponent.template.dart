@@ -38,40 +38,44 @@ import 'package:angular2/src/core/metadata/view.dart' as import16;
 import 'package:angular2/src/core/linker/component_factory.dart' as import17;
 const List<dynamic> styles_TabComponent = const [];
 const List<StaticNodeDebugInfo> nodeDebugInfos_TabComponent0 = const [
-  null,null,null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+  null,const StaticNodeDebugInfo(const [import1.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import2.IncludeComponent],import2.IncludeComponent,const <String, dynamic>{}),
   null,null,null,null,const StaticNodeDebugInfo(const [import2.IncludeComponent],import2.IncludeComponent,const <String, dynamic>{}),
-  null,null
+  null,null,null
 ]
 ;
 RenderComponentType renderType_TabComponent;
 class ViewTabComponent0 extends DebugAppView<import5.TabComponent> {
   Element _el_0;
   Element _el_3;
-  import1.TabDirective _TabDirective_3_3;
   Element _el_5;
-  Element _el_8;
-  Element _el_11;
-  Element _el_15;
+  import1.TabDirective _TabDirective_5_3;
+  Element _el_7;
+  Element _el_10;
+  Element _el_13;
   Element _el_17;
-  Element _el_21;
+  Element _el_19;
   Element _el_23;
-  Element _el_27;
+  Element _el_25;
   Element _el_29;
-  Element _el_33;
-  import1.TabDirective _TabDirective_33_3;
-  Element _el_35;
-  Element _el_38;
-  Element _el_42;
-  Element _el_44;
-  AppElement _appEl_44;
-  import2.IncludeComponent _IncludeComponent_44_4;
-  Element _el_47;
-  Element _el_49;
-  AppElement _appEl_49;
-  import2.IncludeComponent _IncludeComponent_49_4;
+  Element _el_31;
+  Element _el_36;
+  Element _el_39;
+  Element _el_41;
+  import1.TabDirective _TabDirective_41_3;
+  Element _el_43;
+  Element _el_46;
+  Element _el_50;
+  Element _el_52;
+  AppElement _appEl_52;
+  import2.IncludeComponent _IncludeComponent_52_4;
+  Element _el_55;
+  Element _el_57;
+  AppElement _appEl_57;
+  import2.IncludeComponent _IncludeComponent_57_4;
   var _expr_0 = uninitialized;
   var _expr_1 = uninitialized;
   ViewTabComponent0(import9.Injector parentInjector,AppElement declarationEl): super(ViewTabComponent0,renderType_TabComponent,import10.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_TabComponent0);
@@ -90,228 +94,256 @@ class ViewTabComponent0 extends DebugAppView<import5.TabComponent> {
     _el_3 = document.createElement('div');
     parentRenderNode.append(_el_3);
     dbgElm(_el_3,3,2,0);
-    setAttr(_el_3,'class','ui tabular menu');
-    setAttr(_el_3,'semantic_ui_tab','');
-    _TabDirective_3_3 = new import1.TabDirective(new ElementRef(_el_3));
     Text _text_4 = new Text('\n    ');
     _el_3.append(_text_4);
-    dbgElm(_text_4,4,2,45);
+    dbgElm(_text_4,4,2,5);
     _el_5 = document.createElement('div');
     _el_3.append(_el_5);
     dbgElm(_el_5,5,3,4);
-    setAttr(_el_5,'class','active item');
-    setAttr(_el_5,'data-tab','tab-1');
-    Text _text_6 = new Text('Tab 1');
+    setAttr(_el_5,'class','ui tabular menu');
+    setAttr(_el_5,'semantic_ui_tab','');
+    _TabDirective_5_3 = new import1.TabDirective(new ElementRef(_el_5));
+    Text _text_6 = new Text('\n        ');
     _el_5.append(_text_6);
-    dbgElm(_text_6,6,3,46);
-    Text _text_7 = new Text('\n    ');
-    _el_3.append(_text_7);
-    dbgElm(_text_7,7,3,57);
-    _el_8 = document.createElement('div');
-    _el_3.append(_el_8);
-    dbgElm(_el_8,8,4,4);
-    setAttr(_el_8,'class','item');
-    setAttr(_el_8,'data-tab','tab-2');
-    Text _text_9 = new Text('Tab 2');
-    _el_8.append(_text_9);
-    dbgElm(_text_9,9,4,39);
-    Text _text_10 = new Text('\n    ');
-    _el_3.append(_text_10);
-    dbgElm(_text_10,10,4,50);
-    _el_11 = document.createElement('div');
-    _el_3.append(_el_11);
-    dbgElm(_el_11,11,5,4);
-    setAttr(_el_11,'class','item');
-    setAttr(_el_11,'data-tab','tab-3');
-    Text _text_12 = new Text('Tab 3');
-    _el_11.append(_text_12);
-    dbgElm(_text_12,12,5,39);
-    Text _text_13 = new Text('\n');
-    _el_3.append(_text_13);
-    dbgElm(_text_13,13,5,50);
-    Text _text_14 = new Text('\n');
-    parentRenderNode.append(_text_14);
-    dbgElm(_text_14,14,6,6);
-    _el_15 = document.createElement('div');
-    parentRenderNode.append(_el_15);
-    dbgElm(_el_15,15,7,0);
-    setAttr(_el_15,'class','ui active tab');
-    setAttr(_el_15,'data-tab','tab-1');
+    dbgElm(_text_6,6,3,49);
+    _el_7 = document.createElement('div');
+    _el_5.append(_el_7);
+    dbgElm(_el_7,7,4,8);
+    setAttr(_el_7,'class','active item');
+    setAttr(_el_7,'data-tab','tab-1');
+    Text _text_8 = new Text('Tab 1');
+    _el_7.append(_text_8);
+    dbgElm(_text_8,8,4,50);
+    Text _text_9 = new Text('\n        ');
+    _el_5.append(_text_9);
+    dbgElm(_text_9,9,4,61);
+    _el_10 = document.createElement('div');
+    _el_5.append(_el_10);
+    dbgElm(_el_10,10,5,8);
+    setAttr(_el_10,'class','item');
+    setAttr(_el_10,'data-tab','tab-2');
+    Text _text_11 = new Text('Tab 2');
+    _el_10.append(_text_11);
+    dbgElm(_text_11,11,5,43);
+    Text _text_12 = new Text('\n        ');
+    _el_5.append(_text_12);
+    dbgElm(_text_12,12,5,54);
+    _el_13 = document.createElement('div');
+    _el_5.append(_el_13);
+    dbgElm(_el_13,13,6,8);
+    setAttr(_el_13,'class','item');
+    setAttr(_el_13,'data-tab','tab-3');
+    Text _text_14 = new Text('Tab 3');
+    _el_13.append(_text_14);
+    dbgElm(_text_14,14,6,43);
+    Text _text_15 = new Text('\n    ');
+    _el_5.append(_text_15);
+    dbgElm(_text_15,15,6,54);
     Text _text_16 = new Text('\n    ');
-    _el_15.append(_text_16);
-    dbgElm(_text_16,16,7,44);
-    _el_17 = document.createElement('p');
-    _el_15.append(_el_17);
+    _el_3.append(_text_16);
+    dbgElm(_text_16,16,7,10);
+    _el_17 = document.createElement('div');
+    _el_3.append(_el_17);
     dbgElm(_el_17,17,8,4);
-    Text _text_18 = new Text('\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    ');
+    setAttr(_el_17,'class','ui active tab');
+    setAttr(_el_17,'data-tab','tab-1');
+    Text _text_18 = new Text('\n        ');
     _el_17.append(_text_18);
-    dbgElm(_text_18,18,8,7);
-    Text _text_19 = new Text('\n');
-    _el_15.append(_text_19);
-    dbgElm(_text_19,19,10,8);
-    Text _text_20 = new Text('\n');
-    parentRenderNode.append(_text_20);
-    dbgElm(_text_20,20,11,6);
-    _el_21 = document.createElement('div');
-    parentRenderNode.append(_el_21);
-    dbgElm(_el_21,21,12,0);
-    setAttr(_el_21,'class','ui tab');
-    setAttr(_el_21,'data-tab','tab-2');
+    dbgElm(_text_18,18,8,48);
+    _el_19 = document.createElement('p');
+    _el_17.append(_el_19);
+    dbgElm(_el_19,19,9,8);
+    Text _text_20 = new Text('\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        ');
+    _el_19.append(_text_20);
+    dbgElm(_text_20,20,9,11);
+    Text _text_21 = new Text('\n    ');
+    _el_17.append(_text_21);
+    dbgElm(_text_21,21,11,12);
     Text _text_22 = new Text('\n    ');
-    _el_21.append(_text_22);
-    dbgElm(_text_22,22,12,37);
-    _el_23 = document.createElement('p');
-    _el_21.append(_el_23);
+    _el_3.append(_text_22);
+    dbgElm(_text_22,22,12,10);
+    _el_23 = document.createElement('div');
+    _el_3.append(_el_23);
     dbgElm(_el_23,23,13,4);
-    Text _text_24 = new Text('\n        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n    ');
+    setAttr(_el_23,'class','ui tab');
+    setAttr(_el_23,'data-tab','tab-2');
+    Text _text_24 = new Text('\n        ');
     _el_23.append(_text_24);
-    dbgElm(_text_24,24,13,7);
-    Text _text_25 = new Text('\n');
-    _el_21.append(_text_25);
-    dbgElm(_text_25,25,15,8);
-    Text _text_26 = new Text('\n');
-    parentRenderNode.append(_text_26);
-    dbgElm(_text_26,26,16,6);
-    _el_27 = document.createElement('div');
-    parentRenderNode.append(_el_27);
-    dbgElm(_el_27,27,17,0);
-    setAttr(_el_27,'class','ui tab');
-    setAttr(_el_27,'data-tab','tab-3');
+    dbgElm(_text_24,24,13,41);
+    _el_25 = document.createElement('p');
+    _el_23.append(_el_25);
+    dbgElm(_el_25,25,14,8);
+    Text _text_26 = new Text('\n            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n        ');
+    _el_25.append(_text_26);
+    dbgElm(_text_26,26,14,11);
+    Text _text_27 = new Text('\n    ');
+    _el_23.append(_text_27);
+    dbgElm(_text_27,27,16,12);
     Text _text_28 = new Text('\n    ');
-    _el_27.append(_text_28);
-    dbgElm(_text_28,28,17,37);
-    _el_29 = document.createElement('p');
-    _el_27.append(_el_29);
+    _el_3.append(_text_28);
+    dbgElm(_text_28,28,17,10);
+    _el_29 = document.createElement('div');
+    _el_3.append(_el_29);
     dbgElm(_el_29,29,18,4);
-    Text _text_30 = new Text('\n        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n    ');
+    setAttr(_el_29,'class','ui tab');
+    setAttr(_el_29,'data-tab','tab-3');
+    Text _text_30 = new Text('\n        ');
     _el_29.append(_text_30);
-    dbgElm(_text_30,30,18,7);
-    Text _text_31 = new Text('\n');
-    _el_27.append(_text_31);
-    dbgElm(_text_31,31,20,8);
-    Text _text_32 = new Text('\n\n');
-    parentRenderNode.append(_text_32);
-    dbgElm(_text_32,32,21,6);
-    _el_33 = document.createElement('div');
-    parentRenderNode.append(_el_33);
-    dbgElm(_el_33,33,23,0);
-    setAttr(_el_33,'class','ui top attached tabular menu');
-    setAttr(_el_33,'semantic_ui_tab','');
-    _TabDirective_33_3 = new import1.TabDirective(new ElementRef(_el_33));
-    Text _text_34 = new Text('\n    ');
-    _el_33.append(_text_34);
-    dbgElm(_text_34,34,23,58);
-    _el_35 = document.createElement('div');
-    _el_33.append(_el_35);
-    dbgElm(_el_35,35,24,4);
-    setAttr(_el_35,'class','active item');
-    setAttr(_el_35,'data-tab','tab-html');
-    Text _text_36 = new Text('HTML');
-    _el_35.append(_text_36);
-    dbgElm(_text_36,36,24,49);
-    Text _text_37 = new Text('\n    ');
-    _el_33.append(_text_37);
-    dbgElm(_text_37,37,24,59);
-    _el_38 = document.createElement('div');
-    _el_33.append(_el_38);
-    dbgElm(_el_38,38,25,4);
-    setAttr(_el_38,'class','item');
-    setAttr(_el_38,'data-tab','tab-dart');
-    Text _text_39 = new Text('Dart');
-    _el_38.append(_text_39);
-    dbgElm(_text_39,39,25,42);
-    Text _text_40 = new Text('\n');
-    _el_33.append(_text_40);
-    dbgElm(_text_40,40,25,52);
-    Text _text_41 = new Text('\n');
-    parentRenderNode.append(_text_41);
-    dbgElm(_text_41,41,26,6);
-    _el_42 = document.createElement('div');
-    parentRenderNode.append(_el_42);
-    dbgElm(_el_42,42,27,0);
-    setAttr(_el_42,'class','ui bottom attached active tab segment');
-    setAttr(_el_42,'data-tab','tab-html');
-    Text _text_43 = new Text('\n    ');
-    _el_42.append(_text_43);
-    dbgElm(_text_43,43,27,71);
-    _el_44 = document.createElement('div');
-    _el_42.append(_el_44);
-    dbgElm(_el_44,44,28,4);
-    _appEl_44 = new AppElement(44,42,this,_el_44);
-    var compView_44 = import12.viewFactory_IncludeComponent0(this.injector(44),_appEl_44);
-    _IncludeComponent_44_4 = new import2.IncludeComponent(new ElementRef(_el_44),this.parentInjector.get(import13.BrowserClient));
-    _appEl_44.initComponent(_IncludeComponent_44_4,[],compView_44);
-    compView_44.createComp([],null);
-    Text _text_45 = new Text('\n');
-    _el_42.append(_text_45);
-    dbgElm(_text_45,45,28,54);
-    Text _text_46 = new Text('\n');
-    parentRenderNode.append(_text_46);
-    dbgElm(_text_46,46,29,6);
-    _el_47 = document.createElement('div');
-    parentRenderNode.append(_el_47);
-    dbgElm(_el_47,47,30,0);
-    setAttr(_el_47,'class','ui bottom attached tab segment');
-    setAttr(_el_47,'data-tab','tab-dart');
+    dbgElm(_text_30,30,18,41);
+    _el_31 = document.createElement('p');
+    _el_29.append(_el_31);
+    dbgElm(_el_31,31,19,8);
+    Text _text_32 = new Text('\n            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\n        ');
+    _el_31.append(_text_32);
+    dbgElm(_text_32,32,19,11);
+    Text _text_33 = new Text('\n    ');
+    _el_29.append(_text_33);
+    dbgElm(_text_33,33,21,12);
+    Text _text_34 = new Text('\n');
+    _el_3.append(_text_34);
+    dbgElm(_text_34,34,22,10);
+    Text _text_35 = new Text('\n\n');
+    parentRenderNode.append(_text_35);
+    dbgElm(_text_35,35,23,6);
+    _el_36 = document.createElement('div');
+    parentRenderNode.append(_el_36);
+    dbgElm(_el_36,36,25,0);
+    setAttr(_el_36,'class','ui horizontal section divider');
+    Text _text_37 = new Text('Source');
+    _el_36.append(_text_37);
+    dbgElm(_text_37,37,25,43);
+    Text _text_38 = new Text('\n\n');
+    parentRenderNode.append(_text_38);
+    dbgElm(_text_38,38,25,55);
+    _el_39 = document.createElement('div');
+    parentRenderNode.append(_el_39);
+    dbgElm(_el_39,39,27,0);
+    Text _text_40 = new Text('\n    ');
+    _el_39.append(_text_40);
+    dbgElm(_text_40,40,27,5);
+    _el_41 = document.createElement('div');
+    _el_39.append(_el_41);
+    dbgElm(_el_41,41,28,4);
+    setAttr(_el_41,'class','ui top attached tabular menu');
+    setAttr(_el_41,'semantic_ui_tab','');
+    _TabDirective_41_3 = new import1.TabDirective(new ElementRef(_el_41));
+    Text _text_42 = new Text('\n        ');
+    _el_41.append(_text_42);
+    dbgElm(_text_42,42,28,62);
+    _el_43 = document.createElement('div');
+    _el_41.append(_el_43);
+    dbgElm(_el_43,43,29,8);
+    setAttr(_el_43,'class','active item');
+    setAttr(_el_43,'data-tab','tab-html');
+    Text _text_44 = new Text('HTML');
+    _el_43.append(_text_44);
+    dbgElm(_text_44,44,29,53);
+    Text _text_45 = new Text('\n        ');
+    _el_41.append(_text_45);
+    dbgElm(_text_45,45,29,63);
+    _el_46 = document.createElement('div');
+    _el_41.append(_el_46);
+    dbgElm(_el_46,46,30,8);
+    setAttr(_el_46,'class','item');
+    setAttr(_el_46,'data-tab','tab-dart');
+    Text _text_47 = new Text('Dart');
+    _el_46.append(_text_47);
+    dbgElm(_text_47,47,30,46);
     Text _text_48 = new Text('\n    ');
-    _el_47.append(_text_48);
-    dbgElm(_text_48,48,30,64);
-    _el_49 = document.createElement('div');
-    _el_47.append(_el_49);
-    dbgElm(_el_49,49,31,4);
-    _appEl_49 = new AppElement(49,47,this,_el_49);
-    var compView_49 = import12.viewFactory_IncludeComponent0(this.injector(49),_appEl_49);
-    _IncludeComponent_49_4 = new import2.IncludeComponent(new ElementRef(_el_49),this.parentInjector.get(import13.BrowserClient));
-    _appEl_49.initComponent(_IncludeComponent_49_4,[],compView_49);
-    compView_49.createComp([],null);
-    Text _text_50 = new Text('\n');
-    _el_47.append(_text_50);
-    dbgElm(_text_50,50,31,54);
-    Text _text_51 = new Text('\n');
-    parentRenderNode.append(_text_51);
-    dbgElm(_text_51,51,32,6);
+    _el_41.append(_text_48);
+    dbgElm(_text_48,48,30,56);
+    Text _text_49 = new Text('\n    ');
+    _el_39.append(_text_49);
+    dbgElm(_text_49,49,31,10);
+    _el_50 = document.createElement('div');
+    _el_39.append(_el_50);
+    dbgElm(_el_50,50,32,4);
+    setAttr(_el_50,'class','ui bottom attached active tab segment');
+    setAttr(_el_50,'data-tab','tab-html');
+    Text _text_51 = new Text('\n        ');
+    _el_50.append(_text_51);
+    dbgElm(_text_51,51,32,75);
+    _el_52 = document.createElement('div');
+    _el_50.append(_el_52);
+    dbgElm(_el_52,52,33,8);
+    _appEl_52 = new AppElement(52,50,this,_el_52);
+    var compView_52 = import12.viewFactory_IncludeComponent0(this.injector(52),_appEl_52);
+    _IncludeComponent_52_4 = new import2.IncludeComponent(new ElementRef(_el_52),this.parentInjector.get(import13.BrowserClient));
+    _appEl_52.initComponent(_IncludeComponent_52_4,[],compView_52);
+    compView_52.createComp([],null);
+    Text _text_53 = new Text('\n    ');
+    _el_50.append(_text_53);
+    dbgElm(_text_53,53,33,58);
+    Text _text_54 = new Text('\n    ');
+    _el_39.append(_text_54);
+    dbgElm(_text_54,54,34,10);
+    _el_55 = document.createElement('div');
+    _el_39.append(_el_55);
+    dbgElm(_el_55,55,35,4);
+    setAttr(_el_55,'class','ui bottom attached tab segment');
+    setAttr(_el_55,'data-tab','tab-dart');
+    Text _text_56 = new Text('\n        ');
+    _el_55.append(_text_56);
+    dbgElm(_text_56,56,35,68);
+    _el_57 = document.createElement('div');
+    _el_55.append(_el_57);
+    dbgElm(_el_57,57,36,8);
+    _appEl_57 = new AppElement(57,55,this,_el_57);
+    var compView_57 = import12.viewFactory_IncludeComponent0(this.injector(57),_appEl_57);
+    _IncludeComponent_57_4 = new import2.IncludeComponent(new ElementRef(_el_57),this.parentInjector.get(import13.BrowserClient));
+    _appEl_57.initComponent(_IncludeComponent_57_4,[],compView_57);
+    compView_57.createComp([],null);
+    Text _text_58 = new Text('\n    ');
+    _el_55.append(_text_58);
+    dbgElm(_text_58,58,36,58);
+    Text _text_59 = new Text('\n');
+    _el_39.append(_text_59);
+    dbgElm(_text_59,59,37,10);
+    Text _text_60 = new Text('\n');
+    parentRenderNode.append(_text_60);
+    dbgElm(_text_60,60,38,6);
     init([],[
-      _el_0,_text_1,_text_2,_el_3,_text_4,_el_5,_text_6,_text_7,_el_8,_text_9,_text_10,
-      _el_11,_text_12,_text_13,_text_14,_el_15,_text_16,_el_17,_text_18,_text_19,_text_20,
-      _el_21,_text_22,_el_23,_text_24,_text_25,_text_26,_el_27,_text_28,_el_29,_text_30,
-      _text_31,_text_32,_el_33,_text_34,_el_35,_text_36,_text_37,_el_38,_text_39,_text_40,
-      _text_41,_el_42,_text_43,_el_44,_text_45,_text_46,_el_47,_text_48,_el_49,_text_50,
-      _text_51
+      _el_0,_text_1,_text_2,_el_3,_text_4,_el_5,_text_6,_el_7,_text_8,_text_9,_el_10,
+      _text_11,_text_12,_el_13,_text_14,_text_15,_text_16,_el_17,_text_18,_el_19,_text_20,
+      _text_21,_text_22,_el_23,_text_24,_el_25,_text_26,_text_27,_text_28,_el_29,_text_30,
+      _el_31,_text_32,_text_33,_text_34,_text_35,_el_36,_text_37,_text_38,_el_39,_text_40,
+      _el_41,_text_42,_el_43,_text_44,_text_45,_el_46,_text_47,_text_48,_text_49,_el_50,
+      _text_51,_el_52,_text_53,_text_54,_el_55,_text_56,_el_57,_text_58,_text_59,_text_60
     ]
     ,[]);
     return null;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
-    if ((identical(token, import1.TabDirective) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 13)))) { return _TabDirective_3_3; }
-    if ((identical(token, import1.TabDirective) && ((33 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return _TabDirective_33_3; }
-    if ((identical(token, import2.IncludeComponent) && identical(44, requestNodeIndex))) { return _IncludeComponent_44_4; }
-    if ((identical(token, import2.IncludeComponent) && identical(49, requestNodeIndex))) { return _IncludeComponent_49_4; }
+    if ((identical(token, import1.TabDirective) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 15)))) { return _TabDirective_5_3; }
+    if ((identical(token, import1.TabDirective) && ((41 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return _TabDirective_41_3; }
+    if ((identical(token, import2.IncludeComponent) && identical(52, requestNodeIndex))) { return _IncludeComponent_52_4; }
+    if ((identical(token, import2.IncludeComponent) && identical(57, requestNodeIndex))) { return _IncludeComponent_57_4; }
     return notFoundResult;
   }
   void detectChangesInternal() {
-    dbg(44,28,9);
+    dbg(52,33,13);
     final currVal_0 = 'TabComponent.html';
     if (import14.checkBinding(_expr_0,currVal_0)) {
-      _IncludeComponent_44_4.src = currVal_0;
+      _IncludeComponent_52_4.src = currVal_0;
       _expr_0 = currVal_0;
     }
-    dbg(49,31,9);
+    dbg(57,36,13);
     final currVal_1 = 'TabComponent.dart';
     if (import14.checkBinding(_expr_1,currVal_1)) {
-      _IncludeComponent_49_4.src = currVal_1;
+      _IncludeComponent_57_4.src = currVal_1;
       _expr_1 = currVal_1;
     }
     this.detectContentChildrenChanges();
     this.detectViewChildrenChanges();
     if (!import14.AppViewUtils.throwOnChanges) {
-      dbg(3,2,0);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_3_3.ngAfterViewInit(); }
-      dbg(33,23,0);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_33_3.ngAfterViewInit(); }
-      dbg(44,28,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_44_4.ngAfterViewInit(); }
-      dbg(49,31,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_49_4.ngAfterViewInit(); }
+      dbg(5,3,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_5_3.ngAfterViewInit(); }
+      dbg(41,28,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_41_3.ngAfterViewInit(); }
+      dbg(52,33,8);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_52_4.ngAfterViewInit(); }
+      dbg(57,36,8);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_57_4.ngAfterViewInit(); }
     }
   }
 }

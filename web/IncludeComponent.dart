@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 
 import 'dart:async';
 
-@Component(selector: '[source_include]', template: '<xmp [innerHTML]="source"></xmp>')
+@Component(selector: '[source_include]', template: '<xmp>{{source}}</xmp>')
 class IncludeComponent implements AfterViewInit {
 
   final ElementRef elementRef;

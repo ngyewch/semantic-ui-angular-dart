@@ -48,7 +48,7 @@ const List<StaticNodeDebugInfo> nodeDebugInfos_CalendarComponent0 = const [
     import5.NgControlStatus
   ]
   ,null,const <String, dynamic>{}),null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,const StaticNodeDebugInfo(const [import6.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import6.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import7.IncludeComponent],import7.IncludeComponent,const <String, dynamic>{}),
   null,null,null,null,const StaticNodeDebugInfo(const [import7.IncludeComponent],import7.IncludeComponent,const <String, dynamic>{}),
   null,null
@@ -70,17 +70,18 @@ class ViewCalendarComponent0 extends DebugAppView<import10.CalendarComponent> {
   Element _el_15;
   Text _text_16;
   Element _el_19;
-  import6.TabDirective _TabDirective_19_3;
-  Element _el_21;
+  Element _el_22;
+  import6.TabDirective _TabDirective_22_3;
   Element _el_24;
-  Element _el_28;
-  Element _el_30;
-  AppElement _appEl_30;
-  import7.IncludeComponent _IncludeComponent_30_4;
+  Element _el_27;
+  Element _el_31;
   Element _el_33;
-  Element _el_35;
-  AppElement _appEl_35;
-  import7.IncludeComponent _IncludeComponent_35_4;
+  AppElement _appEl_33;
+  import7.IncludeComponent _IncludeComponent_33_4;
+  Element _el_36;
+  Element _el_38;
+  AppElement _appEl_38;
+  import7.IncludeComponent _IncludeComponent_38_4;
   var _expr_1 = uninitialized;
   var _expr_2 = uninitialized;
   var _expr_3 = uninitialized;
@@ -166,88 +167,98 @@ class ViewCalendarComponent0 extends DebugAppView<import10.CalendarComponent> {
     _el_19 = document.createElement('div');
     parentRenderNode.append(_el_19);
     dbgElm(_el_19,19,15,0);
-    setAttr(_el_19,'class','ui top attached tabular menu');
-    setAttr(_el_19,'semantic_ui_tab','');
-    _TabDirective_19_3 = new import6.TabDirective(new ElementRef(_el_19));
-    Text _text_20 = new Text('\n    ');
+    setAttr(_el_19,'class','ui horizontal section divider');
+    Text _text_20 = new Text('Source');
     _el_19.append(_text_20);
-    dbgElm(_text_20,20,15,58);
-    _el_21 = document.createElement('div');
-    _el_19.append(_el_21);
-    dbgElm(_el_21,21,16,4);
-    setAttr(_el_21,'class','active item');
-    setAttr(_el_21,'data-tab','tab-html');
-    Text _text_22 = new Text('HTML');
-    _el_21.append(_text_22);
-    dbgElm(_text_22,22,16,49);
+    dbgElm(_text_20,20,15,43);
+    Text _text_21 = new Text('\n\n');
+    parentRenderNode.append(_text_21);
+    dbgElm(_text_21,21,15,55);
+    _el_22 = document.createElement('div');
+    parentRenderNode.append(_el_22);
+    dbgElm(_el_22,22,17,0);
+    setAttr(_el_22,'class','ui top attached tabular menu');
+    setAttr(_el_22,'semantic_ui_tab','');
+    _TabDirective_22_3 = new import6.TabDirective(new ElementRef(_el_22));
     Text _text_23 = new Text('\n    ');
-    _el_19.append(_text_23);
-    dbgElm(_text_23,23,16,59);
+    _el_22.append(_text_23);
+    dbgElm(_text_23,23,17,58);
     _el_24 = document.createElement('div');
-    _el_19.append(_el_24);
-    dbgElm(_el_24,24,17,4);
-    setAttr(_el_24,'class','item');
-    setAttr(_el_24,'data-tab','tab-dart');
-    Text _text_25 = new Text('Dart');
+    _el_22.append(_el_24);
+    dbgElm(_el_24,24,18,4);
+    setAttr(_el_24,'class','active item');
+    setAttr(_el_24,'data-tab','tab-html');
+    Text _text_25 = new Text('HTML');
     _el_24.append(_text_25);
-    dbgElm(_text_25,25,17,42);
-    Text _text_26 = new Text('\n');
-    _el_19.append(_text_26);
-    dbgElm(_text_26,26,17,52);
-    Text _text_27 = new Text('\n');
-    parentRenderNode.append(_text_27);
-    dbgElm(_text_27,27,18,6);
-    _el_28 = document.createElement('div');
-    parentRenderNode.append(_el_28);
-    dbgElm(_el_28,28,19,0);
-    setAttr(_el_28,'class','ui bottom attached active tab segment');
-    setAttr(_el_28,'data-tab','tab-html');
-    Text _text_29 = new Text('\n    ');
-    _el_28.append(_text_29);
-    dbgElm(_text_29,29,19,71);
-    _el_30 = document.createElement('div');
-    _el_28.append(_el_30);
-    dbgElm(_el_30,30,20,4);
-    _appEl_30 = new AppElement(30,28,this,_el_30);
-    var compView_30 = import17.viewFactory_IncludeComponent0(this.injector(30),_appEl_30);
-    _IncludeComponent_30_4 = new import7.IncludeComponent(new ElementRef(_el_30),this.parentInjector.get(import18.BrowserClient));
-    _appEl_30.initComponent(_IncludeComponent_30_4,[],compView_30);
-    compView_30.createComp([],null);
-    Text _text_31 = new Text('\n');
-    _el_28.append(_text_31);
-    dbgElm(_text_31,31,20,59);
-    Text _text_32 = new Text('\n');
-    parentRenderNode.append(_text_32);
-    dbgElm(_text_32,32,21,6);
+    dbgElm(_text_25,25,18,49);
+    Text _text_26 = new Text('\n    ');
+    _el_22.append(_text_26);
+    dbgElm(_text_26,26,18,59);
+    _el_27 = document.createElement('div');
+    _el_22.append(_el_27);
+    dbgElm(_el_27,27,19,4);
+    setAttr(_el_27,'class','item');
+    setAttr(_el_27,'data-tab','tab-dart');
+    Text _text_28 = new Text('Dart');
+    _el_27.append(_text_28);
+    dbgElm(_text_28,28,19,42);
+    Text _text_29 = new Text('\n');
+    _el_22.append(_text_29);
+    dbgElm(_text_29,29,19,52);
+    Text _text_30 = new Text('\n');
+    parentRenderNode.append(_text_30);
+    dbgElm(_text_30,30,20,6);
+    _el_31 = document.createElement('div');
+    parentRenderNode.append(_el_31);
+    dbgElm(_el_31,31,21,0);
+    setAttr(_el_31,'class','ui bottom attached active tab segment');
+    setAttr(_el_31,'data-tab','tab-html');
+    Text _text_32 = new Text('\n    ');
+    _el_31.append(_text_32);
+    dbgElm(_text_32,32,21,71);
     _el_33 = document.createElement('div');
-    parentRenderNode.append(_el_33);
-    dbgElm(_el_33,33,22,0);
-    setAttr(_el_33,'class','ui bottom attached tab segment');
-    setAttr(_el_33,'data-tab','tab-dart');
-    Text _text_34 = new Text('\n    ');
-    _el_33.append(_text_34);
-    dbgElm(_text_34,34,22,64);
-    _el_35 = document.createElement('div');
-    _el_33.append(_el_35);
-    dbgElm(_el_35,35,23,4);
-    _appEl_35 = new AppElement(35,33,this,_el_35);
-    var compView_35 = import17.viewFactory_IncludeComponent0(this.injector(35),_appEl_35);
-    _IncludeComponent_35_4 = new import7.IncludeComponent(new ElementRef(_el_35),this.parentInjector.get(import18.BrowserClient));
-    _appEl_35.initComponent(_IncludeComponent_35_4,[],compView_35);
-    compView_35.createComp([],null);
-    Text _text_36 = new Text('\n');
-    _el_33.append(_text_36);
-    dbgElm(_text_36,36,23,59);
-    Text _text_37 = new Text('\n');
-    parentRenderNode.append(_text_37);
-    dbgElm(_text_37,37,24,6);
+    _el_31.append(_el_33);
+    dbgElm(_el_33,33,22,4);
+    _appEl_33 = new AppElement(33,31,this,_el_33);
+    var compView_33 = import17.viewFactory_IncludeComponent0(this.injector(33),_appEl_33);
+    _IncludeComponent_33_4 = new import7.IncludeComponent(new ElementRef(_el_33),this.parentInjector.get(import18.BrowserClient));
+    _appEl_33.initComponent(_IncludeComponent_33_4,[],compView_33);
+    compView_33.createComp([],null);
+    Text _text_34 = new Text('\n');
+    _el_31.append(_text_34);
+    dbgElm(_text_34,34,22,59);
+    Text _text_35 = new Text('\n');
+    parentRenderNode.append(_text_35);
+    dbgElm(_text_35,35,23,6);
+    _el_36 = document.createElement('div');
+    parentRenderNode.append(_el_36);
+    dbgElm(_el_36,36,24,0);
+    setAttr(_el_36,'class','ui bottom attached tab segment');
+    setAttr(_el_36,'data-tab','tab-dart');
+    Text _text_37 = new Text('\n    ');
+    _el_36.append(_text_37);
+    dbgElm(_text_37,37,24,64);
+    _el_38 = document.createElement('div');
+    _el_36.append(_el_38);
+    dbgElm(_el_38,38,25,4);
+    _appEl_38 = new AppElement(38,36,this,_el_38);
+    var compView_38 = import17.viewFactory_IncludeComponent0(this.injector(38),_appEl_38);
+    _IncludeComponent_38_4 = new import7.IncludeComponent(new ElementRef(_el_38),this.parentInjector.get(import18.BrowserClient));
+    _appEl_38.initComponent(_IncludeComponent_38_4,[],compView_38);
+    compView_38.createComp([],null);
+    Text _text_39 = new Text('\n');
+    _el_36.append(_text_39);
+    dbgElm(_text_39,39,25,59);
+    Text _text_40 = new Text('\n');
+    parentRenderNode.append(_text_40);
+    dbgElm(_text_40,40,26,6);
     renderer.listen(_el_3,'ngModelChange',evt(_handle_ngModelChange_3_0));
     final subscription_0 = _NgModel_3_5.update.listen(evt(_handle_ngModelChange_3_0));
     init([],[
       _el_0,_text_1,_text_2,_el_3,_text_4,_el_5,_text_6,_el_7,_text_8,_el_9,_text_10,
       _el_11,_text_12,_text_13,_text_14,_el_15,_text_16,_text_17,_text_18,_el_19,_text_20,
-      _el_21,_text_22,_text_23,_el_24,_text_25,_text_26,_text_27,_el_28,_text_29,_el_30,
-      _text_31,_text_32,_el_33,_text_34,_el_35,_text_36,_text_37
+      _text_21,_el_22,_text_23,_el_24,_text_25,_text_26,_el_27,_text_28,_text_29,_text_30,
+      _el_31,_text_32,_el_33,_text_34,_text_35,_el_36,_text_37,_el_38,_text_39,_text_40
     ]
     ,[subscription_0]);
     return null;
@@ -258,9 +269,9 @@ class ViewCalendarComponent0 extends DebugAppView<import10.CalendarComponent> {
     if ((identical(token, import3.NgModel) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 17)))) { return _NgModel_3_5; }
     if ((identical(token, import4.NgControl) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 17)))) { return _NgControl_3_6; }
     if ((identical(token, import5.NgControlStatus) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 17)))) { return _NgControlStatus_3_7; }
-    if ((identical(token, import6.TabDirective) && ((19 <= requestNodeIndex) && (requestNodeIndex <= 26)))) { return _TabDirective_19_3; }
-    if ((identical(token, import7.IncludeComponent) && identical(30, requestNodeIndex))) { return _IncludeComponent_30_4; }
-    if ((identical(token, import7.IncludeComponent) && identical(35, requestNodeIndex))) { return _IncludeComponent_35_4; }
+    if ((identical(token, import6.TabDirective) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return _TabDirective_22_3; }
+    if ((identical(token, import7.IncludeComponent) && identical(33, requestNodeIndex))) { return _IncludeComponent_33_4; }
+    if ((identical(token, import7.IncludeComponent) && identical(38, requestNodeIndex))) { return _IncludeComponent_38_4; }
     return notFoundResult;
   }
   void detectChangesInternal() {
@@ -282,16 +293,16 @@ class ViewCalendarComponent0 extends DebugAppView<import10.CalendarComponent> {
       _expr_2 = currVal_2;
     }
     if (!identical(changes, null)) { _NgModel_3_5.ngOnChanges(changes); }
-    dbg(30,20,9);
+    dbg(33,22,9);
     final currVal_10 = 'CalendarComponent.html';
     if (import19.checkBinding(_expr_10,currVal_10)) {
-      _IncludeComponent_30_4.src = currVal_10;
+      _IncludeComponent_33_4.src = currVal_10;
       _expr_10 = currVal_10;
     }
-    dbg(35,23,9);
+    dbg(38,25,9);
     final currVal_11 = 'CalendarComponent.dart';
     if (import19.checkBinding(_expr_11,currVal_11)) {
-      _IncludeComponent_35_4.src = currVal_11;
+      _IncludeComponent_38_4.src = currVal_11;
       _expr_11 = currVal_11;
     }
     this.detectContentChildrenChanges();
@@ -341,12 +352,12 @@ class ViewCalendarComponent0 extends DebugAppView<import10.CalendarComponent> {
     if (!import19.AppViewUtils.throwOnChanges) {
       dbg(3,2,0);
       if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _CalendarDirective_3_3.ngAfterViewInit(); }
-      dbg(19,15,0);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_19_3.ngAfterViewInit(); }
-      dbg(30,20,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_30_4.ngAfterViewInit(); }
-      dbg(35,23,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_35_4.ngAfterViewInit(); }
+      dbg(22,17,0);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_22_3.ngAfterViewInit(); }
+      dbg(33,22,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_33_4.ngAfterViewInit(); }
+      dbg(38,25,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_38_4.ngAfterViewInit(); }
     }
   }
   bool _handle_ngModelChange_3_0($event) {

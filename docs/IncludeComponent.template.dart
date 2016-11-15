@@ -33,10 +33,14 @@ import 'package:angular2/src/core/linker/element_ref.dart';
 import 'package:http/browser_client.dart' as import13;
 import 'package:angular2/src/core/linker/component_factory.dart' as import14;
 const List<dynamic> styles_IncludeComponent = const [];
-const List<StaticNodeDebugInfo> nodeDebugInfos_IncludeComponent0 = const [null];
+const List<StaticNodeDebugInfo> nodeDebugInfos_IncludeComponent0 = const [
+  null,null
+]
+;
 RenderComponentType renderType_IncludeComponent;
 class ViewIncludeComponent0 extends DebugAppView<import3.IncludeComponent> {
   Element _el_0;
+  Text _text_1;
   var _expr_0 = uninitialized;
   ViewIncludeComponent0(import6.Injector parentInjector,AppElement declarationEl): super(ViewIncludeComponent0,renderType_IncludeComponent,import8.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_IncludeComponent0);
   AppElement createInternal(dynamic rootSelector) {
@@ -44,15 +48,21 @@ class ViewIncludeComponent0 extends DebugAppView<import3.IncludeComponent> {
     _el_0 = document.createElement('xmp');
     parentRenderNode.append(_el_0);
     dbgElm(_el_0,0,0,0);
-    init([],[_el_0],[]);
+    _text_1 = new Text('');
+    _el_0.append(_text_1);
+    dbgElm(_text_1,1,0,5);
+    init([],[
+      _el_0,_text_1
+    ]
+    ,[]);
     return null;
   }
   void detectChangesInternal() {
     this.detectContentChildrenChanges();
-    dbg(0,0,5);
-    final currVal_0 = ctx.source;
+    dbg(1,0,5);
+    final currVal_0 = import9.interpolate0(ctx.source);
     if (import9.checkBinding(_expr_0,currVal_0)) {
-      renderer.setElementProperty(_el_0,'innerHTML',import9.appViewUtils.sanitizer.sanitizeHtml(currVal_0));
+      _text_1.text = currVal_0;
       _expr_0 = currVal_0;
     }
     this.detectViewChildrenChanges();

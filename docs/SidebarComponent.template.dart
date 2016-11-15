@@ -42,7 +42,8 @@ const List<StaticNodeDebugInfo> nodeDebugInfos_SidebarComponent0 = const [
   null,null,null,null,null,const StaticNodeDebugInfo(const [import1.SidebarDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
   null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
-  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import2.TabDirective],null,const <String, dynamic>{}),
+  null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+  null,null,const StaticNodeDebugInfo(const [import2.TabDirective],null,const <String, dynamic>{}),
   null,null,null,null,null,null,null,null,null,null,const StaticNodeDebugInfo(const [import3.IncludeComponent],import3.IncludeComponent,const <String, dynamic>{}),
   null,null,null,null,const StaticNodeDebugInfo(const [import3.IncludeComponent],import3.IncludeComponent,const <String, dynamic>{}),
   null,null
@@ -71,17 +72,18 @@ class ViewSidebarComponent0 extends DebugAppView<import6.SidebarComponent> {
   Element _el_47;
   Element _el_50;
   Element _el_56;
-  import2.TabDirective _TabDirective_56_3;
-  Element _el_58;
+  Element _el_59;
+  import2.TabDirective _TabDirective_59_3;
   Element _el_61;
-  Element _el_65;
-  Element _el_67;
-  AppElement _appEl_67;
-  import3.IncludeComponent _IncludeComponent_67_4;
+  Element _el_64;
+  Element _el_68;
   Element _el_70;
-  Element _el_72;
-  AppElement _appEl_72;
-  import3.IncludeComponent _IncludeComponent_72_4;
+  AppElement _appEl_70;
+  import3.IncludeComponent _IncludeComponent_70_4;
+  Element _el_73;
+  Element _el_75;
+  AppElement _appEl_75;
+  import3.IncludeComponent _IncludeComponent_75_4;
   var _expr_2 = uninitialized;
   var _expr_3 = uninitialized;
   ViewSidebarComponent0(import10.Injector parentInjector,AppElement declarationEl): super(ViewSidebarComponent0,renderType_SidebarComponent,import11.ViewType.COMPONENT,{},parentInjector,declarationEl,ChangeDetectionStrategy.CheckAlways,nodeDebugInfos_SidebarComponent0);
@@ -274,81 +276,91 @@ class ViewSidebarComponent0 extends DebugAppView<import6.SidebarComponent> {
     _el_56 = document.createElement('div');
     parentRenderNode.append(_el_56);
     dbgElm(_el_56,56,51,0);
-    setAttr(_el_56,'class','ui top attached tabular menu');
-    setAttr(_el_56,'semantic_ui_tab','');
-    _TabDirective_56_3 = new import2.TabDirective(new ElementRef(_el_56));
-    Text _text_57 = new Text('\n    ');
+    setAttr(_el_56,'class','ui horizontal section divider');
+    Text _text_57 = new Text('Source');
     _el_56.append(_text_57);
-    dbgElm(_text_57,57,51,58);
-    _el_58 = document.createElement('div');
-    _el_56.append(_el_58);
-    dbgElm(_el_58,58,52,4);
-    setAttr(_el_58,'class','active item');
-    setAttr(_el_58,'data-tab','tab-html');
-    Text _text_59 = new Text('HTML');
-    _el_58.append(_text_59);
-    dbgElm(_text_59,59,52,49);
+    dbgElm(_text_57,57,51,43);
+    Text _text_58 = new Text('\n\n');
+    parentRenderNode.append(_text_58);
+    dbgElm(_text_58,58,51,55);
+    _el_59 = document.createElement('div');
+    parentRenderNode.append(_el_59);
+    dbgElm(_el_59,59,53,0);
+    setAttr(_el_59,'class','ui top attached tabular menu');
+    setAttr(_el_59,'semantic_ui_tab','');
+    _TabDirective_59_3 = new import2.TabDirective(new ElementRef(_el_59));
     Text _text_60 = new Text('\n    ');
-    _el_56.append(_text_60);
-    dbgElm(_text_60,60,52,59);
+    _el_59.append(_text_60);
+    dbgElm(_text_60,60,53,58);
     _el_61 = document.createElement('div');
-    _el_56.append(_el_61);
-    dbgElm(_el_61,61,53,4);
-    setAttr(_el_61,'class','item');
-    setAttr(_el_61,'data-tab','tab-dart');
-    Text _text_62 = new Text('Dart');
+    _el_59.append(_el_61);
+    dbgElm(_el_61,61,54,4);
+    setAttr(_el_61,'class','active item');
+    setAttr(_el_61,'data-tab','tab-html');
+    Text _text_62 = new Text('HTML');
     _el_61.append(_text_62);
-    dbgElm(_text_62,62,53,42);
-    Text _text_63 = new Text('\n');
-    _el_56.append(_text_63);
-    dbgElm(_text_63,63,53,52);
-    Text _text_64 = new Text('\n');
-    parentRenderNode.append(_text_64);
-    dbgElm(_text_64,64,54,6);
-    _el_65 = document.createElement('div');
-    parentRenderNode.append(_el_65);
-    dbgElm(_el_65,65,55,0);
-    setAttr(_el_65,'class','ui bottom attached active tab segment');
-    setAttr(_el_65,'data-tab','tab-html');
-    Text _text_66 = new Text('\n    ');
-    _el_65.append(_text_66);
-    dbgElm(_text_66,66,55,71);
-    _el_67 = document.createElement('div');
-    _el_65.append(_el_67);
-    dbgElm(_el_67,67,56,4);
-    _appEl_67 = new AppElement(67,65,this,_el_67);
-    var compView_67 = import13.viewFactory_IncludeComponent0(this.injector(67),_appEl_67);
-    _IncludeComponent_67_4 = new import3.IncludeComponent(new ElementRef(_el_67),this.parentInjector.get(import14.BrowserClient));
-    _appEl_67.initComponent(_IncludeComponent_67_4,[],compView_67);
-    compView_67.createComp([],null);
-    Text _text_68 = new Text('\n');
-    _el_65.append(_text_68);
-    dbgElm(_text_68,68,56,58);
-    Text _text_69 = new Text('\n');
-    parentRenderNode.append(_text_69);
-    dbgElm(_text_69,69,57,6);
+    dbgElm(_text_62,62,54,49);
+    Text _text_63 = new Text('\n    ');
+    _el_59.append(_text_63);
+    dbgElm(_text_63,63,54,59);
+    _el_64 = document.createElement('div');
+    _el_59.append(_el_64);
+    dbgElm(_el_64,64,55,4);
+    setAttr(_el_64,'class','item');
+    setAttr(_el_64,'data-tab','tab-dart');
+    Text _text_65 = new Text('Dart');
+    _el_64.append(_text_65);
+    dbgElm(_text_65,65,55,42);
+    Text _text_66 = new Text('\n');
+    _el_59.append(_text_66);
+    dbgElm(_text_66,66,55,52);
+    Text _text_67 = new Text('\n');
+    parentRenderNode.append(_text_67);
+    dbgElm(_text_67,67,56,6);
+    _el_68 = document.createElement('div');
+    parentRenderNode.append(_el_68);
+    dbgElm(_el_68,68,57,0);
+    setAttr(_el_68,'class','ui bottom attached active tab segment');
+    setAttr(_el_68,'data-tab','tab-html');
+    Text _text_69 = new Text('\n    ');
+    _el_68.append(_text_69);
+    dbgElm(_text_69,69,57,71);
     _el_70 = document.createElement('div');
-    parentRenderNode.append(_el_70);
-    dbgElm(_el_70,70,58,0);
-    setAttr(_el_70,'class','ui bottom attached tab segment');
-    setAttr(_el_70,'data-tab','tab-dart');
-    Text _text_71 = new Text('\n    ');
-    _el_70.append(_text_71);
-    dbgElm(_text_71,71,58,64);
-    _el_72 = document.createElement('div');
-    _el_70.append(_el_72);
-    dbgElm(_el_72,72,59,4);
-    _appEl_72 = new AppElement(72,70,this,_el_72);
-    var compView_72 = import13.viewFactory_IncludeComponent0(this.injector(72),_appEl_72);
-    _IncludeComponent_72_4 = new import3.IncludeComponent(new ElementRef(_el_72),this.parentInjector.get(import14.BrowserClient));
-    _appEl_72.initComponent(_IncludeComponent_72_4,[],compView_72);
-    compView_72.createComp([],null);
-    Text _text_73 = new Text('\n');
-    _el_70.append(_text_73);
-    dbgElm(_text_73,73,59,58);
-    Text _text_74 = new Text('\n');
-    parentRenderNode.append(_text_74);
-    dbgElm(_text_74,74,60,6);
+    _el_68.append(_el_70);
+    dbgElm(_el_70,70,58,4);
+    _appEl_70 = new AppElement(70,68,this,_el_70);
+    var compView_70 = import13.viewFactory_IncludeComponent0(this.injector(70),_appEl_70);
+    _IncludeComponent_70_4 = new import3.IncludeComponent(new ElementRef(_el_70),this.parentInjector.get(import14.BrowserClient));
+    _appEl_70.initComponent(_IncludeComponent_70_4,[],compView_70);
+    compView_70.createComp([],null);
+    Text _text_71 = new Text('\n');
+    _el_68.append(_text_71);
+    dbgElm(_text_71,71,58,58);
+    Text _text_72 = new Text('\n');
+    parentRenderNode.append(_text_72);
+    dbgElm(_text_72,72,59,6);
+    _el_73 = document.createElement('div');
+    parentRenderNode.append(_el_73);
+    dbgElm(_el_73,73,60,0);
+    setAttr(_el_73,'class','ui bottom attached tab segment');
+    setAttr(_el_73,'data-tab','tab-dart');
+    Text _text_74 = new Text('\n    ');
+    _el_73.append(_text_74);
+    dbgElm(_text_74,74,60,64);
+    _el_75 = document.createElement('div');
+    _el_73.append(_el_75);
+    dbgElm(_el_75,75,61,4);
+    _appEl_75 = new AppElement(75,73,this,_el_75);
+    var compView_75 = import13.viewFactory_IncludeComponent0(this.injector(75),_appEl_75);
+    _IncludeComponent_75_4 = new import3.IncludeComponent(new ElementRef(_el_75),this.parentInjector.get(import14.BrowserClient));
+    _appEl_75.initComponent(_IncludeComponent_75_4,[],compView_75);
+    compView_75.createComp([],null);
+    Text _text_76 = new Text('\n');
+    _el_73.append(_text_76);
+    dbgElm(_text_76,76,61,58);
+    Text _text_77 = new Text('\n');
+    parentRenderNode.append(_text_77);
+    dbgElm(_text_77,77,62,6);
     renderer.listen(_el_5,'semantic_ui_sidebar',evt(_handle_semantic_ui_sidebar_5_0));
     final subscription_0 = _SidebarDirective_5_3.eventEmitter.listen(evt(_handle_semantic_ui_sidebar_5_0));
     renderer.listen(_el_37,'click',evt(_handle_click_37_0));
@@ -358,31 +370,31 @@ class ViewSidebarComponent0 extends DebugAppView<import6.SidebarComponent> {
       _text_21,_el_22,_text_23,_text_24,_el_25,_text_26,_text_27,_el_28,_text_29,_text_30,
       _el_31,_text_32,_text_33,_text_34,_el_35,_text_36,_el_37,_text_38,_el_39,_text_40,
       _text_41,_el_42,_text_43,_el_44,_text_45,_text_46,_el_47,_text_48,_text_49,_el_50,
-      _text_51,_text_52,_text_53,_text_54,_text_55,_el_56,_text_57,_el_58,_text_59,_text_60,
-      _el_61,_text_62,_text_63,_text_64,_el_65,_text_66,_el_67,_text_68,_text_69,_el_70,
-      _text_71,_el_72,_text_73,_text_74
+      _text_51,_text_52,_text_53,_text_54,_text_55,_el_56,_text_57,_text_58,_el_59,_text_60,
+      _el_61,_text_62,_text_63,_el_64,_text_65,_text_66,_text_67,_el_68,_text_69,_el_70,
+      _text_71,_text_72,_el_73,_text_74,_el_75,_text_76,_text_77
     ]
     ,[subscription_0]);
     return null;
   }
   dynamic injectorGetInternal(dynamic token,num requestNodeIndex,dynamic notFoundResult) {
     if ((identical(token, import1.SidebarDirective) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return _SidebarDirective_5_3; }
-    if ((identical(token, import2.TabDirective) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return _TabDirective_56_3; }
-    if ((identical(token, import3.IncludeComponent) && identical(67, requestNodeIndex))) { return _IncludeComponent_67_4; }
-    if ((identical(token, import3.IncludeComponent) && identical(72, requestNodeIndex))) { return _IncludeComponent_72_4; }
+    if ((identical(token, import2.TabDirective) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return _TabDirective_59_3; }
+    if ((identical(token, import3.IncludeComponent) && identical(70, requestNodeIndex))) { return _IncludeComponent_70_4; }
+    if ((identical(token, import3.IncludeComponent) && identical(75, requestNodeIndex))) { return _IncludeComponent_75_4; }
     return notFoundResult;
   }
   void detectChangesInternal() {
-    dbg(67,56,9);
+    dbg(70,58,9);
     final currVal_2 = 'SidebarComponent.html';
     if (import15.checkBinding(_expr_2,currVal_2)) {
-      _IncludeComponent_67_4.src = currVal_2;
+      _IncludeComponent_70_4.src = currVal_2;
       _expr_2 = currVal_2;
     }
-    dbg(72,59,9);
+    dbg(75,61,9);
     final currVal_3 = 'SidebarComponent.dart';
     if (import15.checkBinding(_expr_3,currVal_3)) {
-      _IncludeComponent_72_4.src = currVal_3;
+      _IncludeComponent_75_4.src = currVal_3;
       _expr_3 = currVal_3;
     }
     this.detectContentChildrenChanges();
@@ -392,12 +404,12 @@ class ViewSidebarComponent0 extends DebugAppView<import6.SidebarComponent> {
     }
     this.detectViewChildrenChanges();
     if (!import15.AppViewUtils.throwOnChanges) {
-      dbg(56,51,0);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_56_3.ngAfterViewInit(); }
-      dbg(67,56,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_67_4.ngAfterViewInit(); }
-      dbg(72,59,4);
-      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_72_4.ngAfterViewInit(); }
+      dbg(59,53,0);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _TabDirective_59_3.ngAfterViewInit(); }
+      dbg(70,58,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_70_4.ngAfterViewInit(); }
+      dbg(75,61,4);
+      if (identical(this.cdState, ChangeDetectorState.NeverChecked)) { _IncludeComponent_75_4.ngAfterViewInit(); }
     }
   }
   bool _handle_semantic_ui_sidebar_5_0($event) {
