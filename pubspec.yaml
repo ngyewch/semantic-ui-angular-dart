@@ -5,12 +5,12 @@ author: Nick Ng <ngyewch@gmail.com>
 homepage: https://github.com/ngyewch/semantic-ui-angular-dart
 
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.8.0 <2.0.0'
 
 dependencies:
   angular2: '>=2.0.0 <3.0.0'
-  browser: ^0.10.0
-  http: ^0.11.0
+  browser: '>=0.10.0 <0.11.0'
+  http: '>=0.11.0 <0.12.0'
 
 transformers:
 - angular2:
