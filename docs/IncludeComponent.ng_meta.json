@@ -11,10 +11,6 @@
         "5": false
       },
       {
-        "1": "package:http/http.dart",
-        "5": false
-      },
-      {
         "1": "dart:async",
         "5": false
       }

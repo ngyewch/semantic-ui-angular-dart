@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Updated semantic_ui_calendar directive to support 'startCalendar' and 'endCalendar' settings.
+
 ## 0.1.5
 
 - Added semantic_ui_progress directive.

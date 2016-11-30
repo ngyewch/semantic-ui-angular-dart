@@ -21,6 +21,12 @@ class CalendarDirective extends AbstractModule implements AfterViewInit, Control
   void _init() {
     Map<String, dynamic> adjustedSettings;
     if (settings is Map) {
+      if (settings.containsKey('startCalendar')) {
+        settings['startCalendar'] = context.callMethod(r'$', [settings['startCalendar']]);
+      }
+      if (settings.containsKey('endCalendar')) {
+        settings['endCalendar'] = context.callMethod(r'$', [settings['endCalendar']]);
+      }
       adjustedSettings = new Map<String, dynamic>.from(settings);
     } else {
       adjustedSettings = {};

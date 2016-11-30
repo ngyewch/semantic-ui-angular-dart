@@ -1,6 +1,5 @@
 import 'package:angular2/core.dart';
 import 'package:http/browser_client.dart';
-import 'package:http/http.dart';
 
 import 'dart:async';
 

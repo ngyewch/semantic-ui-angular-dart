@@ -1,17 +1,40 @@
 <h2 class="ui header">Calendar</h2>
 
-<div [semantic_ui_calendar]="startDateSettings" [(ngModel)]="startDate" class="ui calendar">
-    <div>
-        Start date:
-        <div class="ui input left icon">
-            <i class="calendar icon"></i>
-            <input type="text" placeholder="Start date"/>
+<div class="ui form">
+    <div class="four fields">
+        <div class="field">
+            <label>Start date</label>
+            <div id="startDate" [semantic_ui_calendar]="startDateSettings" [(ngModel)]="startDate" class="ui calendar">
+                <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="Start date"/>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>End date</label>
+            <div id="endDate" [semantic_ui_calendar]="endDateSettings" [(ngModel)]="endDate" class="ui calendar">
+                <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="End date"/>
+                </div>
+            </div>
         </div>
     </div>
-    <div>
-        Selected start date: {{startDate}}
-    </div>
 </div>
+
+<table class="ui collapsing definition table">
+    <tbody>
+        <tr>
+            <td>Selected start date</td>
+            <td>{{startDate|date:'yyyy-MM-dd'}}</td>
+        </tr>
+        <tr>
+            <td>Selected end date</td>
+            <td>{{endDate|date:'yyyy-MM-dd'}}</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="ui horizontal section divider">Source</div>
 

@@ -10,6 +10,14 @@ import 'IncludeComponent.dart' show IncludeComponent;
     directives: const [SEMANTIC_UI_DIRECTIVES, IncludeComponent]
 )
 class CalendarComponent {
-  var startDateSettings = { 'type': 'date' };
-  var startDate = DateTime.parse('2016-10-01');
+  var startDateSettings = {
+    'type': 'date',
+    'endCalendar': '#endDate'
+  };
+  var endDateSettings = {
+    'type': 'date',
+    'startCalendar': '#startDate'
+  };
+  var startDate = new DateTime.now();
+  var endDate = new DateTime.now();
 }
